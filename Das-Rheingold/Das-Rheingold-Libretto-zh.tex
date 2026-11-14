@@ -22,12 +22,12 @@
   \par\addvspace{1.0ex}%
   \noindent{\small\bfseries #1}\par
   \nopagebreak[3]}
-\newcommand{\vzeile}[1]{\noindent #1\par}
+\newcommand{\vzeile}[1]{\noindent{\small #1}\par}
 \newcommand{\stage}[1]{%
-  \par\addvspace{0.5ex}%
-  {\small\color{stage}\emph{#1}}\par}
+  \par\addvspace{0.5ex}\noindent
+  {\small\color{stage}\emph{（#1）}}\par}
 \newcommand{\stagedir}[1]{%
-  \par{\small\color{stage}\emph{#1}}\par
+  \par\noindent{\small\color{stage}\emph{（#1）}}\par
   \nopagebreak[2]}
 \newenvironment{stageblock}{%
   \par\addvspace{0.6ex}\begingroup\small\color{stage}\itshape
