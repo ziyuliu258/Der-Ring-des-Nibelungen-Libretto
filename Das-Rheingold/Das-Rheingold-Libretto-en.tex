@@ -1,0 +1,2094 @@
+\documentclass[10.5pt,openany]{book}
+
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+\usepackage[a5paper, top=1.9cm, bottom=1.9cm, inner=1.85cm, outer=1.55cm]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\setstretch{1.05}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\small\color{stage}\nouppercase{\rightmark}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+
+\definecolor{ink}{HTML}{2B241C}
+\definecolor{stage}{HTML}{6E6E6E}
+\definecolor{rule}{HTML}{C4B39A}
+\color{ink}
+
+\titleformat{\chapter}[display]
+  {\centering}{}{0pt}{\Large\bfseries}
+\titlespacing*{\chapter}{0pt}{1.6ex}{1.2ex}
+
+% Rollenangabe: Kapitälchen, leicht gesperrt.
+\newcommand{\speaker}[1]{%
+  \par\addvspace{1.0ex}%
+  \noindent{\small\bfseries\scshape #1}\par
+  \nopagebreak[3]}
+
+% Gesungene oder gesprochene Zeile.
+\newcommand{\vzeile}[1]{\noindent #1\par}
+
+% Regieanweisung.
+\newcommand{\stage}[1]{%
+  \par\addvspace{0.5ex}%
+  {\small\color{stage}\emph{#1}}\par}
+
+\newcommand{\stagedir}[1]{%
+  \par{\small\color{stage}\emph{#1}}\par
+  \nopagebreak[2]}
+
+% Längere Szenenbeschreibung, im Blocksatz mit Einzug.
+\newenvironment{stageblock}{%
+  \par\addvspace{0.6ex}\begingroup\small\color{stage}\itshape
+  \setlength{\parindent}{1.1em}\setlength{\parskip}{0.55ex}}{%
+  \par\endgroup\addvspace{0.8ex}}
+
+\begin{document}
+\frontmatter
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{3.2cm}
+\begin{center}
+{\Huge The Rhinegold}\\[3.4ex]
+{\color{rule}\rule{0.4\textwidth}{0.4pt}}\\[3.2ex]
+{\large Richard Wagner}
+\end{center}
+\vfill
+\end{titlepage}
+
+\tableofcontents
+\markboth{}{Inhalt}
+
+\mainmatter
+
+\chapter*{Characters}
+\addcontentsline{toc}{chapter}{Characters}
+\markboth{Characters}{Characters}
+\begin{center}
+{\small\color{stage}\textsc{Gods}}\\[0.8ex]
+\textbf{Wotan}\enspace{\small\color{stage}baritone}\\[0.3ex]
+\textbf{Donner}\enspace{\small\color{stage}baritone}\\[0.3ex]
+\textbf{Froh}\enspace{\small\color{stage}tenor}\\[0.3ex]
+\textbf{Loge}\enspace{\small\color{stage}tenor}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Goddesses}}\\[0.8ex]
+\textbf{Fricka}\enspace{\small\color{stage}mezzo-soprano}\\[0.3ex]
+\textbf{Freia}\enspace{\small\color{stage}soprano}\\[0.3ex]
+\textbf{Erda}\enspace{\small\color{stage}contralto}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Nibelungs}}\\[0.8ex]
+\textbf{Alberich}\enspace{\small\color{stage}baritone}\\[0.3ex]
+\textbf{Mime}\enspace{\small\color{stage}tenor}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Giants}}\\[0.8ex]
+\textbf{Fasolt}\enspace{\small\color{stage}bass}\\[0.3ex]
+\textbf{Fafner}\enspace{\small\color{stage}bass}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{The Rhinemaidens}}\\[0.8ex]
+\textbf{Woglinde}\enspace{\small\color{stage}soprano}\\[0.3ex]
+\textbf{Wellgunde}\enspace{\small\color{stage}mezzo-soprano}\\[0.3ex]
+\textbf{Flosshilde}\enspace{\small\color{stage}contralto}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Silent Roles}}\\[0.8ex]
+\textbf{Nibelungs}\\[0.3ex]
+\par\vspace{1.0ex}
+\end{center}
+
+\chapter*{Vorspiel}
+\addcontentsline{toc}{chapter}{Vorspiel}
+\markright{Vorspiel}
+\chapter*{Scene One}
+\addcontentsline{toc}{chapter}{Erste Szene}
+\markright{Erste Szene}
+\begin{center}\small\color{stage}\emph{Woglinde, Wellgunde, Flosshilde, Alberich}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{At the bottom of the Rhine.}
+\stage{Greenish twilight, lighter above, darker below. The upper reaches are filled with surging water that streams restlessly from right to left. Towards the depths the floods dissolve into an ever finer damp mist, so that the space to a man's height above the ground seems entirely free of the water, which flows like banks of cloud over the night-dark bed. Everywhere steep rocky reefs jut up from the depths and bound the space of the stage; the whole ground is split into a wild tangle of jagged points, so that nowhere is it quite level, and on every side it falls away in deepest darkness into lower chasms.}
+\stage{Around a reef in the middle of the stage, whose slender peak rises up into the denser, more brightly glimmering water, one of the Rhinemaidens circles in graceful swimming motion.}
+\speaker{Woglinde}
+\vzeile{Weia! Waga! Surge, you wave,}
+\vzeile{roll to the cradle! Wagalaweia!}
+\vzeile{Wallala, weiala weia!}
+\speaker{Wellgunde}
+\stagedir{voice from above}
+\vzeile{Woglinde, do you keep watch alone?}
+\speaker{Woglinde}
+\vzeile{With Wellgunde I would be two.}
+\speaker{Wellgunde}
+\stagedir{dives down from the flood to the reef}
+\vzeile{Let me see how you keep watch!}
+\stagedir{she tries to catch Woglinde}
+\speaker{Woglinde}
+\stagedir{eludes her, swimming}
+\vzeile{Safe from you!}
+\stagedir{They tease one another and try playfully to catch each other}
+\speaker{Flosshilde}
+\stagedir{voice from above}
+\vzeile{Heiaha weia! Wild sisters!}
+\speaker{Wellgunde}
+\vzeile{Flosshilde, swim! Woglinde is fleeing:}
+\vzeile{help me catch the one who slips away!}
+\speaker{Flosshilde}
+\stagedir{dives down and darts between the two at play}
+\vzeile{Badly you guard the sleeping gold!}
+\vzeile{Keep better watch over the slumberer's bed,}
+\vzeile{or you will both pay for your sport!}
+\stagedir{With merry shrieks the two dart apart. Flosshilde tries to catch first one, then the other; they slip away from her and at last join together to hunt Flosshilde in their turn. So they dart like fish from reef to reef, jesting and laughing.}
+\stagedir{Meanwhile Alberich has climbed out of the abyss from a dark chasm, clambering up a reef. Still wrapped in darkness, he stops and watches the Rhinemaidens' play with growing delight.}
+\speaker{Alberich}
+\vzeile{Hehe! You nixies!}
+\vzeile{How dainty you are, enviable folk!}
+\vzeile{Gladly would I come up from Nibelheim's night,}
+\vzeile{if you would bend down to me!}
+\stagedir{As soon as they hear Alberich's voice, the maidens stop their play}
+\speaker{Woglinde}
+\vzeile{Hei! Who is there?}
+\speaker{Wellgunde}
+\vzeile{It grows dark, and someone calls!}
+\speaker{Flosshilde}
+\vzeile{Look who is spying on us!}
+\speaker{Woglinde and Wellgunde}
+\stagedir{they dive deeper and recognise the Nibelung}
+\vzeile{Pfui! The ugly one!}
+\speaker{Flosshilde}
+\stagedir{darting quickly up}
+\vzeile{Guard the gold!}
+\vzeile{Father warned us of such a foe.}
+\stagedir{The other two follow her, and all three gather quickly around the middle reef}
+\speaker{Alberich}
+\vzeile{You, up there!}
+\speaker{The Three Rhinemaidens}
+\vzeile{What do you want down there?}
+\speaker{Alberich}
+\vzeile{Do I spoil your play,}
+\vzeile{if I stand here marvelling in silence?}
+\vzeile{If you dived down, the Nibelung would gladly}
+\vzeile{romp and tease with you!}
+\speaker{Woglinde}
+\vzeile{He wants to play with us?}
+\speaker{Wellgunde}
+\vzeile{Is he mocking?}
+\speaker{Alberich}
+\vzeile{How bright and fair you seem in the shimmer!}
+\vzeile{How gladly my arm would clasp one of the slender ones,}
+\vzeile{if she glided kindly down!}
+\speaker{Flosshilde}
+\vzeile{Now I laugh at my fear: the foe is in love!}
+\stagedir{They laugh}
+\speaker{Wellgunde}
+\vzeile{The lecherous fellow!}
+\speaker{Woglinde}
+\vzeile{Let us get to know him!}
+\stagedir{She lets herself down onto the peak of the reef, at whose foot Alberich has arrived.}
+\speaker{Alberich}
+\vzeile{She bends down to me.}
+\speaker{Woglinde}
+\vzeile{Now come close to me!}
+\stagedir{Alberich climbs towards the peak of the reef with impish agility, but is repeatedly held back}
+\speaker{Alberich}
+\vzeile{Nasty, smooth, slippery glimmer!}
+\vzeile{How I keep sliding! With hands and feet}
+\vzeile{I can neither grip nor hold the sleek slither!}
+\stagedir{he snorts}
+\vzeile{Wet damp fills my nose:}
+\vzeile{accursed sneezing!}
+\stagedir{he has come close to Woglinde}
+\speaker{Woglinde}
+\stagedir{laughing}
+\vzeile{Snorting, my suitor's splendour draws near!}
+\speaker{Alberich}
+\vzeile{Be my sweetheart, you maidenly child!}
+\stagedir{he tries to embrace her}
+\speaker{Woglinde}
+\stagedir{slipping free of him}
+\vzeile{If you would woo me, then woo me here!}
+\stagedir{she surfaces at another reef; the sisters laugh}
+\speaker{Alberich}
+\stagedir{scratches his head}
+\vzeile{Alas! You escape? Come back!}
+\vzeile{What you swing up so lightly costs me dear.}
+\speaker{Woglinde}
+\stagedir{swings herself onto a third reef, deeper down}
+\vzeile{Just climb to the bottom, there you will catch me for sure!}
+\speaker{Alberich}
+\stagedir{clambering hastily down}
+\vzeile{Better down below, then!}
+\speaker{Woglinde}
+\stagedir{darts quickly upwards to a high reef at the side}
+\vzeile{But now up above!}
+\speaker{Wellgunde and Flosshilde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\vzeile{How shall I catch the coy fish as she leaps?}
+\vzeile{Wait, you false one!}
+\stagedir{he tries to climb hastily after her}
+\speaker{Wellgunde}
+\stagedir{has sunk down to a lower reef on the other side}
+\vzeile{Heia, you handsome one! Do you not hear me?}
+\speaker{Alberich}
+\stagedir{turning round}
+\vzeile{Are you calling me?}
+\speaker{Wellgunde}
+\vzeile{I counsel you well: turn to me,}
+\vzeile{leave Woglinde be!}
+\speaker{Alberich}
+\stagedir{clambers hastily over the river bed towards Wellgunde}
+\vzeile{You are far fairer than that shy one,}
+\vzeile{who gleams less brightly and is all too sleek.}
+\vzeile{Only dive deeper, if you would suit me.}
+\speaker{Wellgunde}
+\stagedir{letting herself sink a little closer to him}
+\vzeile{Am I near you now?}
+\speaker{Alberich}
+\vzeile{Not near enough!}
+\vzeile{Wind your slender arms about me,}
+\vzeile{so that I may teasingly stroke your neck,}
+\vzeile{and with coaxing ardour}
+\vzeile{nestle against your swelling breast.}
+\speaker{Wellgunde}
+\vzeile{If you are in love and lusting for love,}
+\vzeile{let me see, you handsome one, what you look like!}
+\vzeile{Pfui! You hairy, humpbacked fop!}
+\vzeile{Black, calloused sulphur-dwarf!}
+\vzeile{Find yourself a sweetheart whom you please!}
+\speaker{Alberich}
+\stagedir{tries to hold her by force}
+\vzeile{If I do not please you, I will hold you fast all the same!}
+\speaker{Wellgunde}
+\stagedir{darting quickly up to the middle reef}
+\vzeile{Hold fast, or I flow away from you!}
+\speaker{Woglinde and Flosshilde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\stagedir{scolding angrily after Wellgunde}
+\vzeile{False child! Cold, bony fish!}
+\vzeile{If I do not seem fair to you,}
+\vzeile{dainty and playful, sleek and smooth --}
+\vzeile{hei, then go courting eels, if my hide disgusts you!}
+\speaker{Flosshilde}
+\vzeile{Why scold, elf? So downcast already?}
+\vzeile{You have wooed two: ask the third,}
+\vzeile{and the beloved would bring you sweet comfort!}
+\speaker{Alberich}
+\vzeile{Lovely song comes singing to me!}
+\vzeile{How good that you are not but one!}
+\vzeile{Of many, one at least might like me:}
+\vzeile{with only one, none would choose me!}
+\vzeile{If I am to believe you, glide down here!}
+\speaker{Flosshilde}
+\stagedir{dives down to Alberich}
+\vzeile{How foolish you are, stupid sisters,}
+\vzeile{not to think him fair!}
+\speaker{Alberich}
+\stagedir{approaching her}
+\vzeile{I may well think them stupid and ugly,}
+\vzeile{now that I see you, loveliest one.}
+\speaker{Flosshilde}
+\stagedir{coaxingly}
+\vzeile{O sing on, so sweet and fine;}
+\vzeile{how nobly it beguiles my ear!}
+\speaker{Alberich}
+\stagedir{touching her confidingly}
+\vzeile{My heart falters, flutters and wastes away,}
+\vzeile{when such dainty praise smiles on me.}
+\speaker{Flosshilde}
+\stagedir{gently fending him off}
+\vzeile{How your grace delights my eye,}
+\vzeile{how the mildness of your smile refreshes my courage!}
+\stagedir{She draws him blissfully to her}
+\vzeile{Most blessed of men!}
+\speaker{Alberich}
+\vzeile{Sweetest of maids!}
+\speaker{Flosshilde}
+\vzeile{If only you were fond of me!}
+\speaker{Alberich}
+\vzeile{If I held you for ever!}
+\speaker{Flosshilde}
+\stagedir{holding him wholly in her arms}
+\vzeile{Your piercing glance, your bristly beard --}
+\vzeile{o, might I see it, might I grasp it always!}
+\vzeile{The stiff locks of your prickly hair --}
+\vzeile{might they flow about Flosshilde for ever!}
+\vzeile{Your toad-like shape, the croak of your voice --}
+\vzeile{o, might I, marvelling and dumb,}
+\vzeile{only hear and see them!}
+\speaker{Woglinde and Wellgunde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\stagedir{starting up in fright from Flosshilde's arms}
+\vzeile{Are you wicked ones laughing at me?}
+\speaker{Flosshilde}
+\stagedir{suddenly tearing herself from him}
+\vzeile{As is only fitting at the end of the song!}
+\stagedir{she darts quickly up with her sisters}
+\speaker{Woglinde and Wellgunde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\stagedir{in a shrieking voice}
+\vzeile{Woe! Ah, woe! O pain! O pain!}
+\vzeile{The third, so dear -- has she betrayed me too?}
+\vzeile{You shamefully cunning, wanton, worthless rabble!}
+\vzeile{Do you live on nothing but deceit, you faithless brood of nixies?}
+\speaker{The Three Rhinemaidens}
+\vzeile{Wallala! Lalaleia! Leialalei!}
+\vzeile{Heia! Heia! Haha!}
+\vzeile{Shame on you, elf! Do not scold down there!}
+\vzeile{Hear what we bid you!}
+\vzeile{Why, faint-heart, did you not hold fast}
+\vzeile{the maiden you love?}
+\vzeile{We are true, and without deceit,}
+\vzeile{to the suitor who catches us.}
+\vzeile{Just seize hold, and do not be afraid!}
+\vzeile{In the flood we do not easily escape!}
+\vzeile{Wallala! Lalaleia! Leialalei!}
+\vzeile{Heia! Heia! Haha!}
+\stagedir{They swim apart, hither and thither, now deeper, now higher, to entice Alberich into hunting them.}
+\speaker{Alberich}
+\vzeile{How a lustful fire burns and glows}
+\vzeile{in my limbs!}
+\vzeile{Rage and love, wild and mighty,}
+\vzeile{stir up my courage!}
+\vzeile{Laugh and lie as you will,}
+\vzeile{I lust and thirst for you,}
+\vzeile{and one of you must yield to me!}
+\stagedir{With desperate effort he sets off in pursuit: with terrible agility he climbs reef after reef, leaps from one to another, and tries to catch now this maiden, now that, while they always slip away from him with merry shrieks. He stumbles, plunges down into the abyss, then clambers hastily up again to renew the chase. They bend down a little. He almost reaches them, falls back once more, and tries again. At last, foaming with rage, he stops, breathless, and stretches his clenched fist up towards the maidens.}
+\speaker{Alberich}
+\stagedir{scarcely master of himself}
+\vzeile{If only this fist could catch one!...}
+\stagedir{He remains in speechless fury, his gaze turned upward, where he is then suddenly caught and held fast by the spectacle that follows.}
+\stagedir{From above, an ever brighter gleam has pierced the flood, and gradually kindles at a high point of the middle reef into a blindingly radiant golden glow: a magical golden light breaks from there through the water.}
+\speaker{Woglinde}
+\vzeile{Look, sisters!}
+\vzeile{The wakener laughs down into the depths.}
+\speaker{Wellgunde}
+\vzeile{Through the green swell}
+\vzeile{she greets the blissful sleeper.}
+\speaker{Flosshilde}
+\vzeile{Now she kisses his eye, so that he opens it.}
+\speaker{Wellgunde}
+\vzeile{See, he smiles in the bright gleam.}
+\speaker{Woglinde}
+\vzeile{Through the waters flows his radiant star!}
+\speaker{The Three Rhinemaidens}
+\stagedir{swimming gracefully together around the reef}
+\vzeile{Heiajaheia! Heiajaheia!}
+\vzeile{Wallalalalala leiajahei!}
+\vzeile{Rhinegold! Rhinegold!}
+\vzeile{Radiant joy, how bright and noble you laugh!}
+\vzeile{Glowing splendour streams solemnly from you through the waves!}
+\vzeile{Heiajaheia! Heiajaheia!}
+\vzeile{Wake, friend, wake in joy!}
+\vzeile{Blissful games we offer you:}
+\vzeile{the river shimmers, the flood flames,}
+\vzeile{and diving, dancing and singing we flow about you,}
+\vzeile{your bed, in the blessed bath!}
+\vzeile{Rhinegold! Rhinegold!}
+\vzeile{Heiajaheia! Wallalalalala leiajahei!}
+\stagedir{With ever wilder delight the maidens swim around the reef. The whole flood shimmers in a bright golden glow.}
+\speaker{Alberich}
+\stagedir{his eyes, powerfully drawn by the gleam, fixed staring on the gold}
+\vzeile{What is it, you sleek ones, that glitters and gleams there?}
+\speaker{The Three Rhinemaidens}
+\vzeile{Where do you come from, rough one,}
+\vzeile{that you have never heard of the Rhinegold?}
+\speaker{Wellgunde}
+\vzeile{Does the elf know nothing of the gold's eye,}
+\vzeile{that wakes and sleeps by turns?}
+\speaker{Woglinde}
+\vzeile{Of the blissful star of the water's depths,}
+\vzeile{that nobly lights the waves through?}
+\speaker{The Three Rhinemaidens}
+\vzeile{See how blissfully we glide in its radiance!}
+\vzeile{If you, faint-heart, would bathe in it,}
+\vzeile{then swim and revel with us!}
+\vzeile{Wallalalala leialalai! Wallalalala leiajahei!}
+\speaker{Alberich}
+\vzeile{Is the gold good for nothing but your diving games?}
+\vzeile{Then it would be worth little to me!}
+\speaker{Woglinde}
+\vzeile{He would not scorn the gold's adornment,}
+\vzeile{if he knew all its wonders!}
+\speaker{Wellgunde}
+\vzeile{The inheritance of the world would be won}
+\vzeile{by him who forged from the Rhinegold the ring}
+\vzeile{that bestowed on him measureless power.}
+\speaker{Flosshilde}
+\vzeile{Our father told us so, and bade us}
+\vzeile{guard the bright hoard wisely,}
+\vzeile{so that no false one might steal it from the flood:}
+\vzeile{so be silent, you chattering brood!}
+\speaker{Wellgunde}
+\vzeile{Wisest sister, do you rebuke us?}
+\vzeile{Do you not know, then, to whom alone}
+\vzeile{it is granted to forge the gold?}
+\speaker{Woglinde}
+\vzeile{Only he who renounces the power of love,}
+\vzeile{only he who drives away the joy of love,}
+\vzeile{only he wins for himself the magic}
+\vzeile{to compel the gold into a ring.}
+\speaker{Wellgunde}
+\vzeile{Safe indeed we are, and free of care:}
+\vzeile{for all that lives will love,}
+\vzeile{and none will shun love.}
+\speaker{Woglinde}
+\vzeile{Least of all he, the lustful elf;}
+\vzeile{he would perish for greed of love!}
+\speaker{Flosshilde}
+\vzeile{I do not fear him, such as I found him:}
+\vzeile{the ardour of his love all but burned me.}
+\speaker{Wellgunde}
+\vzeile{A sulphur-brand in the swell of the waves:}
+\vzeile{he hisses loud with the fury of love!}
+\speaker{The Three Rhinemaidens}
+\vzeile{Wallala! Wallaleialala!}
+\vzeile{Loveliest elf! Will you not laugh too?}
+\vzeile{How fair you shine in the gleam of the gold!}
+\vzeile{O come, lovely one, laugh with us!}
+\vzeile{Heiajaheia! Heiajaheia! Wallalalala leiajahei!}
+\stagedir{They swim up and down in the radiance, laughing.}
+\speaker{Alberich}
+\stagedir{his eyes fixed staring on the gold, has listened well to the sisters' chatter}
+\vzeile{The inheritance of the world --}
+\vzeile{could I win it for my own through you?}
+\vzeile{If I cannot compel love,}
+\vzeile{might I yet cunningly compel delight for myself?}
+\stagedir{terribly loud}
+\vzeile{Mock on, then! --}
+\vzeile{The Nibelung draws near your play!}
+\stagedir{in a fury he leaps across to the middle reef and climbs with hideous haste towards its peak. The maidens dart apart shrieking and dive up on different sides}
+\speaker{The Three Rhinemaidens}
+\vzeile{Heia! Heia! Heiajahei!}
+\vzeile{Save yourselves! The elf is raving:}
+\vzeile{the water sprays wherever he leaps:}
+\vzeile{love has driven him mad!}
+\stagedir{they laugh in the wildest high spirits}
+\speaker{Alberich}
+\stagedir{reaches the peak of the reef with a final bound}
+\vzeile{Are you not afraid yet?}
+\vzeile{Then go courting in the dark, you watery brood!}
+\stagedir{he stretches his hand out towards the gold}
+\vzeile{I quench your light, I tear the gold from the reef,}
+\vzeile{I forge the avenging ring;}
+\vzeile{for hear it, flood: thus I curse love!}
+\stagedir{With terrible force he tears the gold from the reef and plunges hastily with it into the depths, where he quickly disappears. Dense night falls suddenly everywhere. The maidens dive down after the robber into the depths.}
+\speaker{Flosshilde}
+\vzeile{Stop the robber!}
+\speaker{Wellgunde}
+\vzeile{Save the gold!}
+\speaker{Woglinde and Wellgunde}
+\vzeile{Help! Help!}
+\speaker{The Three Rhinemaidens}
+\vzeile{Woe! Woe!}
+\stagedir{The flood sinks down with them into the depths. From the lowest ground Alberich's shrill mocking laughter is heard. The reefs vanish in deepest darkness; the whole stage, from top to bottom, is filled with black waves of water, which for a time still seem to sink downwards.}
+\chapter*{Scene Two}
+\addcontentsline{toc}{chapter}{Zweite Szene}
+\markright{Zweite Szene}
+\begin{center}\small\color{stage}\emph{Wotan, Fricka, Freia, Fasolt, Fafner, Donner, Froh, Loge}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{Little by little the waves have turned to banks of cloud, which, as an ever brighter glimmering light rises behind them, clear into a finer mist. When the mist has quite dissolved overhead into delicate little clouds, an open space on the mountain heights becomes visible in the grey of dawn.}
+\stage{The breaking day lights with growing radiance a castle with glittering battlements, standing on a rocky summit in the background; between this castle-crowned peak and the foreground of the scene a deep valley is to be imagined, through which the Rhine flows. -- To one side, on a flowery bank, lies Wotan, and beside him Fricka, both asleep. The castle has become fully visible.}
+\speaker{Fricka}
+\stagedir{wakes; her gaze falls on the castle; she is astonished and alarmed}
+\vzeile{Wotan, husband, awake!}
+\speaker{Wotan}
+\stagedir{softly, in his dream}
+\vzeile{The blessed hall of delight --}
+\vzeile{gate and door guard it for me:}
+\vzeile{man's honour, eternal power,}
+\vzeile{rise to endless renown!}
+\speaker{Fricka}
+\stagedir{shakes him}
+\vzeile{Up, out of the blissful deceit of dreams!}
+\vzeile{Awake, husband, and consider!}
+\speaker{Wotan}
+\stagedir{wakes and raises himself a little; his eye is at once held fast by the sight of the castle}
+\vzeile{The eternal work is complete!}
+\vzeile{On the mountain's summit the castle of the gods;}
+\vzeile{splendidly the gleaming building vaunts itself!}
+\vzeile{As I carried it in my dream,}
+\vzeile{as my will ordained it, strong and fair}
+\vzeile{it stands on show: noble, glorious building!}
+\speaker{Fricka}
+\vzeile{Does what frightens me bring you nothing but delight?}
+\vzeile{The castle gladdens you; I fear for Freia!}
+\vzeile{Heedless one, let me remind you}
+\vzeile{of the wage that was agreed!}
+\vzeile{The castle is finished, the pledge is forfeit:}
+\vzeile{have you forgotten what you gave away?}
+\speaker{Wotan}
+\vzeile{Well I remember what they stipulated,}
+\vzeile{they who built me the castle there;}
+\vzeile{by a treaty I tamed their defiant brood,}
+\vzeile{so that they would raise me the noble hall;}
+\vzeile{it stands now, thanks to the strong ones:}
+\vzeile{do not trouble yourself about the payment.}
+\speaker{Fricka}
+\vzeile{O laughing, wanton levity!}
+\vzeile{Most loveless light-heartedness!}
+\vzeile{Had I known of your treaty,}
+\vzeile{I would have prevented the deceit;}
+\vzeile{but boldly you men sent the women away,}
+\vzeile{so that, deaf and at ease before us,}
+\vzeile{you might confer with the giants alone:}
+\vzeile{so shamelessly you insolent ones gave away}
+\vzeile{Freia, my dear sister,}
+\vzeile{glad of the robbers' bargain!}
+\vzeile{What, then, is sacred and dear to you hard ones,}
+\vzeile{when you men lust after power!}
+\speaker{Wotan}
+\stagedir{calmly}
+\vzeile{The same greed was surely not unknown to Fricka,}
+\vzeile{when she herself begged me for the building?}
+\speaker{Fricka}
+\vzeile{Anxious for my husband's faithfulness,}
+\vzeile{sadly I had to ponder}
+\vzeile{how to bind him to me,}
+\vzeile{when he is drawn away into the distance:}
+\vzeile{a glorious dwelling, blissful household goods}
+\vzeile{were to bind you to a lingering rest.}
+\vzeile{But you, in building the house, thought of rampart and wall alone;}
+\vzeile{it was to increase your dominion and power;}
+\vzeile{only to stir up ever more restless strife}
+\vzeile{did the towering castle rise for you.}
+\speaker{Wotan}
+\stagedir{smiling}
+\vzeile{If you, wife, would trap me in the fortress,}
+\vzeile{you must grant me, the god, at least this:}
+\vzeile{that, bound within the castle, I win}
+\vzeile{the world for myself from without.}
+\vzeile{He who lives loves change and variety;}
+\vzeile{so I cannot forgo the game!}
+\speaker{Fricka}
+\vzeile{Loveless, most vexing man!}
+\vzeile{For the idle trinket of power and dominion}
+\vzeile{you gamble away, in blasphemous mockery,}
+\vzeile{love and a woman's worth?}
+\speaker{Wotan}
+\stagedir{gravely}
+\vzeile{To win you for my wife,}
+\vzeile{I staked one of my eyes in my wooing;}
+\vzeile{how foolishly you reproach me now!}
+\vzeile{I honour women more than pleases you;}
+\vzeile{and Freia, the good one, I will not give up;}
+\vzeile{never did my mind seriously intend it.}
+\speaker{Fricka}
+\stagedir{looking anxiously and tensely off the stage}
+\vzeile{Then shield her now: in defenceless fear}
+\vzeile{she comes running this way for help!}
+\speaker{Freia}
+\stagedir{enters as if in hasty flight}
+\vzeile{Help me, sister! Protect me, brother-in-law!}
+\vzeile{From the rock over there Fasolt threatened me:}
+\vzeile{he was coming to fetch me, the fair one.}
+\speaker{Wotan}
+\vzeile{Let him threaten! Did you not see Loge?}
+\speaker{Fricka}
+\vzeile{That you always trust the cunning one best of all!}
+\vzeile{Much harm he has already done us,}
+\vzeile{yet he ensnares you again and again.}
+\speaker{Wotan}
+\vzeile{Where free courage avails,}
+\vzeile{I ask for no one's help.}
+\vzeile{But to turn a foe's malice to one's own use,}
+\vzeile{only cunning and craft can teach,}
+\vzeile{such as Loge slyly practises.}
+\vzeile{He who counselled me to the treaty}
+\vzeile{promised me he would redeem Freia:}
+\vzeile{on him I rely now.}
+\speaker{Fricka}
+\vzeile{And he leaves you alone!}
+\vzeile{There the giants come striding swiftly:}
+\vzeile{where does your cunning helper delay?}
+\speaker{Freia}
+\vzeile{Where do my brothers delay, to bring me help,}
+\vzeile{now that my brother-in-law gives the weak one away?}
+\vzeile{To my aid, Donner! Here, here!}
+\vzeile{Save Freia, my Froh!}
+\speaker{Fricka}
+\vzeile{They who betrayed you in an evil pact,}
+\vzeile{they all hide themselves now!}
+\stagedir{Fasolt and Fafner, both of gigantic stature, armed with stout staves, enter.}
+\speaker{Fasolt}
+\vzeile{Gently sleep closed your eye;}
+\vzeile{we two built the castle, sleepless.}
+\vzeile{Never tiring of mighty toil,}
+\vzeile{we piled up massive stones;}
+\vzeile{steep tower, door and gate}
+\vzeile{guard and enclose the hall in the slender castle.}
+\stagedir{pointing to the castle}
+\vzeile{There stands what we reared,}
+\vzeile{shimmering bright where the day shines on it:}
+\vzeile{move in now, pay us our wage!}
+\speaker{Wotan}
+\vzeile{Name your wage, fellows:}
+\vzeile{what do you think to stipulate?}
+\speaker{Fasolt}
+\vzeile{What we think fitting has been stipulated:}
+\vzeile{does it come back to you so dimly?}
+\vzeile{Freia, the fair one, Holda, the free one --}
+\vzeile{it is agreed, we carry her home.}
+\speaker{Wotan}
+\stagedir{quickly}
+\vzeile{Are you in your right mind with your treaty?}
+\vzeile{Think of some other reward: Freia is not for sale to me.}
+\speaker{Fasolt}
+\stagedir{stands speechless for a moment, in the utmost dismay}
+\vzeile{What do you say? Ha, do you mean betrayal?}
+\vzeile{Betrayal of the treaty? The runes of the covenant we deliberated,}
+\vzeile{which your spear guards -- are they a game to you?}
+\speaker{Fafner}
+\stagedir{scornfully}
+\vzeile{Most trusty brother,}
+\vzeile{do you see the deceit now, simpleton?}
+\speaker{Fasolt}
+\vzeile{You son of light, lightly fashioned!}
+\vzeile{Hear, and beware: keep faith with treaties!}
+\vzeile{What you are, you are only through treaties;}
+\vzeile{your power is stipulated, well considered.}
+\vzeile{Though you are wiser than we are clever,}
+\vzeile{you bound us free ones to peace:}
+\vzeile{I curse all your wisdom,}
+\vzeile{and flee far from your peace,}
+\vzeile{if you do not know how, openly, honestly and freely,}
+\vzeile{to keep faith with treaties!}
+\vzeile{A stupid giant counsels you this:}
+\vzeile{you wise one, learn it from him.}
+\speaker{Wotan}
+\vzeile{How shrewdly you take for earnest}
+\vzeile{what we resolved only in jest!}
+\vzeile{The lovely goddess, bright and light --}
+\vzeile{what use is her charm to you dolts?}
+\speaker{Fasolt}
+\vzeile{You mock us? Ha, how unjust!}
+\vzeile{You who rule through beauty,}
+\vzeile{shimmering, noble race,}
+\vzeile{foolishly you strive after towers of stone,}
+\vzeile{and stake a woman's delight}
+\vzeile{for castle and hall!}
+\vzeile{We clumsy ones plague ourselves,}
+\vzeile{sweating with calloused hands,}
+\vzeile{to win a woman who, blissful and mild,}
+\vzeile{would dwell with us poor ones;}
+\vzeile{and you call the bargain perverse?}
+\speaker{Fafner}
+\vzeile{Silence your idle chatter;}
+\vzeile{it is no gain we seek:}
+\vzeile{holding Freia helps little,}
+\vzeile{but it means much to wrest her from the gods.}
+\stagedir{softly}
+\vzeile{Golden apples grow in her garden;}
+\vzeile{she alone knows how to tend the apples!}
+\vzeile{Enjoying the fruit avails her kindred}
+\vzeile{for a youth that never ages:}
+\vzeile{but sick and pale their bloom sinks,}
+\vzeile{old and weak they fade away,}
+\vzeile{if they must do without Freia.}
+\stagedir{roughly}
+\vzeile{So let her be carried off from their midst!}
+\speaker{Wotan}
+\stagedir{aside}
+\vzeile{Loge delays too long!}
+\speaker{Fasolt}
+\vzeile{Give your answer plainly now!}
+\speaker{Wotan}
+\vzeile{Think of some other payment!}
+\speaker{Fasolt}
+\vzeile{No other: Freia alone!}
+\speaker{Fafner}
+\vzeile{You there! Come along with us!}
+\stagedir{They press towards Freia}
+\speaker{Freia}
+\stagedir{fleeing}
+\vzeile{Help! Help, from the hard ones!}
+\speaker{Froh}
+\stagedir{taking Freia in his arms}
+\vzeile{To me, Freia! Leave her be, insolent one!}
+\vzeile{Froh protects the fair one.}
+\speaker{Donner}
+\stagedir{placing himself before the two giants}
+\vzeile{Fasolt and Fafner,}
+\vzeile{have you felt the hard blow of my hammer before?}
+\speaker{Fafner}
+\vzeile{What is this threatening for?}
+\speaker{Fasolt}
+\vzeile{Why do you press in here?}
+\vzeile{We did not choose a fight,}
+\vzeile{we demand only our wage.}
+\speaker{Donner}
+\vzeile{Often enough I have paid giants their toll.}
+\vzeile{Come here; the weight of the wage}
+\vzeile{I will weigh out in good measure!}
+\stagedir{he swings his hammer}
+\speaker{Wotan}
+\stagedir{stretching his spear between the disputants}
+\vzeile{Hold, you wild one! Nothing by force!}
+\vzeile{The shaft of my spear protects treaties:}
+\vzeile{spare your hammer's haft!}
+\speaker{Freia}
+\vzeile{Woe! Woe! Wotan abandons me!}
+\speaker{Fricka}
+\vzeile{Can I still understand you, cruel man?}
+\speaker{Wotan}
+\stagedir{turns away and sees Loge coming}
+\vzeile{Loge at last! Did you hasten so}
+\vzeile{to settle the bad bargain}
+\vzeile{that you concluded?}
+\speaker{Loge}
+\stagedir{has come up from the valley in the background}
+\vzeile{What? What bargain did I conclude?}
+\vzeile{The one, perhaps, that you bargained in council with the giants there?}
+\vzeile{Through depths and heights my inclination drives me;}
+\vzeile{house and hearth do not suit me.}
+\vzeile{Donner and Froh}
+\vzeile{think of roof and home;}
+\vzeile{if they would woo,}
+\vzeile{a house must gladden them.}
+\vzeile{A proud hall, a strong castle --}
+\vzeile{that was Wotan's wish.}
+\vzeile{House and homestead, hall and castle,}
+\vzeile{the blessed fortress, it stands firmly built now.}
+\vzeile{I examined the splendid masonry myself,}
+\vzeile{I enquired closely whether all was sound:}
+\vzeile{Fasolt and Fafner I found true to their word:}
+\vzeile{not a stone stirs in the structure.}
+\vzeile{I was not idle, like many here;}
+\vzeile{he lies who calls me lax!}
+\speaker{Wotan}
+\vzeile{Craftily you evade me:}
+\vzeile{take good care, in faith, not to deceive me!}
+\vzeile{Of all the gods your only friend,}
+\vzeile{I took you into the company that ill trusted you.}
+\vzeile{Now speak, and counsel wisely!}
+\vzeile{When once the builders of the castle}
+\vzeile{stipulated Freia as their thanks,}
+\vzeile{you know I consented only}
+\vzeile{because you pledged yourself on your duty}
+\vzeile{to redeem the noble pledge.}
+\speaker{Loge}
+\vzeile{To ponder with the utmost care}
+\vzeile{how it might be redeemed -- that I pledged.}
+\vzeile{But that I would find}
+\vzeile{what never comes about, what never succeeds --}
+\vzeile{how could that well be pledged?}
+\speaker{Fricka}
+\stagedir{to Wotan}
+\vzeile{See what a deceitful rogue you trusted!}
+\speaker{Froh}
+\vzeile{Loge you are called,}
+\vzeile{but I call you Lie!}
+\speaker{Donner}
+\vzeile{Accursed flame, I will put you out!}
+\speaker{Loge}
+\vzeile{To cover their own disgrace,}
+\vzeile{fools revile me!}
+\stagedir{Donner makes to strike Loge}
+\speaker{Wotan}
+\stagedir{steps between them}
+\vzeile{Leave my friend in peace!}
+\vzeile{You do not know Loge's art:}
+\vzeile{the worth of his counsel weighs richer}
+\vzeile{when he pays it out slowly.}
+\speaker{Fafner}
+\vzeile{No delaying! Quick payment!}
+\speaker{Fasolt}
+\vzeile{The wage takes long!}
+\speaker{Wotan}
+\stagedir{turns sharply to Loge, pressing him}
+\vzeile{Hear now, stubborn one! Stand to your word!}
+\vzeile{Where have you been roving back and forth?}
+\speaker{Loge}
+\vzeile{Ingratitude is always Loge's reward!}
+\vzeile{Concerned for you alone, I looked about,}
+\vzeile{ransacked every corner of the world in the storm,}
+\vzeile{seeking a substitute for Freia}
+\vzeile{such as might rightly content the giants.}
+\vzeile{In vain I sought, and see now well:}
+\vzeile{in the ring of the worlds nothing is so rich}
+\vzeile{that a man might accept it in exchange}
+\vzeile{for a woman's delight and worth!}
+\stagedir{All are seized with astonishment and dismay of various kinds}
+\vzeile{As far as life stirs and weaves,}
+\vzeile{in water, earth and air,}
+\vzeile{much I asked, enquiring of all}
+\vzeile{where force but moves and seeds but quicken:}
+\vzeile{what might seem mightier to a man}
+\vzeile{than a woman's delight and worth?}
+\vzeile{But as far as life stirs and weaves,}
+\vzeile{my questioning cunning was only laughed at:}
+\vzeile{in water, earth and air,}
+\vzeile{nothing will let go of love and woman.}
+\vzeile{Only one did I see who renounced love:}
+\vzeile{for red gold he forwent a woman's favour.}
+\vzeile{The bright children of the Rhine}
+\vzeile{lamented their distress to me:}
+\vzeile{the Nibelung, night-Alberich,}
+\vzeile{wooed the bathers' favour in vain;}
+\vzeile{the Rhinegold then}
+\vzeile{the thief stole in revenge:}
+\vzeile{that seems to him now the dearest of goods,}
+\vzeile{nobler than a woman's grace.}
+\vzeile{For the glittering trinket}
+\vzeile{snatched from the depths,}
+\vzeile{the daughters' lament rang out to me:}
+\vzeile{to you, Wotan, they turn,}
+\vzeile{that you might rightly pursue the robber,}
+\vzeile{give the gold back to the water,}
+\vzeile{and let it remain their own for ever.}
+\stagedir{A movement of devotion from all}
+\vzeile{I vowed to the maidens I would tell you of it:}
+\vzeile{now Loge has redeemed his word.}
+\speaker{Wotan}
+\vzeile{Foolish you are, if not outright malicious!}
+\vzeile{You see me myself in need:}
+\vzeile{how should I help others to their good?}
+\speaker{Fasolt}
+\stagedir{who has listened attentively, to Fafner}
+\vzeile{I do not grudge the gold to the elf;}
+\vzeile{much trouble the Nibelung has already made us,}
+\vzeile{yet the dwarf always slipped cunningly}
+\vzeile{out of our grasp.}
+\speaker{Fafner}
+\vzeile{The Nibelung plots fresh malice against us,}
+\vzeile{if the gold gives him power. --}
+\vzeile{You there, Loge! Say without lying:}
+\vzeile{what great thing, then, is the gold worth,}
+\vzeile{that it contents the Nibelung?}
+\speaker{Loge}
+\vzeile{A trinket it is in the water's depths,}
+\vzeile{a joy to laughing children;}
+\vzeile{but once it is forged into a round ring,}
+\vzeile{it helps to the highest power,}
+\vzeile{and wins a man the world.}
+\speaker{Wotan}
+\stagedir{musing}
+\vzeile{Of the Rhine's gold I have heard whispers:}
+\vzeile{runes of booty lie hidden in its red gleam;}
+\vzeile{a ring would create power and treasure without measure.}
+\speaker{Fricka}
+\stagedir{softly to Loge}
+\vzeile{Might the glittering adornment}
+\vzeile{of the golden trinket}
+\vzeile{serve women too as fair ornament?}
+\speaker{Loge}
+\vzeile{A wife would wrest her husband's faithfulness,}
+\vzeile{if she wore kindly the bright adornment}
+\vzeile{that shimmering dwarfs forge,}
+\vzeile{busy under the ring's constraint.}
+\speaker{Fricka}
+\stagedir{coaxingly to Wotan}
+\vzeile{Might my husband win the gold for himself?}
+\speaker{Wotan}
+\stagedir{as if in a state of growing enchantment}
+\vzeile{To wield the ring --}
+\vzeile{it seems advisable to me.}
+\vzeile{But how, Loge, might I learn the art?}
+\vzeile{How might I forge the adornment for myself?}
+\speaker{Loge}
+\vzeile{A rune-spell compels the gold into a ring;}
+\vzeile{no one knows it;}
+\vzeile{yet one man practises it easily,}
+\vzeile{he who renounces blessed love.}
+\stagedir{Wotan turns away ill-humoured}
+\vzeile{That you will surely spare yourself; you would come too late besides:}
+\vzeile{Alberich did not hesitate.}
+\vzeile{Fearlessly he won the magic's power:}
+\stagedir{harshly}
+\vzeile{the ring has turned out well for him!}
+\speaker{Donner}
+\stagedir{to Wotan}
+\vzeile{The dwarf would force us all,}
+\vzeile{if the ring were not wrested from him.}
+\speaker{Wotan}
+\vzeile{I must have the ring!}
+\speaker{Froh}
+\vzeile{Easily he wins it now, without love's curse.}
+\speaker{Loge}
+\vzeile{Mockingly easy, without art, as in a child's game!}
+\speaker{Wotan}
+\stagedir{harshly}
+\vzeile{Then counsel me, how?}
+\speaker{Loge}
+\vzeile{By theft!}
+\vzeile{What a thief stole, you steal from the thief;}
+\vzeile{was a possession ever gained more lightly?}
+\vzeile{But Alberich guards himself with evil weapons;}
+\vzeile{cleverly and finely you must proceed,}
+\vzeile{if you would bring the robber to justice,}
+\vzeile{so as to give the red trinket back}
+\stagedir{warmly}
+\vzeile{to the daughters of the Rhine, the gold;}
+\vzeile{for that is what they beg of you.}
+\speaker{Wotan}
+\vzeile{The daughters of the Rhine? What use is that counsel to me?}
+\speaker{Fricka}
+\vzeile{Of that watery brood I will know nothing:}
+\vzeile{many a man already -- to my sorrow --}
+\vzeile{they have lured, flirting in the bath.}
+\stagedir{Wotan stands silent, struggling with himself; the other gods fix their eyes on him in silent suspense. Meanwhile Fafner has conferred aside with Fasolt}
+\speaker{Fafner}
+\stagedir{to Fasolt}
+\vzeile{Believe me, the glittering gold}
+\vzeile{avails more than Freia:}
+\vzeile{he wins eternal youth too,}
+\vzeile{who compels it by the gold's magic.}
+\stagedir{Fasolt's gesture shows that he feels himself persuaded against his will. Fafner steps up to Wotan again with Fasolt.}
+\vzeile{Hear, Wotan, the word of those who wait!}
+\vzeile{Let Freia remain with you in peace;}
+\vzeile{I have found a lighter wage for the ransom:}
+\vzeile{for us rough giants the Nibelung's}
+\vzeile{red gold suffices.}
+\speaker{Wotan}
+\vzeile{Are you in your senses?}
+\vzeile{What I do not possess,}
+\vzeile{am I to give to you shameless ones?}
+\speaker{Fafner}
+\vzeile{The castle was hard to build there;}
+\vzeile{it will be easy for you, with cunning force,}
+\vzeile{to seize the Nibelung fast --}
+\vzeile{what never succeeded for us in the game of envy.}
+\speaker{Wotan}
+\vzeile{Am I to trouble myself with the elf for your sake?}
+\vzeile{Am I to catch the foe for you?}
+\vzeile{Shameless and over-demanding,}
+\vzeile{my thanks makes fools of you!}
+\speaker{Fasolt}
+\stagedir{suddenly seizes Freia and leads her aside with Fafner}
+\vzeile{Here, maid! Into our power!}
+\vzeile{As a pledge you follow us now,}
+\vzeile{until we receive the ransom!}
+\speaker{Freia}
+\stagedir{lamenting}
+\vzeile{Woe! Woe! Woe!}
+\stagedir{all the gods are in the utmost dismay}
+\speaker{Fafner}
+\vzeile{Let her be carried off from here!}
+\vzeile{Until evening -- mark it well --}
+\vzeile{we keep her as a pledge;}
+\vzeile{we return again; but when we come,}
+\vzeile{if the ransom does not lie ready,}
+\vzeile{the Rhinegold, bright and red --}
+\speaker{Fasolt}
+\vzeile{then the respite is at an end,}
+\vzeile{Freia forfeited:}
+\vzeile{let her follow us for ever!}
+\speaker{Freia}
+\stagedir{screaming}
+\vzeile{Sister! Brothers! Save me! Help!}
+\stagedir{she is carried off by the giants, who hurry away}
+\speaker{Froh}
+\vzeile{Up, after them!}
+\speaker{Donner}
+\vzeile{Then let all break!}
+\stagedir{They look questioningly at Wotan}
+\speaker{Freia}
+\stagedir{from far away}
+\vzeile{Save me! Help!}
+\speaker{Loge}
+\stagedir{looking after the giants}
+\vzeile{Over stock and stone, down into the valley}
+\vzeile{they tramp:}
+\vzeile{through the Rhine's water-ford}
+\vzeile{the giants wade.}
+\vzeile{Not happily does Freia hang}
+\vzeile{on the rough ones' backs! --}
+\vzeile{Heia! Hei! How the dolts stumble along!}
+\vzeile{Already they plod through the valley.}
+\vzeile{Not till the border of Giant-home}
+\vzeile{will they stop to rest. --}
+\stagedir{he turns to the gods}
+\vzeile{What does Wotan brood on so wildly now?}
+\vzeile{How goes it with the blessed gods?}
+\stagedir{A pale mist fills the stage with growing density; in it the gods take on an increasingly pallid and aged appearance: all stand fearful and expectant, looking at Wotan, who gazes musingly at the ground.}
+\speaker{Loge}
+\vzeile{Does a mist deceive me?}
+\vzeile{Does a dream mock me?}
+\vzeile{How fearfully and palely you wither so soon!}
+\vzeile{The light of your cheeks goes out;}
+\vzeile{the glance of your eyes grows dull!}
+\vzeile{Cheer up, my Froh, it is still early!}
+\vzeile{From your hand, Donner, the hammer is sinking!}
+\vzeile{What is it with Fricka? Does she take little joy}
+\vzeile{in Wotan's morose greyness,}
+\vzeile{which all but makes an old man of him?}
+\speaker{Fricka}
+\vzeile{Woe! Woe! What has happened?}
+\speaker{Donner}
+\vzeile{My hand sinks!}
+\speaker{Froh}
+\vzeile{My heart stands still!}
+\speaker{Loge}
+\vzeile{Now I have found it: hear what you lack!}
+\vzeile{Today you have not yet tasted of Freia's fruit.}
+\vzeile{The golden apples in her garden,}
+\vzeile{they made you vigorous and young,}
+\vzeile{if you ate them every day.}
+\vzeile{The garden's keeper is pledged away now;}
+\vzeile{on the branches the fruit starves and withers,}
+\vzeile{soon it falls down rotten. --}
+\vzeile{It troubles me less;}
+\vzeile{Freia was ever sparing with me}
+\vzeile{of the precious fruit, miserly:}
+\vzeile{for I am only half as genuine as you, blessed ones!}
+\vzeile{But you staked everything on the youth-giving fruit:}
+\vzeile{the giants knew that well;}
+\vzeile{they staked it against your lives:}
+\vzeile{now see to it how you preserve them!}
+\vzeile{Without the apples,}
+\vzeile{old and grey, aged and morose,}
+\vzeile{withering to the mockery of all the world,}
+\vzeile{the race of the gods dies out.}
+\speaker{Fricka}
+\stagedir{fearfully}
+\vzeile{Wotan, husband, ill-fated man!}
+\vzeile{See how your levity, laughing, has brought}
+\vzeile{shame and disgrace on us all!}
+\speaker{Wotan}
+\stagedir{starting up with sudden resolve}
+\vzeile{Up, Loge, down with me!}
+\vzeile{To Nibelheim we journey below:}
+\vzeile{I will win the gold.}
+\speaker{Loge}
+\vzeile{The Rhinemaidens called on you:}
+\vzeile{so may they hope to be heard?}
+\speaker{Wotan}
+\stagedir{violently}
+\vzeile{Silence, chatterer!}
+\vzeile{Freia, the good one -- it is Freia who must be redeemed!}
+\speaker{Loge}
+\vzeile{As you command,}
+\vzeile{I lead you gladly}
+\vzeile{steeply down:}
+\vzeile{shall we climb down through the Rhine, then?}
+\speaker{Wotan}
+\vzeile{Not through the Rhine!}
+\speaker{Loge}
+\vzeile{Then let us swing ourselves through the sulphur cleft.}
+\vzeile{Slip in there with me!}
+\stagedir{He goes ahead and disappears sideways into a cleft, from which a sulphurous vapour at once wells out.}
+\speaker{Wotan}
+\vzeile{You others, wait here until evening:}
+\vzeile{I go to win, as ransom, the gold of lost youth!}
+\stagedir{He climbs down after Loge into the cleft: the sulphurous vapour issuing from it spreads over the whole stage and quickly fills it with thick cloud. Those who remain are already invisible.}
+\speaker{Donner}
+\vzeile{Fare well, Wotan!}
+\speaker{Froh}
+\vzeile{Good luck! Good luck!}
+\speaker{Fricka}
+\vzeile{O return soon to your anxious wife!}
+\stagedir{The sulphurous vapour darkens to a wholly black cloud, which rises from below upwards; then this changes into a solid, dark rocky ravine, which moves ever upward, so that the scene seems to sink ever deeper into the earth. A growing noise as of smithying is heard from all sides.}
+\chapter*{Scene Three}
+\addcontentsline{toc}{chapter}{Dritte Szene}
+\markright{Dritte Szene}
+\begin{center}\small\color{stage}\emph{Alberich, Mime, Wotan, Loge}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{From various sides a dark red gleam dawns in the distance: an underground chasm is revealed, stretching away immeasurably far, which seems to open out on every side into narrow shafts.}
+\stage{Alberich drags the shrieking Mime by the ears out of a side chasm.}
+\speaker{Alberich}
+\vzeile{Hehe! Hehe!}
+\vzeile{Here! Here! Treacherous dwarf!}
+\vzeile{You shall be bravely pinched for me,}
+\vzeile{if you do not finish, as I ordered,}
+\vzeile{the fine adornment by the hour!}
+\speaker{Mime}
+\stagedir{howling}
+\vzeile{Ohe! Ohe! Au! Au!}
+\vzeile{Just let me go!}
+\vzeile{It is finished, as you commanded,}
+\vzeile{with diligence and sweat it is wrought:}
+\vzeile{take your nails}
+\vzeile{from my ear at once!}
+\speaker{Alberich}
+\stagedir{letting go}
+\vzeile{Why do you hesitate then,}
+\vzeile{and not show it?}
+\speaker{Mime}
+\vzeile{Poor me, I feared}
+\vzeile{that something might still be lacking.}
+\speaker{Alberich}
+\vzeile{What would not yet be finished?}
+\speaker{Mime}
+\stagedir{embarrassed}
+\vzeile{Here -- and there --}
+\speaker{Alberich}
+\vzeile{What here and there? Hand over the adornment!}
+\stagedir{He makes to seize him by the ear again; in his fright Mime lets fall a metal web that he had been clutching convulsively in his hands. Alberich hastily picks it up and examines it closely.}
+\vzeile{Look, you rogue! All forged}
+\vzeile{and finished complete, as I commanded!}
+\vzeile{So the simpleton would cunningly deceive me?}
+\vzeile{Keep for himself the noble adornment}
+\vzeile{that my cunning taught him to forge?}
+\vzeile{Do I know you, stupid thief?}
+\stagedir{He sets the web on his head as the Tarnhelm}
+\vzeile{The helm fits the head:}
+\vzeile{but does the magic show itself too?}
+\stagedir{very softly}
+\vzeile{``Night and mist -- like no one!''}
+\stagedir{his form vanishes; in its place a column of mist is seen}
+\vzeile{Do you see me, brother?}
+\speaker{Mime}
+\stagedir{looks about in bewilderment}
+\vzeile{Where are you? I do not see you.}
+\speaker{Alberich}
+\stagedir{invisible}
+\vzeile{Then feel me, you lazy scoundrel!}
+\vzeile{Take that for your thieving lust!}
+\speaker{Mime}
+\stagedir{screams and writhes under the lashes of a whip, whose fall is heard though the whip itself is not seen}
+\vzeile{Ohe, Ohe! Au! Au! Au!}
+\speaker{Alberich}
+\stagedir{laughing, invisible}
+\vzeile{Hahahahahaha!}
+\vzeile{My thanks, you fool!}
+\vzeile{Your work proves itself well!}
+\vzeile{Hoho! Hoho!}
+\vzeile{All you Nibelungs, bow now to Alberich!}
+\vzeile{Everywhere he lingers now, to watch over you;}
+\vzeile{rest and repose are gone from you;}
+\vzeile{you must toil for him where you do not see him;}
+\vzeile{where you do not perceive him, be on your guard for him!}
+\vzeile{Subject to him you are for ever!}
+\stagedir{harshly}
+\vzeile{Hoho! Hoho! Hear him, he draws near:}
+\vzeile{the lord of the Nibelungs!}
+\stagedir{The column of mist vanishes towards the background: Alberich's raging and scolding is heard ever further off; howling and shrieking answer him, which at last fade out of hearing in the ever greater distance. Mime has sunk down in pain. Wotan and Loge let themselves down from a chasm above.}
+\speaker{Loge}
+\vzeile{Nibelheim here:}
+\vzeile{through pale mists,}
+\vzeile{what fiery sparks glitter there?}
+\speaker{Mime}
+\vzeile{Au! Au! Au!}
+\speaker{Wotan}
+\vzeile{Something groans loudly here:}
+\vzeile{what lies in the rock?}
+\speaker{Loge}
+\stagedir{bends down to Mime}
+\vzeile{What wonder makes you whimper here?}
+\speaker{Mime}
+\vzeile{Ohe! Ohe! Au! Au!}
+\speaker{Loge}
+\vzeile{Hei, Mime! Cheerful dwarf!}
+\vzeile{What pinches and nips you so, then?}
+\speaker{Mime}
+\vzeile{Leave me in peace!}
+\speaker{Loge}
+\vzeile{That I will indeed,}
+\vzeile{and more besides, hear:}
+\vzeile{I will help you, Mime!}
+\vzeile{He sets him upright with difficulty}
+\speaker{Mime}
+\vzeile{Who would help me?}
+\vzeile{I must obey my own brother,}
+\vzeile{who has laid me in bonds.}
+\speaker{Loge}
+\vzeile{To bind you, Mime,}
+\vzeile{what gave him the power?}
+\speaker{Mime}
+\vzeile{With evil cunning Alberich forged himself}
+\vzeile{a yellow ring from the Rhine's gold:}
+\vzeile{at its strong magic we tremble, marvelling;}
+\vzeile{with it he compels us all,}
+\vzeile{the night-host of the Nibelungs.}
+\vzeile{Carefree smiths, we used to fashion}
+\vzeile{ornaments for our women, blissful adornment,}
+\vzeile{dainty Nibelung trinkets;}
+\vzeile{we laughed merrily at the toil.}
+\vzeile{Now the wicked one compels us}
+\vzeile{to slip into clefts,}
+\vzeile{to toil ever for him alone.}
+\vzeile{Through the ring's gold his greed divines}
+\vzeile{where a new gleam lies hidden in the shafts:}
+\vzeile{there we must spy, search and dig,}
+\vzeile{smelt the booty and forge the casting,}
+\vzeile{without rest or repose,}
+\vzeile{to heap up the hoard for our lord.}
+\speaker{Loge}
+\vzeile{So his wrath struck you, sluggard, just now?}
+\speaker{Mime}
+\vzeile{Me, poorest of all, ah, he forced to the worst:}
+\vzeile{a helm-adornment he bade me weld;}
+\vzeile{precisely he ordered how it was to be wrought.}
+\vzeile{Well I marked, cleverly, what mighty power}
+\vzeile{dwelt in the work that I wove of ore;}
+\vzeile{so I meant to keep the helm for myself;}
+\vzeile{by its magic}
+\vzeile{to withdraw myself from Alberich's constraint:}
+\vzeile{perhaps -- yes, perhaps --}
+\vzeile{to outwit the tormentor himself,}
+\vzeile{to cast him into my power,}
+\vzeile{to wrest the ring from him,}
+\vzeile{so that, as I am now thrall to the bold one,}
+\stagedir{harshly}
+\vzeile{he himself would then serve me, the free one!}
+\speaker{Loge}
+\vzeile{Why, clever one, did it not succeed for you?}
+\speaker{Mime}
+\vzeile{Ah, I who wrought the work,}
+\vzeile{the magic that ravishes him --}
+\vzeile{the magic I did not rightly divine!}
+\vzeile{He who counselled me the work and snatched it from me,}
+\vzeile{he taught me now --}
+\vzeile{but alas, too late --}
+\vzeile{what cunning lay in the helm:}
+\vzeile{he vanished from my sight,}
+\vzeile{but his unseen arm}
+\vzeile{struck weals upon me, the blind one.}
+\stagedir{howling and sobbing}
+\vzeile{Fine thanks I earned myself for that, fool that I am!}
+\stagedir{he rubs his back. Wotan and Loge laugh}
+\speaker{Loge}
+\stagedir{to Wotan}
+\vzeile{Confess, the catch will not be easy.}
+\speaker{Wotan}
+\vzeile{But the foe will yield, if your cunning helps!}
+\speaker{Mime}
+\stagedir{struck by the gods' laughter, regards them more attentively}
+\vzeile{With your questioning --}
+\vzeile{who are you strangers, then?}
+\speaker{Loge}
+\vzeile{Friends to you; from their distress}
+\vzeile{we free the Nibelung folk!}
+\speaker{Mime}
+\stagedir{starts, as he hears Alberich approaching again}
+\vzeile{Take care! Alberich draws near.}
+\speaker{Wotan}
+\vzeile{We wait for him here.}
+\stagedir{He sits down calmly on a stone; Loge leans beside him. Alberich, who has taken the Tarnhelm from his head and hung it at his belt, drives before him with swinging whip a troop of Nibelungs up out of the lower, deeper chasm: they are laden with golden and silver jewellery, which, under Alberich's constant urging, they pile all in a heap and so heap up into a hoard.}
+\speaker{Alberich}
+\vzeile{Here! There! Hehe! Hoho!}
+\vzeile{Sluggish host, pile the hoard up in a heap there!}
+\vzeile{You there, up! Will you go ahead?}
+\vzeile{Contemptible folk, down with the jewellery!}
+\vzeile{Must I help you? All of you here!}
+\stagedir{he suddenly perceives Wotan and Loge}
+\vzeile{He! Who is there? Who has forced his way in?}
+\vzeile{Mime, to me, shabby scoundrel!}
+\vzeile{Have you been chattering with the roving pair?}
+\vzeile{Away, you lazy one!}
+\vzeile{Will you smith and toil at once?}
+\stagedir{He drives Mime with lashes of the whip in among the heap of Nibelungs.}
+\vzeile{He! To work!}
+\vzeile{All of you, away from here! Quickly down!}
+\vzeile{Fetch me the gold from the new shafts!}
+\vzeile{The whip greets you, if you do not dig fast!}
+\vzeile{Let Mime answer to me that none be idle,}
+\vzeile{or he will hardly hide from the swing of my whip!}
+\vzeile{That I linger everywhere, where none suspects me --}
+\vzeile{that, I think, he knows exactly!}
+\vzeile{Do you still delay? Do you even hesitate?}
+\stagedir{He draws the ring from his finger, kisses it and stretches it out threateningly.}
+\vzeile{Tremble and quail, tamed host!}
+\vzeile{Quickly obey the ring's lord!}
+\stagedir{With howling and shrieking the Nibelungs, Mime among them, scatter and slip down into the shafts}
+\speaker{Alberich}
+\stagedir{regards Wotan and Loge long and mistrustfully.}
+\vzeile{What do you want here?}
+\speaker{Wotan}
+\vzeile{From Nibelheim's night-dark land}
+\vzeile{we have heard new tidings:}
+\vzeile{mighty wonders Alberich works here;}
+\vzeile{greed drove us, guests, to feast our eyes on them.}
+\speaker{Alberich}
+\vzeile{Envy leads you to Nibelheim:}
+\vzeile{such bold guests, believe me, I know well!}
+\speaker{Loge}
+\vzeile{Do you know me well, childish elf?}
+\vzeile{Now say, who am I, that you bark so?}
+\vzeile{In the cold hole where you lay cowering,}
+\vzeile{who gave you light and warming flame,}
+\vzeile{if Loge had never smiled on you?}
+\vzeile{What use would your smithing be to you,}
+\vzeile{if I did not heat the forge for you?}
+\vzeile{I am your cousin, and was your friend:}
+\vzeile{so your thanks do not seem fine to me!}
+\speaker{Alberich}
+\vzeile{Loge laughs now with the light-elves,}
+\vzeile{the cunning rogue:}
+\vzeile{if you are falsely their friend,}
+\vzeile{as once you were friend to me,}
+\vzeile{haha! It gladdens me!}
+\vzeile{Then I fear nothing from them.}
+\speaker{Loge}
+\vzeile{So I think you can trust me?}
+\speaker{Alberich}
+\vzeile{I trust your faithlessness, not your faith!}
+\stagedir{taking up a defiant stance}
+\vzeile{But confidently I defy you all!}
+\speaker{Loge}
+\vzeile{High courage your power lends you;}
+\vzeile{grimly great your strength has grown!}
+\speaker{Alberich}
+\vzeile{Do you see the hoard}
+\vzeile{that my host has heaped up for me there?}
+\speaker{Loge}
+\vzeile{So enviable a one I never yet saw.}
+\speaker{Alberich}
+\vzeile{That is for today, a paltry little heap:}
+\vzeile{boldly and mightily it shall grow hereafter.}
+\speaker{Wotan}
+\vzeile{Yet what use is the hoard to you,}
+\vzeile{since joyless Nibelheim}
+\vzeile{has nothing here for sale in exchange for treasure?}
+\speaker{Alberich}
+\vzeile{To create treasure and to hide treasure,}
+\vzeile{Nibelheim's night serves me.}
+\vzeile{But with the hoard heaped in the cavern,}
+\vzeile{I mean then to work wonders:}
+\vzeile{the whole world I will win with it for my own!}
+\speaker{Wotan}
+\vzeile{How do you begin that, kindly one?}
+\speaker{Alberich}
+\vzeile{You who live up there in the wafting of mild breezes,}
+\vzeile{laugh and love: with golden fist}
+\vzeile{I will catch all you gods for myself!}
+\vzeile{As I have renounced love,}
+\vzeile{all that lives shall renounce it!}
+\vzeile{Lured with gold,}
+\vzeile{you shall lust after gold alone!}
+\vzeile{On blissful heights,}
+\vzeile{in blessed weaving you rock yourselves;}
+\vzeile{the black-elves}
+\vzeile{you despise, you eternal revellers!}
+\vzeile{Beware! Beware!}
+\vzeile{For once you men serve my power,}
+\vzeile{your fair women, who scorned my wooing --}
+\vzeile{the dwarf will force them to his pleasure,}
+\vzeile{though love does not smile on him!}
+\stagedir{laughing wildly}
+\vzeile{Hahahaha! Have you heard?}
+\vzeile{Beware of the night-host,}
+\vzeile{when the Nibelung's hoard rises}
+\vzeile{from the silent depths to the day!}
+\speaker{Wotan}
+\stagedir{starting up}
+\vzeile{Perish, wanton fool!}
+\speaker{Alberich}
+\vzeile{What does he say?}
+\speaker{Loge}
+\stagedir{has stepped between them}
+\vzeile{Come to your senses!}
+\stagedir{to Alberich}
+\vzeile{Who would not be seized with wonder,}
+\vzeile{hearing of Alberich's work?}
+\vzeile{If your glorious cunning succeeds}
+\vzeile{in what you demand with the hoard,}
+\vzeile{I must praise you as the mightiest;}
+\vzeile{for moon and stars, and the radiant sun,}
+\vzeile{they too may do no other:}
+\vzeile{they must serve you.}
+\vzeile{But -- above all I think it important}
+\vzeile{that the heapers of the hoard, the Nibelung host,}
+\vzeile{be devoted to you without envy.}
+\vzeile{Boldly you wielded a ring;}
+\vzeile{your folk quailed before it, trembling: --}
+\vzeile{but if in your sleep a thief crept upon you}
+\vzeile{and cunningly snatched the ring from you --}
+\vzeile{how would you guard yourself then, wise one?}
+\speaker{Alberich}
+\vzeile{Loge thinks himself the craftiest;}
+\vzeile{others he always thinks stupid:}
+\vzeile{that I needed him for counsel and service,}
+\vzeile{for hard thanks --}
+\vzeile{that the thief would gladly hear now!}
+\vzeile{The concealing helm I devised for myself;}
+\vzeile{the most careful smith,}
+\vzeile{Mime, had to forge it for me:}
+\vzeile{to change myself quickly, at my wish,}
+\vzeile{to exchange my shape, the helm serves.}
+\vzeile{No one sees me when he seeks me;}
+\vzeile{yet I am everywhere, hidden from sight.}
+\vzeile{So, without care,}
+\vzeile{I am safe even from you,}
+\vzeile{you piously caring friend!}
+\speaker{Loge}
+\vzeile{Much I have seen, strange things I have found,}
+\vzeile{but such a wonder I never beheld.}
+\vzeile{In the work without equal I cannot believe;}
+\vzeile{were that one thing possible,}
+\vzeile{your power would then last for ever!}
+\speaker{Alberich}
+\vzeile{Do you think I lie and boast like Loge?}
+\speaker{Loge}
+\vzeile{Until I have tested it,}
+\vzeile{I doubt your word, dwarf.}
+\speaker{Alberich}
+\vzeile{With cleverness the stupid one}
+\vzeile{puffs himself up to bursting!}
+\vzeile{Now let envy plague you!}
+\vzeile{Decide in what shape}
+\vzeile{I shall stand suddenly before you!}
+\speaker{Loge}
+\vzeile{In whichever you will;}
+\vzeile{only strike me dumb with amazement.}
+\speaker{Alberich}
+\stagedir{has put on the helm}
+\vzeile{``Giant worm, wind yourself coiling!''}
+\stagedir{At once he vanishes: an enormous giant serpent winds itself on the ground in his place; it rears up and stretches its gaping jaws towards Wotan and Loge.}
+\speaker{Loge}
+\stagedir{feigns being seized with fear}
+\vzeile{Ohe! Ohe!}
+\vzeile{Terrible serpent, do not swallow me!}
+\vzeile{Spare Loge's life!}
+\speaker{Wotan}
+\vzeile{Hahaha! Good, Alberich!}
+\vzeile{Good, you wicked one!}
+\vzeile{How quickly the dwarf}
+\vzeile{grew into a gigantic worm!}
+\stagedir{The serpent vanishes; in its place Alberich at once appears again in his true shape.}
+\speaker{Alberich}
+\vzeile{Hehe! You clever ones, do you believe me now?}
+\speaker{Loge}
+\vzeile{My trembling may bear witness to it.}
+\vzeile{Quickly you made yourself into a great serpent:}
+\vzeile{since I beheld it,}
+\vzeile{willingly I believe in the wonder.}
+\vzeile{But, as you grew,}
+\vzeile{can you also make yourself tiny}
+\vzeile{and small?}
+\vzeile{That would seem to me the cleverest thing,}
+\vzeile{cunningly to escape dangers:}
+\vzeile{but that, I think, is too hard!}
+\speaker{Alberich}
+\vzeile{Too hard for you, because you are too stupid!}
+\vzeile{How small shall I be?}
+\speaker{Loge}
+\vzeile{So that the finest crevice could hold you,}
+\vzeile{where the frightened toad hides.}
+\speaker{Alberich}
+\vzeile{Pah! Nothing easier! Just look here!}
+\vzeile{He puts the Tarnhelm on again.}
+\vzeile{``Crooked and grey, creep, toad!''}
+\stagedir{He vanishes; the gods perceive a toad creeping towards them in the rock.}
+\speaker{Loge}
+\stagedir{to Wotan}
+\vzeile{There, the toad, seize it quickly!}
+\stagedir{Wotan sets his foot on the toad; Loge reaches for its head and holds the Tarnhelm in his hand. Alberich suddenly becomes visible in his true shape, writhing under Wotan's foot.}
+\speaker{Alberich}
+\vzeile{Ohe! Accursed! I am caught!}
+\speaker{Loge}
+\vzeile{Hold him fast until I have bound him.}
+\stagedir{He has brought out a bast rope and binds Alberich's hands and feet with it; then both seize the gagged one, who tries furiously to defend himself, and drag him with them to the chasm from which they came.}
+\speaker{Loge}
+\vzeile{Now quickly up: there he is ours!}
+\stagedir{They disappear, climbing upwards.}
+\chapter*{Scene Four}
+\addcontentsline{toc}{chapter}{Vierte Szene}
+\markright{Vierte Szene}
+\begin{center}\small\color{stage}\emph{Alberich, Wotan, Loge, Die Übrigen Gods Und Goddesses, Erda, Die Drei Rheintöchter}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{The scene changes, only in the reverse manner to before; the transformation leads once more past the smiths. The transformation continues upwards. At last the open space on the mountain heights appears again, as in the second scene; only it is still veiled in pale mist, as before the second transformation, after Freia was led away.}
+\stage{Wotan and Loge climb up out of the chasm, leading the bound Alberich with them.}
+\speaker{Loge}
+\vzeile{There, cousin, sit fast!}
+\vzeile{Look, dearest, there lies the world}
+\vzeile{that you, sluggard, mean to win for yourself:}
+\vzeile{what little spot, say,}
+\vzeile{do you appoint me in it for a stall?}
+\stagedir{he snaps his fingers at him, dancing}
+\speaker{Alberich}
+\vzeile{Infamous robber! You rogue! You knave!}
+\vzeile{Loosen the bast, untie me,}
+\vzeile{or you will pay for the outrage, insolent one!}
+\speaker{Wotan}
+\vzeile{You are captive, fast bound for me,}
+\vzeile{as you already fancied the world, all that lives and stirs,}
+\vzeile{in your power:}
+\vzeile{in bonds you lie before me,}
+\vzeile{you fearful one, you cannot deny it!}
+\vzeile{To set yourself free, a ransom is needed now.}
+\speaker{Alberich}
+\vzeile{O, what a simpleton, what a dreaming fool I am!}
+\vzeile{How stupidly I trusted the thieving deceit!}
+\vzeile{Terrible revenge shall avenge the fault!}
+\speaker{Loge}
+\vzeile{If revenge is to avail you,}
+\vzeile{above all counsel yourself free:}
+\vzeile{to a bound man}
+\vzeile{no free man pays for an outrage.}
+\vzeile{So, if you plot revenge,}
+\vzeile{quickly, without delay,}
+\vzeile{see to the ransom first!}
+\stagedir{snapping his fingers, he shows him the manner of the ransom}
+\speaker{Alberich}
+\stagedir{brusquely}
+\vzeile{Then demand what you desire!}
+\speaker{Wotan}
+\vzeile{The hoard and your bright gold.}
+\speaker{Alberich}
+\vzeile{Greedy pack of rogues!}
+\stagedir{aside}
+\vzeile{But if I only keep the ring for myself,}
+\vzeile{then I can easily do without the hoard;}
+\vzeile{for won anew,}
+\vzeile{and blissfully fed,}
+\vzeile{it is soon restored by the ring's command:}
+\vzeile{it would be a lesson}
+\vzeile{to make me wise;}
+\vzeile{not too dearly do I pay,}
+\vzeile{if I leave the trinket for the teaching.}
+\speaker{Wotan}
+\vzeile{Do you hand over the hoard?}
+\speaker{Alberich}
+\vzeile{Free my hand, and I will call it here.}
+\stagedir{Loge loosens the noose on his right hand. Alberich touches the ring with his lips and secretly murmurs a command.}
+\vzeile{Well then, I have called the Nibelungs to me.}
+\vzeile{Obeying their lord, I hear them bring the hoard}
+\vzeile{up from the depths to the day:}
+\vzeile{now free me from the irksome bond!}
+\speaker{Wotan}
+\vzeile{Not before all is paid.}
+\stagedir{The Nibelungs climb up out of the chasm, laden with the jewellery of the hoard. During what follows they pile the hoard up.}
+\speaker{Alberich}
+\vzeile{O shameful disgrace!}
+\vzeile{That the timid thralls}
+\vzeile{should see me myself, gagged!}
+\stagedir{to the Nibelungs}
+\vzeile{Brought there, as I commanded!}
+\vzeile{Pile the hoard all in a heap!}
+\vzeile{Must I help you lame ones?}
+\vzeile{Do not look this way!}
+\vzeile{Quick there, quick!}
+\vzeile{Then stir yourselves away from here,}
+\vzeile{so that you toil for me!}
+\vzeile{Off to the shafts!}
+\vzeile{Woe to you, if I find you idle!}
+\vzeile{I follow at your heels!}
+\stagedir{he kisses his ring and stretches it out commandingly. As if struck by a blow, the Nibelungs press shyly and fearfully towards the chasm, into which they quickly slip down.}
+\vzeile{I have paid;}
+\vzeile{now let me go:}
+\vzeile{and the helm-adornment}
+\vzeile{that Loge holds there,}
+\vzeile{give that kindly back to me now!}
+\speaker{Loge}
+\stagedir{throwing the Tarnhelm onto the hoard}
+\vzeile{The booty too belongs to the forfeit.}
+\speaker{Alberich}
+\vzeile{Accursed thief!}
+\stagedir{softly}
+\vzeile{But only patience!}
+\vzeile{He who made me the old one will make another:}
+\vzeile{I still hold the power that Mime obeys.}
+\vzeile{Bad it is, indeed, to leave the cunning weapon}
+\vzeile{to the cunning foe!}
+\vzeile{Well then! Alberich has left you everything:}
+\vzeile{now loosen the bond, you wicked ones.}
+\speaker{Loge}
+\stagedir{to Wotan}
+\vzeile{Are you satisfied? Shall I let him go free?}
+\speaker{Wotan}
+\vzeile{A golden ring gleams on your finger;}
+\vzeile{do you hear, elf?}
+\vzeile{That, I reckon, belongs with the hoard.}
+\speaker{Alberich}
+\stagedir{horrified}
+\vzeile{The ring?}
+\speaker{Wotan}
+\vzeile{For your ransom you must let it go.}
+\speaker{Alberich}
+\stagedir{trembling}
+\vzeile{My life, but not the ring!}
+\speaker{Wotan}
+\stagedir{more violently}
+\vzeile{I demand the ring;}
+\vzeile{with your life do what you will!}
+\speaker{Alberich}
+\vzeile{If I ransom body and life,}
+\vzeile{the ring too I must ransom for myself;}
+\vzeile{hand and head, eye and ear}
+\vzeile{are no more my own}
+\vzeile{than this red ring here!}
+\speaker{Wotan}
+\vzeile{You call the ring your own?}
+\vzeile{Are you raving, shameless elf?}
+\vzeile{Say soberly,}
+\vzeile{from whom did you take the gold}
+\vzeile{from which you forged the shimmering one?}
+\vzeile{Was it your own, what you, wicked one,}
+\vzeile{snatched from the water's depths?}
+\vzeile{Ask counsel of the Rhine's daughters,}
+\vzeile{whether they gave you their gold for your own,}
+\vzeile{which you stole for yourself to make the ring!}
+\speaker{Alberich}
+\vzeile{Shameful malice! Infamous deceit!}
+\vzeile{Do you, robber, reproach me with the guilt}
+\vzeile{that you so blissfully desired?}
+\vzeile{How gladly you yourself would have}
+\vzeile{robbed the Rhine of the gold,}
+\vzeile{had the art of forging it}
+\vzeile{only been so easily gained?}
+\vzeile{How it now turns out to your good, hypocrite,}
+\vzeile{that I, the Nibelung, out of shameful distress,}
+\vzeile{under the constraint of rage,}
+\vzeile{won the terrible magic}
+\vzeile{whose work now laughs merrily on you!}
+\vzeile{The accursed one's, the anguish-wounded one's}
+\vzeile{curse-ripe, terrible deed --}
+\vzeile{is it to serve you blithely as a princely trinket,}
+\vzeile{is my curse to avail you for your joy?}
+\vzeile{Beware, imperious god!}
+\vzeile{If I sinned, I sinned freely against myself:}
+\vzeile{but against all that was,}
+\vzeile{is and will be,}
+\vzeile{you sin, eternal one,}
+\vzeile{if you insolently wrest the ring from me!}
+\speaker{Wotan}
+\vzeile{Hand over the ring!}
+\vzeile{No right to it}
+\vzeile{do you babble yourself into.}
+\stagedir{he seizes Alberich and with violent force draws the ring from his finger.}
+\speaker{Alberich}
+\stagedir{screaming horribly}
+\vzeile{Ha! Shattered! Crushed!}
+\vzeile{The saddest thrall of the sad!}
+\speaker{Wotan}
+\stagedir{contemplating the ring}
+\vzeile{Now I hold what raises me up,}
+\vzeile{the lord of the mightiest of the mighty!}
+\stagedir{he puts the ring on}
+\speaker{Loge}
+\vzeile{Is he released?}
+\speaker{Wotan}
+\vzeile{Untie him!}
+\speaker{Loge}
+\stagedir{completely loosens Alberich's bonds}
+\vzeile{Slip home, then!}
+\vzeile{No noose holds you:}
+\vzeile{go freely on your way!}
+\speaker{Alberich}
+\stagedir{raising himself from the ground}
+\vzeile{Am I free now?}
+\stagedir{with furious laughter}
+\vzeile{Truly free?}
+\vzeile{Then let my freedom's first greeting}
+\vzeile{greet you! --}
+\vzeile{As it came to me through a curse,}
+\vzeile{accursed be this ring!}
+\vzeile{As its gold gave me power without measure,}
+\vzeile{now let its magic breed death for him who wears it!}
+\vzeile{No joyful one shall take joy in it,}
+\vzeile{on no happy one shall its bright gleam smile!}
+\vzeile{Whoever possesses it, let care consume him,}
+\vzeile{and whoever has it not, let envy gnaw him!}
+\vzeile{Let each one lust after its good,}
+\vzeile{yet let none enjoy it with profit!}
+\vzeile{Let its lord guard it without gain;}
+\vzeile{yet let it draw the slayer to him!}
+\vzeile{Doomed to death, let fear fetter the coward:}
+\vzeile{as long as he lives, let him die away thirsting,}
+\vzeile{the ring's lord as the ring's thrall:}
+\vzeile{until in my hand I hold the stolen one again! --}
+\vzeile{So, in his utmost need,}
+\vzeile{the Nibelung blesses his ring!}
+\vzeile{Keep it now,}
+\stagedir{laughing}
+\vzeile{guard it well:}
+\stagedir{grimly}
+\vzeile{you shall not escape my curse!}
+\stagedir{He disappears quickly into the chasm. The dense misty vapour of the foreground gradually clears.}
+\speaker{Loge}
+\vzeile{Did you listen to his loving greeting?}
+\speaker{Wotan}
+\stagedir{sunk in contemplation of the ring on his hand}
+\vzeile{Grant him his slavering pleasure!}
+\stagedir{it grows ever brighter}
+\speaker{Loge}
+\stagedir{looking off to the right of the stage}
+\vzeile{Fasolt and Fafner approach from afar:}
+\vzeile{they lead Freia here.}
+\stagedir{Out of the mist, which keeps parting more and more, Donner, Froh and Fricka appear and hurry towards the foreground.}
+\speaker{Froh}
+\vzeile{They return!}
+\speaker{Donner}
+\vzeile{Welcome, brother!}
+\speaker{Fricka}
+\stagedir{anxiously to Wotan}
+\vzeile{Do you bring good news?}
+\speaker{Loge}
+\stagedir{pointing to the hoard}
+\vzeile{With cunning and force the work succeeded:}
+\vzeile{there lies what redeems Freia.}
+\speaker{Donner}
+\vzeile{From the giants' keeping the fair one approaches there.}
+\speaker{Froh}
+\vzeile{How lovely an air blows on us again,}
+\vzeile{blissful feeling fills the senses!}
+\vzeile{Sadly it went with us all,}
+\vzeile{parted from her for ever,}
+\vzeile{who grants us the jubilant joy}
+\vzeile{of sorrowless eternal youth.}
+\stagedir{The foreground has grown bright again; the gods' appearance regains its first freshness: over the background, however, the veil of mist still clings, so that the castle remains invisible. Fasolt and Fafner enter, leading Freia between them.}
+\speaker{Fricka}
+\stagedir{hurries joyfully to her sister to embrace her}
+\vzeile{Dearest sister, sweetest delight!}
+\vzeile{Are you won back to me?}
+\speaker{Fasolt}
+\stagedir{warding her off}
+\vzeile{Hold! Do not touch her!}
+\vzeile{She still belongs to us.}
+\vzeile{On Giant-home's towering border}
+\vzeile{we rested; with faithful courage}
+\vzeile{we tended the treaty's pledge.}
+\vzeile{However it grieves me, I bring it back,}
+\vzeile{if you lay down the ransom for us brothers.}
+\speaker{Wotan}
+\vzeile{The ransom lies ready:}
+\vzeile{let the measure of the gold now be kindly measured.}
+\speaker{Fasolt}
+\vzeile{To lose the woman, know, weighs heavy on me:}
+\vzeile{if she is to vanish from my mind,}
+\vzeile{then heap the hoard of jewellery so}
+\vzeile{that it hides the blooming one wholly from my sight!}
+\speaker{Wotan}
+\vzeile{Then set the measure by Freia's form!}
+\stagedir{Freia is placed in the middle by the two giants. Then they thrust their staves into the ground on either side of Freia, so that they measure the same height and breadth as her form.}
+\speaker{Fafner}
+\vzeile{The staves are planted to the measure of the pledge;}
+\vzeile{now let the hoard fill it, heaped up!}
+\speaker{Wotan}
+\vzeile{Hasten with the work: it disgusts me!}
+\speaker{Loge}
+\vzeile{Help me, Froh!}
+\speaker{Froh}
+\vzeile{I hasten to end Freia's shame.}
+\stagedir{Loge and Froh hastily heap the jewellery between the staves}
+\speaker{Fafner}
+\vzeile{Not fitted so lightly and loosely!}
+\stagedir{he presses the jewellery tightly together with rough force}
+\vzeile{Firm and dense let it fill the measure.}
+\stagedir{he bends down to peer for gaps}
+\vzeile{Here I still look through:}
+\vzeile{stop up the gaps for me!}
+\speaker{Loge}
+\vzeile{Back, you coarse one!}
+\speaker{Fafner}
+\vzeile{Here!}
+\speaker{Loge}
+\vzeile{Lay hands on nothing of mine!}
+\speaker{Fafner}
+\vzeile{Here! Cram the crevice shut!}
+\speaker{Wotan}
+\stagedir{turning away ill-humoured}
+\vzeile{Deep in my breast the shame burns me!}
+\speaker{Fricka}
+\stagedir{her gaze fixed on Freia}
+\vzeile{See how shamefully the noble one stands in disgrace:}
+\vzeile{her suffering glance begs mutely for redemption.}
+\vzeile{Wicked man! That is what you offered the loving one!}
+\speaker{Fafner}
+\vzeile{More yet! More yet, here!}
+\speaker{Donner}
+\vzeile{I can scarcely hold myself: foaming rage}
+\vzeile{the shameless wretch wakes in me!}
+\vzeile{Here, you dog! If you would measure,}
+\vzeile{then measure yourself against me!}
+\speaker{Fafner}
+\vzeile{Quiet, Donner! Roll where it avails:}
+\vzeile{your rattling does you no good here!}
+\speaker{Donner}
+\stagedir{makes to strike}
+\vzeile{Not to smash you, little reviler?}
+\speaker{Wotan}
+\vzeile{Peace, now!}
+\vzeile{Already Freia seems to me covered.}
+\speaker{Loge}
+\vzeile{The hoard is used up.}
+\speaker{Fafner}
+\stagedir{measures the hoard exactly with his eye and peers for gaps}
+\vzeile{Holda's hair still shimmers at me:}
+\vzeile{throw that web there onto the hoard!}
+\speaker{Loge}
+\vzeile{What? The helm too?}
+\speaker{Fafner}
+\vzeile{Quickly, here with it!}
+\speaker{Wotan}
+\vzeile{Let it go, then!}
+\speaker{Loge}
+\stagedir{throws the Tarnhelm onto the hoard}
+\vzeile{So we are finished, then!}
+\vzeile{Are you satisfied?}
+\speaker{Fasolt}
+\vzeile{Freia, the fair one, I see no more:}
+\vzeile{so is she redeemed? Must I let her go?}
+\stagedir{he steps close and peers through the hoard}
+\vzeile{Woe! Her glance still flashes to me here;}
+\vzeile{the star of her eye still beams on me:}
+\vzeile{through a chink I must spy it.}
+\stagedir{beside himself}
+\vzeile{While I see this blissful eye,}
+\vzeile{I will not give up the woman!}
+\speaker{Fafner}
+\vzeile{He! I counsel you,}
+\vzeile{stop up the crack for me!}
+\speaker{Loge}
+\vzeile{Never satisfied! Do you not see, then,}
+\vzeile{the hoard has quite vanished from us?}
+\speaker{Fafner}
+\vzeile{By no means, friend! On Wotan's finger}
+\vzeile{a ring of gold still glitters:}
+\vzeile{give that, to fill the crack!}
+\speaker{Wotan}
+\vzeile{What! This ring?}
+\speaker{Loge}
+\vzeile{Let yourselves be counselled!}
+\vzeile{This gold belongs to the Rhinemaidens;}
+\vzeile{Wotan gives it back to them.}
+\speaker{Wotan}
+\vzeile{What were you chattering there?}
+\vzeile{What I gained for myself with hard toil,}
+\vzeile{I keep for myself without fear!}
+\speaker{Loge}
+\vzeile{Then it stands ill with my promise,}
+\vzeile{which I gave the lamenting ones!}
+\speaker{Wotan}
+\vzeile{Your promise does not bind me;}
+\vzeile{the ring remains mine as booty.}
+\speaker{Fafner}
+\vzeile{But here, for the ransom, you must lay it down.}
+\speaker{Wotan}
+\vzeile{Demand insolently what you will,}
+\vzeile{I grant everything;}
+\vzeile{for all the world,}
+\vzeile{yet I will not let the ring go!}
+\speaker{Fasolt}
+\stagedir{furiously pulls Freia out from behind the hoard}
+\vzeile{It is over, then; it stays as it was;}
+\vzeile{now Freia follows us for ever!}
+\speaker{Freia}
+\vzeile{Help! Help!}
+\speaker{Fricka}
+\vzeile{Hard god, give way to them!}
+\speaker{Froh}
+\vzeile{Do not spare the gold!}
+\speaker{Donner}
+\vzeile{Give the ring, then!}
+\stagedir{Fafner still holds back Fasolt, who presses to go; all stand dismayed}
+\speaker{Wotan}
+\vzeile{Leave me in peace! I will not give the ring!}
+\stagedir{Wotan turns angrily aside. The stage has darkened anew; from the rocky cleft at the side a bluish gleam breaks forth: in it Erda suddenly becomes visible, rising from the depths to half the height of her body; she is of noble form, her black hair flowing far about her.}
+\speaker{Erda}
+\stagedir{stretching her hand warningly towards Wotan}
+\vzeile{Yield, Wotan! Yield!}
+\vzeile{Flee the ring's curse!}
+\vzeile{To dark ruin, past all saving,}
+\vzeile{its gain consecrates you.}
+\speaker{Wotan}
+\vzeile{Who are you, warning woman?}
+\speaker{Erda}
+\vzeile{How all things were, I know;}
+\vzeile{how all things become, how all things will be,}
+\vzeile{I see too --}
+\vzeile{the eternal world's primal Wala,}
+\vzeile{Erda, warns your courage. Three daughters,}
+\vzeile{primally created, my womb bore;}
+\vzeile{what I see, the Norns tell you nightly.}
+\vzeile{But the highest danger leads me today}
+\vzeile{myself here to you.}
+\vzeile{Hear! Hear! Hear!}
+\vzeile{All that is, ends.}
+\vzeile{A gloomy day dawns for the gods:}
+\vzeile{I counsel you, shun the ring!}
+\stagedir{she sinks slowly to the breast, while the bluish gleam begins to darken}
+\speaker{Wotan}
+\vzeile{Mysteriously noble,}
+\vzeile{your word echoes in me:}
+\vzeile{stay, that I may know more!}
+\speaker{Erda}
+\stagedir{sinking}
+\vzeile{I warned you; you know enough:}
+\vzeile{ponder in care and fear!}
+\stagedir{she disappears completely}
+\speaker{Wotan}
+\vzeile{If I am to care and fear,}
+\vzeile{I must seize you, learn everything!}
+\stagedir{he tries to follow the vanishing one into the cleft, to hold her. Froh and Fricka throw themselves in his way and hold him back}
+\speaker{Fricka}
+\vzeile{What do you want, furious one?}
+\speaker{Froh}
+\vzeile{Hold, Wotan!}
+\vzeile{Revere the noble one, heed her word!}
+\stagedir{Wotan stares musingly before him}
+\speaker{Donner}
+\stagedir{turning resolutely to the giants}
+\vzeile{Hear, you giants! Back, and wait:}
+\vzeile{the gold shall be given you.}
+\speaker{Freia}
+\vzeile{Dare I hope it?}
+\vzeile{Does Holda truly seem to you worth the ransom?}
+\stagedir{All look tensely at Wotan; he, coming to himself after deep musing, grasps his spear and swings it as a sign of bold resolve}
+\speaker{Wotan}
+\vzeile{To me, Freia! You are freed.}
+\vzeile{Bought back, let our youth return to us!}
+\vzeile{You giants, take your ring!}
+\vzeile{he throws the ring onto the hoard}
+\stagedir{The giants let Freia go; she hurries joyfully to the gods, who caress her in turn for some time in the highest joy.}
+\stagedir{Fafner at once spreads out an enormous sack and sets about the hoard, to stack it into it.}
+\speaker{Fasolt}
+\stagedir{throwing himself in his brother's way}
+\vzeile{Hold, you greedy one! Grant me something too!}
+\vzeile{An honest division befits us both.}
+\speaker{Fafner}
+\vzeile{More in the maid than in the gold}
+\vzeile{lay your concern, lovesick fop:}
+\vzeile{with toil I brought you, fool, to the exchange;}
+\vzeile{without dividing, you would have wooed Freia:}
+\vzeile{if I divide the hoard,}
+\vzeile{fairly I keep the greater half for myself.}
+\speaker{Fasolt}
+\vzeile{You infamous one! This insult to me?}
+\stagedir{to the gods}
+\vzeile{I call on you as judges:}
+\vzeile{divide the hoard honestly between us by right!}
+\stagedir{Wotan turns contemptuously away}
+\speaker{Loge}
+\vzeile{Let him snatch up the hoard;}
+\vzeile{you, only hold on to the ring!}
+\speaker{Fasolt}
+\stagedir{throws himself on Fafner, who has kept stuffing the sack}
+\vzeile{Back, you insolent one! The ring is mine;}
+\vzeile{it remained to me for Freia's glance!}
+\stagedir{He reaches hastily for the ring. They wrestle.}
+\speaker{Fafner}
+\vzeile{Away with your fist! The ring is mine!}
+\stagedir{Fasolt wrests the ring from Fafner}
+\speaker{Fasolt}
+\vzeile{I hold it, it belongs to me!}
+\speaker{Fafner}
+\stagedir{striking out at Fasolt with a staff}
+\vzeile{Hold it fast, so that it does not fall!}
+\stagedir{With one blow he stretches Fasolt on the ground, then hastily wrests the ring from the dying man}
+\speaker{Fafner}
+\vzeile{Now blink after Freia's glance!}
+\vzeile{You touch the ring no more!}
+\stagedir{He puts the ring into the sack and then leisurely gathers up the rest of the hoard. All the gods stand horrified. A long, solemn silence}
+\speaker{Wotan}
+\vzeile{Terribly now I find the curse's power!}
+\speaker{Loge}
+\vzeile{What, Wotan, can equal your good fortune?}
+\vzeile{The ring's gain won you much;}
+\vzeile{that it is now taken from you avails you still more:}
+\vzeile{your foes -- see -- fell one another}
+\vzeile{for the gold that you gave away.}
+\speaker{Wotan}
+\stagedir{deeply shaken}
+\vzeile{How dread binds me!}
+\vzeile{Care and fear fetter my mind:}
+\vzeile{teach me, Erda, how to end them:}
+\vzeile{to her I must descend!}
+\speaker{Fricka}
+\stagedir{nestling coaxingly against him}
+\vzeile{Where do you linger, Wotan?}
+\vzeile{Does the noble castle not beckon you kindly,}
+\vzeile{waiting now to shelter its lord hospitably?}
+\speaker{Wotan}
+\stagedir{gloomily}
+\vzeile{With an evil toll I paid for the building.}
+\speaker{Donner}
+\stagedir{pointing to the background, which is still wrapped in mist}
+\vzeile{Sultry vapour hovers in the air;}
+\vzeile{the dull pressure irks me!}
+\vzeile{The pale clouds}
+\vzeile{I gather into flashing storm,}
+\vzeile{which sweeps the sky bright for me.}
+\stagedir{he climbs a high rock at the edge of the valley and swings his hammer there; mists gather about him}
+\vzeile{He da! He da! He do!}
+\vzeile{To me, you vapour! You mists, to me!}
+\vzeile{Donner, the lord, calls you to his host!}
+\stagedir{he swings the hammer}
+\vzeile{On the hammer's swing, float hither!}
+\vzeile{Vaporous damp! Hovering mist!}
+\vzeile{Donner, the lord, calls you to his host!}
+\vzeile{He da! He da! He do!}
+\stagedir{he disappears completely in a thundercloud that balls itself ever darker. Donner's hammer-stroke is heard falling heavily on the rock: a strong flash of lightning bursts from the cloud; a violent clap of thunder follows. Froh has disappeared with the cloud.}
+\speaker{Donner}
+\stagedir{invisible}
+\vzeile{Brother, here! Show the bridge its way!}
+\stagedir{Suddenly the cloud disperses; Donner and Froh become visible: from their feet a rainbow bridge draws itself, with blinding radiance, across the valley to the castle, which now, lit by the evening sun, shines in the brightest splendour. Fafner, who beside his brother's body has at last gathered up the whole hoard, has left the stage during Donner's thunderstorm magic, the enormous sack on his back.}
+\speaker{Froh}
+\stagedir{who has pointed out to the bridge with outstretched hand the way across the valley, to the gods}
+\vzeile{The bridge leads to the castle,}
+\vzeile{light, yet firm to your foot:}
+\vzeile{tread boldly its fearless path!}
+\stagedir{Wotan and the other gods are lost speechless in the magnificent sight.}
+\speaker{Wotan}
+\vzeile{The sun's eye shines in the evening;}
+\vzeile{in splendid glow the castle gleams radiant.}
+\vzeile{Shimmering bravely in the morning's light,}
+\vzeile{it lay masterless, nobly enticing, before me.}
+\vzeile{From morning till evening, in toil and dread,}
+\vzeile{not blissfully was it won!}
+\vzeile{Night draws near: from its envy}
+\vzeile{let it offer shelter now.}
+\stagedir{As if seized by a great thought, very resolute}
+\vzeile{So I greet the castle,}
+\vzeile{safe from fear and dread!}
+\stagedir{he turns solemnly to Fricka}
+\vzeile{Follow me, wife:}
+\vzeile{dwell with me in Valhalla!}
+\speaker{Fricka}
+\vzeile{What does the name signify?}
+\vzeile{Never, it seems to me, did I hear it spoken.}
+\speaker{Wotan}
+\vzeile{What, mastering fear,}
+\vzeile{my courage devised for me,}
+\vzeile{if it lives victorious,}
+\vzeile{let that make the meaning plain to you!}
+\stagedir{he takes Fricka by the hand and walks slowly with her towards the bridge;}
+\stagedir{Froh, Freia and Donner follow}
+\speaker{Loge}
+\stagedir{remaining in the foreground and looking after the gods}
+\vzeile{They hasten to their end,}
+\vzeile{they who think themselves so strong in enduring.}
+\vzeile{I almost shame myself to deal with them;}
+\vzeile{to change myself back into licking flame}
+\vzeile{I feel a tempting desire:}
+\vzeile{to consume them, who once tamed me,}
+\vzeile{rather than perish dully with the blind,}
+\vzeile{even were they the most godlike of gods!}
+\vzeile{That would not seem stupid to me!}
+\vzeile{I will consider it: who knows what I shall do!}
+\stagedir{He goes to join the gods in a careless posture. From the depths the singing of the Rhinemaidens is heard ringing up.}
+\speaker{The Three Rhinemaidens}
+\stagedir{in the depths of the valley, invisible}
+\vzeile{Rhinegold! Rhinegold! Pure gold!}
+\vzeile{How clear and bright you shine kindly on us!}
+\vzeile{For you, bright one, we lament now:}
+\vzeile{give us the gold!}
+\vzeile{O give us the pure one back!}
+\speaker{Wotan}
+\stagedir{about to set his foot on the bridge, stops and turns round}
+\vzeile{What lament rings to me here?}
+\speaker{Loge}
+\stagedir{peers down into the valley}
+\vzeile{The Rhine's children lament the theft of the gold!}
+\speaker{Wotan}
+\vzeile{Accursed nixies!}
+\stagedir{to Loge}
+\vzeile{Stop their teasing!}
+\speaker{Loge}
+\stagedir{calling down into the valley}
+\vzeile{You there in the water, why do you weep up here?}
+\vzeile{Hear what Wotan wishes for you!}
+\vzeile{If the gold shines on you maidens no more,}
+\vzeile{in the gods' new radiance}
+\vzeile{bask blissfully henceforth!}
+\stagedir{The gods laugh and then set foot on the bridge.}
+\speaker{The Three Rhinemaidens}
+\stagedir{from the depths}
+\vzeile{Rhinegold! Rhinegold! Pure gold!}
+\vzeile{O, if your pure trinket still shone in the depths!}
+\vzeile{Trusty and true it is only in the depths:}
+\vzeile{false and craven is what rejoices up there!}
+\stagedir{While the gods stride across the bridge towards the castle, the curtain falls.}
+
+\end{document}

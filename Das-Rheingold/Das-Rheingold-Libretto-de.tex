@@ -1,0 +1,2094 @@
+\documentclass[10.5pt,openany]{book}
+
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+\usepackage[a5paper, top=1.9cm, bottom=1.9cm, inner=1.85cm, outer=1.55cm]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\setstretch{1.05}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\small\color{stage}\nouppercase{\rightmark}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+
+\definecolor{ink}{HTML}{2B241C}
+\definecolor{stage}{HTML}{6E6E6E}
+\definecolor{rule}{HTML}{C4B39A}
+\color{ink}
+
+\titleformat{\chapter}[display]
+  {\centering}{}{0pt}{\Large\bfseries}
+\titlespacing*{\chapter}{0pt}{1.6ex}{1.2ex}
+
+% Rollenangabe: Kapitälchen, leicht gesperrt.
+\newcommand{\speaker}[1]{%
+  \par\addvspace{1.0ex}%
+  \noindent{\small\bfseries\scshape #1}\par
+  \nopagebreak[3]}
+
+% Gesungene oder gesprochene Zeile.
+\newcommand{\vzeile}[1]{\noindent #1\par}
+
+% Regieanweisung.
+\newcommand{\stage}[1]{%
+  \par\addvspace{0.5ex}%
+  {\small\color{stage}\emph{#1}}\par}
+
+\newcommand{\stagedir}[1]{%
+  \par{\small\color{stage}\emph{#1}}\par
+  \nopagebreak[2]}
+
+% Längere Szenenbeschreibung, im Blocksatz mit Einzug.
+\newenvironment{stageblock}{%
+  \par\addvspace{0.6ex}\begingroup\small\color{stage}\itshape
+  \setlength{\parindent}{1.1em}\setlength{\parskip}{0.55ex}}{%
+  \par\endgroup\addvspace{0.8ex}}
+
+\begin{document}
+\frontmatter
+
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{3.2cm}
+\begin{center}
+{\Huge Das Rheingold}\\[3.4ex]
+{\color{rule}\rule{0.4\textwidth}{0.4pt}}\\[3.2ex]
+{\large Richard Wagner}
+\end{center}
+\vfill
+\end{titlepage}
+
+\tableofcontents
+\markboth{}{Inhalt}
+
+\mainmatter
+
+\chapter*{Personen}
+\addcontentsline{toc}{chapter}{Personen}
+\markboth{Personen}{Personen}
+\begin{center}
+{\small\color{stage}\textsc{Götter}}\\[0.8ex]
+\textbf{Wotan}\enspace{\small\color{stage}Bariton}\\[0.3ex]
+\textbf{Donner}\enspace{\small\color{stage}Bariton}\\[0.3ex]
+\textbf{Froh}\enspace{\small\color{stage}Tenor}\\[0.3ex]
+\textbf{Loge}\enspace{\small\color{stage}Tenor}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Göttinnen}}\\[0.8ex]
+\textbf{Fricka}\enspace{\small\color{stage}Mezzosopran}\\[0.3ex]
+\textbf{Freia}\enspace{\small\color{stage}Sopran}\\[0.3ex]
+\textbf{Erda}\enspace{\small\color{stage}Alt}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Nibelungen}}\\[0.8ex]
+\textbf{Alberich}\enspace{\small\color{stage}Bariton}\\[0.3ex]
+\textbf{Mime}\enspace{\small\color{stage}Tenor}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Riesen}}\\[0.8ex]
+\textbf{Fasolt}\enspace{\small\color{stage}Bass}\\[0.3ex]
+\textbf{Fafner}\enspace{\small\color{stage}Bass}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Die rheintöchter}}\\[0.8ex]
+\textbf{Woglinde}\enspace{\small\color{stage}Sopran}\\[0.3ex]
+\textbf{Wellgunde}\enspace{\small\color{stage}Mezzosopran}\\[0.3ex]
+\textbf{Flosshilde}\enspace{\small\color{stage}Alt}\\[0.3ex]
+\par\vspace{1.0ex}
+{\small\color{stage}\textsc{Stumme Rollen}}\\[0.8ex]
+\textbf{Nibelungen}\\[0.3ex]
+\par\vspace{1.0ex}
+\end{center}
+
+\chapter*{Vorspiel}
+\addcontentsline{toc}{chapter}{Vorspiel}
+\markright{Vorspiel}
+\chapter*{Erste Szene}
+\addcontentsline{toc}{chapter}{Erste Szene}
+\markright{Erste Szene}
+\begin{center}\small\color{stage}\emph{Woglinde, Wellgunde, Flosshilde, Alberich}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{Auf dem Grunde des Rheines.}
+\stage{Grünliche Dämmerung, nach oben zu lichter, nach unten zu dunkler. Die Höhe ist von wogendem Gewässer erfüllt, das rastlos von rechts nach links zu strömt. Nach der Tiefe zu lösen die Fluten sich in einen immer feineren feuchten Nebel auf, so dass der Raum in Manneshöhe vom Boden auf gänzlich frei vom Wasser zu sein scheint, welches wie in Wolkenzügen über den nächtlichen Grund dahinfliesst. Überall ragen schroffe Felsenriffe aus der Tiefe auf und grenzen den Raum der Bühne ab; der ganze Boden ist in ein wildes Zackengewirr zerspalten, so dass er nirgends vollkommen eben ist und nach allen Seiten hin in dichtester Finsternis tiefere Schlüfte annehmen lässt.}
+\stage{Um ein Riff in der Mitte der Bühne, welches mit seiner schlanken Spitze bis in die dichtere, heller dämmernde Wasserflut hinaufragt, kreist in anmutig schwimmender Bewegung eine der Rheintöchter.}
+\speaker{Woglinde}
+\vzeile{Weia! Waga! Woge, du Welle,}
+\vzeile{walle zur Wiege! Wagalaweia!}
+\vzeile{Wallala, weiala weia!}
+\speaker{Wellgunde}
+\stagedir{Stimme von oben}
+\vzeile{Woglinde, wachst du allein?}
+\speaker{Woglinde}
+\vzeile{Mit Wellgunde wär' ich zu zwei.}
+\speaker{Wellgunde}
+\stagedir{taucht aus der Flut zum Riff herab}
+\vzeile{Lass sehn, wie du wachst!}
+\stagedir{sie sucht Woglinde zu erhaschen}
+\speaker{Woglinde}
+\stagedir{entweicht ihr schwimmend}
+\vzeile{Sicher vor dir!}
+\stagedir{Sie necken sich und suchen sich spielend zu fangen}
+\speaker{Flosshilde}
+\stagedir{Stimme von oben}
+\vzeile{Heiaha weia! Wildes Geschwister!}
+\speaker{Wellgunde}
+\vzeile{Flosshilde, schwimm'! Woglinde flieht:}
+\vzeile{hilf mir die Fliessende fangen!}
+\speaker{Flosshilde}
+\stagedir{taucht herab und fährt zwischen die Spielenden}
+\vzeile{Des Goldes Schlaf hütet ihr schlecht!}
+\vzeile{Besser bewacht des schlummernden Bett,}
+\vzeile{sonst büsst ihr beide das Spiel!}
+\stagedir{Mit muntrem Gekreisch fahren die beiden auseinander. Flosshilde sucht bald die eine, bald die andere zu erhaschen; sie entschlüpfen ihr und vereinigen sich endlich, um gemeinschaftlich auf Flosshilde Jagd zu machen. So schnellen sie gleich Fischen von Riff zu Riff, scherzend und lachend.}
+\stagedir{Aus einer finstern Schluft ist währenddem Alberich, an einem Riffe klimmend, dem Abgrunde entstiegen. Er hält, noch vom Dunkel umgeben, an und schaut dem Spiele der Rheintöchter mit steigendem Wohlgefallen zu.}
+\speaker{Alberich}
+\vzeile{Hehe! Ihr Nicker!}
+\vzeile{Wie seid ihr niedlich, neidliches Volk!}
+\vzeile{Aus Nibelheims Nacht naht' ich mich gern,}
+\vzeile{neigtet ihr euch zu mir!}
+\stagedir{Die Mädchen halten, sobald sie Alberichs Stimme hören, mit dem Spiele ein}
+\speaker{Woglinde}
+\vzeile{Hei! Wer ist dort?}
+\speaker{Wellgunde}
+\vzeile{Es dämmert und ruft!}
+\speaker{Flosshilde}
+\vzeile{Lugt, wer uns lauscht!}
+\speaker{Woglinde Und Wellgunde}
+\stagedir{sie tauchen tiefer herab und erkennen den Nibelung}
+\vzeile{Pfui! Der Garstige!}
+\speaker{Flosshilde}
+\stagedir{schnell auftauchend}
+\vzeile{Hütet das Gold!}
+\vzeile{Vater warnte vor solchem Feind.}
+\stagedir{Die beiden andern folgen ihr, und alle drei versammeln sich schnell um das mittlere Riff}
+\speaker{Alberich}
+\vzeile{Ihr, da oben!}
+\speaker{Die Drei Rheintöchter}
+\vzeile{Was willst du dort unten?}
+\speaker{Alberich}
+\vzeile{Stör' ich eu'r Spiel,}
+\vzeile{wenn staunend ich still hier steh'?}
+\vzeile{Tauchtet ihr nieder, mit euch tollte}
+\vzeile{und neckte der Niblung sich gern!}
+\speaker{Woglinde}
+\vzeile{Mit uns will er spielen?}
+\speaker{Wellgunde}
+\vzeile{Ist ihm das Spott?}
+\speaker{Alberich}
+\vzeile{Wie scheint im Schimmer ihr hell und schön!}
+\vzeile{Wie gern umschlänge der Schlanken eine mein Arm,}
+\vzeile{schlüpfte hold sie herab!}
+\speaker{Flosshilde}
+\vzeile{Nun lach' ich der Furcht: der Feind ist verliebt!}
+\stagedir{Sie lachen}
+\speaker{Wellgunde}
+\vzeile{Der lüsterne Kauz!}
+\speaker{Woglinde}
+\vzeile{Lasst ihn uns kennen!}
+\stagedir{Sie lässt sich auf die Spitze des Riffes hinab, an dessen Fusse Alberich angelangt ist.}
+\speaker{Alberich}
+\vzeile{Die neigt sich herab.}
+\speaker{Woglinde}
+\vzeile{Nun nahe dich mir!}
+\stagedir{Alberich klettert mit koboldartiger Behendigkeit, doch wiederholt aufgehalten, der Spitze des Riffes zu}
+\speaker{Alberich}
+\vzeile{Garstig glatter glitschiger Glimmer!}
+\vzeile{Wie gleit' ich aus! Mit Händen und Füssen}
+\vzeile{nicht fasse noch halt' ich das schlecke Geschlüpfer!}
+\stagedir{er prustet}
+\vzeile{Feuchtes Nass füllt mir die Nase:}
+\vzeile{verfluchtes Niesen!}
+\stagedir{er ist in Woglindes Nähe angelangt}
+\speaker{Woglinde}
+\stagedir{lachend}
+\vzeile{Prustend naht meines Freiers Pracht!}
+\speaker{Alberich}
+\vzeile{Mein Friedel sei, du fräuliches Kind!}
+\stagedir{er sucht sie zu umfassen}
+\speaker{Woglinde}
+\stagedir{sich ihm entwindend}
+\vzeile{Willst du mich frei'n, so freie mich hier!}
+\stagedir{sie taucht auf einem andern Riff auf, die Schwestern lachen}
+\speaker{Alberich}
+\stagedir{kratzt sich den Kopf}
+\vzeile{O weh! Du entweichst? Komm' doch wieder!}
+\vzeile{Schwer ward mir, was so leicht du erschwingst.}
+\speaker{Woglinde}
+\stagedir{schwingt sich auf ein drittes Riff in grösserer Tiefe}
+\vzeile{Steig' nur zu Grund, da greifst du mich sicher!}
+\speaker{Alberich}
+\stagedir{hastig hinab kletternd}
+\vzeile{Wohl besser da unten!}
+\speaker{Woglinde}
+\stagedir{schnellt sich rasch aufwärts nach einem hohen Seitenriffe}
+\vzeile{Nun aber nach oben!}
+\speaker{Wellgunde Und Flosshilde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\vzeile{Wie fang' ich im Sprung den spröden Fisch?}
+\vzeile{Warte, du Falsche!}
+\stagedir{er will ihr eilig nachklettern}
+\speaker{Wellgunde}
+\stagedir{hat sich auf ein tieferes Riff auf der anderen Seite gesenkt}
+\vzeile{Heia, du Holder! Hörst du mich nicht?}
+\speaker{Alberich}
+\stagedir{sich umwendend}
+\vzeile{Rufst du nach mir?}
+\speaker{Wellgunde}
+\vzeile{Ich rate dir wohl: zu mir wende dich,}
+\vzeile{Woglinde meide!}
+\speaker{Alberich}
+\stagedir{klettert hastig über den Bodengrund zu Wellgunde}
+\vzeile{Viel schöner bist du als jene Scheue,}
+\vzeile{die minder gleissend und gar zu glatt.}
+\vzeile{Nur tiefer tauche, willst du mir taugen.}
+\speaker{Wellgunde}
+\stagedir{noch etwas mehr sich zu ihm herabsenkend}
+\vzeile{Bin nun ich dir nah?}
+\speaker{Alberich}
+\vzeile{Noch nicht genug!}
+\vzeile{Die schlanken Arme schlinge um mich,}
+\vzeile{dass ich den Nacken dir neckend betaste,}
+\vzeile{mit schmeichelnder Brunst}
+\vzeile{an die schwellende Brust mich dir schmiege.}
+\speaker{Wellgunde}
+\vzeile{Bist du verliebt und lüstern nach Minne,}
+\vzeile{lass sehn, du Schöner, wie bist du zu schau'n?}
+\vzeile{Pfui! Du haariger, höckriger Geck!}
+\vzeile{Schwarzes, schwieliges Schwefelgezwerg!}
+\vzeile{Such' dir ein Friedel, dem du gefällst!}
+\speaker{Alberich}
+\stagedir{sucht sie mit Gewalt zu halten}
+\vzeile{Gefall' ich dir nicht, dich fass' ich doch fest!}
+\speaker{Wellgunde}
+\stagedir{schnell zum mittleren Riffe auftauchend}
+\vzeile{Nur fest, sonst fliess ich dir fort!}
+\speaker{Woglinde Und Flosshilde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\stagedir{Wellgunde erbost nachzankend}
+\vzeile{Falsches Kind! Kalter, grätiger Fisch!}
+\vzeile{Schein' ich nicht schön dir,}
+\vzeile{niedlich und neckisch, glatt und glau -}
+\vzeile{hei, so buhle mit Aalen, ist dir eklig mein Balg!}
+\speaker{Flosshilde}
+\vzeile{Was zankst du, Alp? Schon so verzagt?}
+\vzeile{Du freitest um zwei: frügst du die dritte,}
+\vzeile{süssen Trost schüfe die Traute dir!}
+\speaker{Alberich}
+\vzeile{Holder Sang singt zu mir her!}
+\vzeile{Wie gut, dass ihr eine nicht seid!}
+\vzeile{Von vielen gefall' ich wohl einer:}
+\vzeile{bei einer kieste mich keine!}
+\vzeile{Soll ich dir glauben, so gleite herab!}
+\speaker{Flosshilde}
+\stagedir{taucht zu Alberich hinab}
+\vzeile{Wie törig seid ihr, dumme Schwestern,}
+\vzeile{dünkt euch dieser nicht schön!}
+\speaker{Alberich}
+\stagedir{ihr nahend}
+\vzeile{Für dumm und hässlich darf ich sie halten,}
+\vzeile{seit ich dich Holdeste seh'.}
+\speaker{Flosshilde}
+\stagedir{schmeichelnd}
+\vzeile{O singe fort so süss und fein,}
+\vzeile{wie hehr verführt es mein Ohr!}
+\speaker{Alberich}
+\stagedir{zutraulich sie berührend}
+\vzeile{Mir zagt, zuckt und zehrt sich das Herz,}
+\vzeile{lacht mir so zierliches Lob.}
+\speaker{Flosshilde}
+\stagedir{ihn sanft abwehrend}
+\vzeile{Wie deine Anmut mein Aug' erfreut,}
+\vzeile{deines Lächelns Milde den Mut mir labt!}
+\stagedir{Sie zieht ihn selig an sich}
+\vzeile{Seligster Mann!}
+\speaker{Alberich}
+\vzeile{Süsseste Maid!}
+\speaker{Flosshilde}
+\vzeile{Wärst du mir hold!}
+\speaker{Alberich}
+\vzeile{Hielt dich immer!}
+\speaker{Flosshilde}
+\stagedir{ihn ganz in ihren Armen haltend}
+\vzeile{Deinen stechenden Blick, deinen struppigen Bart,}
+\vzeile{o säh ich ihn, fasst' ich ihn stets!}
+\vzeile{Deines stachligen Haares strammes Gelock,}
+\vzeile{umflöss es Flosshilde ewig!}
+\vzeile{Deine Krötengestalt, deiner Stimme Gekrächz,}
+\vzeile{o dürft' ich staunend und stumm}
+\vzeile{sie nur hören und sehn!}
+\speaker{Woglinde Und Wellgunde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\stagedir{erschreckt aus Flosshildes Armen auffahrend}
+\vzeile{Lacht ihr Bösen mich aus?}
+\speaker{Flosshilde}
+\stagedir{sich plötzlich ihm entreissend}
+\vzeile{Wie billig am Ende vom Lied!}
+\stagedir{sie taucht mit den Schwestern schnell auf}
+\speaker{Woglinde Und Wellgunde}
+\vzeile{Hahahahaha!}
+\speaker{Alberich}
+\stagedir{mit kreischender Stimme}
+\vzeile{Wehe! Ach wehe! O Schmerz! O Schmerz!}
+\vzeile{Die dritte, so traut, betrog sie mich auch?}
+\vzeile{Ihr schmählich schlaues, lüderlich schlechtes Gelichter!}
+\vzeile{Nährt ihr nur Trug, ihr treuloses Nickergezücht?}
+\speaker{Die Drei Rheintöchter}
+\vzeile{Wallala! Lalaleia! Leialalei!}
+\vzeile{Heia! Heia! Haha!}
+\vzeile{Schäme dich, Albe! Schilt nicht dort unten!}
+\vzeile{Höre, was wir dich heissen!}
+\vzeile{Warum, du Banger, bandest du nicht}
+\vzeile{das Mädchen, das du minnst?}
+\vzeile{Treu sind wir und ohne Trug}
+\vzeile{dem Freier, der uns fängt.}
+\vzeile{Greife nur zu, und grause dich nicht!}
+\vzeile{In der Flut entflieh'n wir nicht leicht!}
+\vzeile{Wallala! Lalaleia! Leialalei!}
+\vzeile{Heia! Heia! Haha!}
+\stagedir{Sie schwimmen auseinander, hierher und dorthin, bald tiefer, bald höher, um Alberich zur Jagd auf sie zu reizen.}
+\speaker{Alberich}
+\vzeile{Wie in den Gliedern brünstige Glut}
+\vzeile{mir brennt und glüht!}
+\vzeile{Wut und Minne, wild und mächtig,}
+\vzeile{wühlt mir den Mut auf!}
+\vzeile{Wie ihr auch lacht und lügt,}
+\vzeile{lüstern lechz' ich nach euch,}
+\vzeile{und eine muss mir erliegen!}
+\stagedir{Er macht sich mit verzweifelter Anstrengung zur Jagd auf: mit grauenhafter Behendigkeit erklimmt er Riff für Riff, springt von einem zum andern, sucht bald dieses, bald jenes der Mädchen zu erhaschen, die mit lustigem Gekreisch stets ihm entweichen. Er strauchelt, stürzt in den Abgrund hinab, klettert dann hastig wieder in die Höhe zu neuer Jagd. Sie neigen sich etwas herab. Fast erreicht er sie, stürzt abermals zurück und versucht es nochmals. Er hält endlich, vor Wut schäumend, atemlos an und streckt die geballte Faust nach den Mädchen hinauf.}
+\speaker{Alberich}
+\stagedir{kaum seiner mächtig}
+\vzeile{Fing' eine diese Faust!...}
+\stagedir{Er verbleibt in sprachloser Wut, den Blick aufwärts gerichtet, wo er dann plötzlich von dem folgenden Schauspiele angezogen und gefesselt wird.}
+\stagedir{Durch die Flut ist von oben her ein immer lichterer Schein gedrungen, der sich an einer hohen Stelle des mittelsten Riffes allmählich zu einem blendend hell strahlenden Goldglanze entzündet: ein zauberisch goldenes Licht bricht von hier durch das Wasser.}
+\speaker{Woglinde}
+\vzeile{Lugt, Schwestern!}
+\vzeile{Die Weckerin lacht in den Grund.}
+\speaker{Wellgunde}
+\vzeile{Durch den grünen Schwall}
+\vzeile{den wonnigen Schläfer sie grüsst.}
+\speaker{Flosshilde}
+\vzeile{Jetzt küsst sie sein Auge, dass er es öffne.}
+\speaker{Wellgunde}
+\vzeile{Schaut, er lächelt in lichtem Schein.}
+\speaker{Woglinde}
+\vzeile{Durch die Fluten hin fliesst sein strahlender Stern!}
+\speaker{Die Drei Rheintöchter}
+\stagedir{zusammen das Riff anmutig umschwimmend}
+\vzeile{Heiajaheia! Heiajaheia!}
+\vzeile{Wallalalalala leiajahei!}
+\vzeile{Rheingold! Rheingold!}
+\vzeile{Leuchtende Lust, wie lachst du so hell und hehr!}
+\vzeile{Glühender Glanz entgleisset dir weihlich im Wag'!}
+\vzeile{Heiajaheia! Heiajaheia!}
+\vzeile{Wache, Freund, Wache froh!}
+\vzeile{Wonnige Spiele spenden wir dir:}
+\vzeile{flimmert der Fluss, flammet die Flut,}
+\vzeile{umfliessen wir tauchend, tanzend und singend}
+\vzeile{im seligem Bade dein Bett!}
+\vzeile{Rheingold! Rheingold!}
+\vzeile{Heiajaheia! Wallalalalala leiajahei!}
+\stagedir{Mit immer ausgelassenerer Lust umschwimmen die Mädchen das Riff. Die ganze Flut flimmert in hellem Goldglanze.}
+\speaker{Alberich}
+\stagedir{dessen Augen, mächtig vom Glanze angezogen, starr an dem Golde haften}
+\vzeile{Was ist's, ihr Glatten, das dort so glänzt und gleisst?}
+\speaker{Die Drei Rheintöchter}
+\vzeile{Wo bist du Rauher denn heim,}
+\vzeile{dass vom Rheingold nie du gehört?}
+\speaker{Wellgunde}
+\vzeile{Nichts weiss der Alp von des Goldes Auge,}
+\vzeile{das wechselnd wacht und schläft?}
+\speaker{Woglinde}
+\vzeile{Von der Wassertiefe wonnigem Stern,}
+\vzeile{der hehr die Wogen durchhellt?}
+\speaker{Die Drei Rheintöchter}
+\vzeile{Sieh, wie selig im Glanze wir gleiten!}
+\vzeile{Willst du Banger in ihm dich baden,}
+\vzeile{so schwimm' und schwelge mit uns!}
+\vzeile{Wallalalala leialalai! Wallalalala leiajahei!}
+\speaker{Alberich}
+\vzeile{Eurem Taucherspiele nur taugte das Gold?}
+\vzeile{Mir gält' es dann wenig!}
+\speaker{Woglinde}
+\vzeile{Des Goldes Schmuck schmähte er nicht,}
+\vzeile{wüsste er all seine Wunder!}
+\speaker{Wellgunde}
+\vzeile{Der Welt Erbe gewänne zu eigen,}
+\vzeile{wer aus dem Rheingold schüfe den Ring,}
+\vzeile{der masslose Macht ihm verlieh'.}
+\speaker{Flosshilde}
+\vzeile{Der Vater sagt' es, und uns befahl er,}
+\vzeile{klug zu hüten den klaren Hort,}
+\vzeile{dass kein Falscher der Flut ihn entführe:}
+\vzeile{drum schweigt, ihr schwatzendes Heer!}
+\speaker{Wellgunde}
+\vzeile{Du klügste Schwester, verklagst du uns wohl?}
+\vzeile{Weisst du denn nicht, wem nur allein}
+\vzeile{das Gold zu schmieden vergönnt?}
+\speaker{Woglinde}
+\vzeile{Nur wer der Minne Macht entsagt,}
+\vzeile{nur wer der Liebe Lust verjagt,}
+\vzeile{nur der erzielt sich den Zauber,}
+\vzeile{zum Reif zu zwingen das Gold.}
+\speaker{Wellgunde}
+\vzeile{Wohl sicher sind wir und sorgenfrei:}
+\vzeile{denn was nur lebt, will lieben,}
+\vzeile{meiden will keiner die Minne.}
+\speaker{Woglinde}
+\vzeile{Am wenigsten er, der lüsterne Alp;}
+\vzeile{vor Liebesgier möcht' er vergehn!}
+\speaker{Flosshilde}
+\vzeile{Nicht fürcht' ich den, wie ich ihn erfand:}
+\vzeile{seiner Minne Brunst brannte fast mich.}
+\speaker{Wellgunde}
+\vzeile{Ein Schwefelbrand in der Wogen Schwall:}
+\vzeile{vor Zorn der Liebe zischt er laut!}
+\speaker{Die Drei Rheintöchter}
+\vzeile{Wallala! Wallaleialala!}
+\vzeile{Lieblichster Albe! Lachst du nicht auch?}
+\vzeile{In des Goldes Scheine wie leuchtest du schön!}
+\vzeile{O komm', Lieblicher, lache mit uns!}
+\vzeile{Heiajaheia! Heiajaheia! Wallalalala leiajahei!}
+\stagedir{Sie schwimmen lachend im Glanze auf und ab.}
+\speaker{Alberich}
+\stagedir{die Augen starr auf das Gold gerichtet, hat dem Geplauder der Schwestern wohl gelauscht}
+\vzeile{Der Welt Erbe}
+\vzeile{gewänn' ich zu eigen durch dich?}
+\vzeile{Erzwäng' ich nicht Liebe,}
+\vzeile{doch listig erzwäng' ich mir Lust?}
+\stagedir{furchtbar laut}
+\vzeile{Spottet nur zu! -}
+\vzeile{Der Niblung naht eurem Spiel!}
+\stagedir{wütend springt er nach dem mittleren Riff hinüber und klettert in grausiger Hast nach dessen Spitze hinauf. Die Mädchen fahren kreischend auseinander und tauchen nach verschiedenen Seiten hin auf}
+\speaker{Die Drei Rheintöchter}
+\vzeile{Heia! Heia! Heiajahei!}
+\vzeile{Rettet euch! Es raset der Alp:}
+\vzeile{in den Wassern sprüht's, wohin er springt:}
+\vzeile{die Minne macht ihn verrückt!}
+\stagedir{sie lachen im tollsten Übermut}
+\speaker{Alberich}
+\stagedir{gelangt mit einem letzten Satze zur Spitze des Riffes}
+\vzeile{Bangt euch noch nicht?}
+\vzeile{So buhlt nun im Finstern, feuchtes Gezücht!}
+\stagedir{er streckt die Hand nach dem Golde aus}
+\vzeile{Das Licht lösch' ich euch aus, entreisse dem Riff das Gold,}
+\vzeile{schmiede den rächende Ring;}
+\vzeile{denn hör' es die Flut: so verfluch' ich die Liebe!}
+\stagedir{Er reisst mit furchtbarer Gewalt das Gold aus dem Riffe und stürzt damit hastig in die Tiefe, wo er schnell verschwindet. Dichte Nacht bricht plötzlich überall herein. Die Mädchen tauchen dem Räuber in die Tiefe nach.}
+\speaker{Flosshilde}
+\vzeile{Haltet den Räuber!}
+\speaker{Wellgunde}
+\vzeile{Rettet das Gold!}
+\speaker{Woglinde Und Wellgunde}
+\vzeile{Hilfe! Hilfe!}
+\speaker{Die Drei Rheintöchter}
+\vzeile{Weh! Weh!}
+\stagedir{Die Flut fällt mit ihnen nach der Tiefe hinab. Aus dem untersten Grunde hört man Alberichs gellendes Hohngelächter. In dichtester Finsternis verschwinden die Riffe; die ganze Bühne ist von der Höhe bis zur Tiefe von schwarzem Wassergewoge erfüllt, das eine Zeitlang immer noch abwärts zu sinken scheint.}
+\chapter*{Zweite Szene}
+\addcontentsline{toc}{chapter}{Zweite Szene}
+\markright{Zweite Szene}
+\begin{center}\small\color{stage}\emph{Wotan, Fricka, Freia, Fasolt, Fafner, Donner, Froh, Loge}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{Allmählich sind die Wogen in Gewölke übergegangen, welches, als eine immer heller dämmernde Beleuchtung dahinter tritt, zu feinerem Nebel sich abklärt. Als der Nebel in zarten Wölkchen gänzlich sich in der Höhe verliert, wird im Tagesgrauen eine freie Gegend auf Bergeshöhen sichtbar.}
+\stage{Der hervorbrechende Tag beleuchtet mit wachsendem Glanze eine Burg mit blinkenden Zinnen, die auf einem Felsgipfel im Hintergrunde steht; zwischen diesem burggekrönten Felsgipfel und dem Vordergrunde der Szene ist ein tiefes Tal, durch welches der Rhein fliesst, anzunehmen. - Zur Seite auf blumigem Grunde liegt Wotan, neben ihm Fricka, beide schlafend. Die Burg ist ganz sichtbar geworden.}
+\speaker{Fricka}
+\stagedir{erwacht; ihr Blick fällt auf die Burg; sie staunt und erschrickt}
+\vzeile{Wotan, Gemahl, erwache!}
+\speaker{Wotan}
+\stagedir{im Traume leise}
+\vzeile{Der Wonne seligen Saal}
+\vzeile{bewachen mir Tür und Tor:}
+\vzeile{Mannes Ehre, ewige Macht,}
+\vzeile{ragen zu endlosem Ruhm!}
+\speaker{Fricka}
+\stagedir{rüttelt ihn}
+\vzeile{Auf, aus der Träume wonnigem Trug!}
+\vzeile{Erwache, Mann, und erwäge!}
+\speaker{Wotan}
+\stagedir{erwacht und erhebt sich ein wenig, sein Auge wird sogleich vom Anblick der Burg gefesselt}
+\vzeile{Vollendet das ewige Werk!}
+\vzeile{Auf Berges Gipfel die Götterburg;}
+\vzeile{prächtig prahlt der prangende Bau!}
+\vzeile{Wie im Traum ich ihn trug,}
+\vzeile{wie mein Wille ihn wies, stark und schön}
+\vzeile{steht er zur Schau; hehrer, herrlicher Bau!}
+\speaker{Fricka}
+\vzeile{Nur Wonne schafft dir, was mich erschreckt?}
+\vzeile{Dich freut die Burg, mir bangt es um Freia!}
+\vzeile{Achtloser, lass mich erinnern}
+\vzeile{des ausbedungenen Lohns!}
+\vzeile{Die Burg ist fertig, verfallen das Pfand:}
+\vzeile{vergassest du, was du vergabst?}
+\speaker{Wotan}
+\vzeile{Wohl dünkt mich's, was sie bedangen,}
+\vzeile{die dort die Burg mir gebaut;}
+\vzeile{durch Vertrag zähmt' ich ihr trotzig Gezücht,}
+\vzeile{dass sie die hehre Halle mir schüfen;}
+\vzeile{die steht nun, dank den Starken:}
+\vzeile{um den Sold sorge dich nicht.}
+\speaker{Fricka}
+\vzeile{O lachend frevelnder Leichtsinn!}
+\vzeile{Liebelosester Frohmut!}
+\vzeile{Wusst' ich um euren Vertrag,}
+\vzeile{dem Truge hätt' ich gewehrt;}
+\vzeile{doch mutig entferntet ihr Männer die Frauen,}
+\vzeile{um taub und ruhig vor uns,}
+\vzeile{allein mit den Riesen zu tagen:}
+\vzeile{so ohne Scham verschenktet ihr Frechen}
+\vzeile{Freia, mein holdes Geschwister,}
+\vzeile{froh des Schächergewerbs!}
+\vzeile{Was ist euch Harten doch heilig und wert,}
+\vzeile{giert ihr Männer nach Macht!}
+\speaker{Wotan}
+\stagedir{ruhig}
+\vzeile{Gleiche Gier war Fricka wohl fremd,}
+\vzeile{als selbst um den Bau sie mich bat?}
+\speaker{Fricka}
+\vzeile{Um des Gatten Treue besorgt,}
+\vzeile{muss traurig ich wohl sinnen,}
+\vzeile{wie an mich er zu fesseln,}
+\vzeile{zieht's in die Ferne ihn fort:}
+\vzeile{herrliche Wohnung, wonniger Hausrat}
+\vzeile{sollten dich binden zu säumender Rast.}
+\vzeile{Doch du bei dem Wohnbau sannst auf Wehr und Wall allein;}
+\vzeile{Herrschaft und Macht soll er dir mehren;}
+\vzeile{nur rastlosern Sturm zu erregen,}
+\vzeile{erstand dir die ragende Burg.}
+\speaker{Wotan}
+\stagedir{lächelnd}
+\vzeile{Wolltest du Frau in der Feste mich fangen,}
+\vzeile{mir Gotte musst du schon gönnen,}
+\vzeile{dass, in der Burg gebunden, ich mir}
+\vzeile{von aussen gewinne die Welt.}
+\vzeile{Wandel und Wechsel liebt, wer lebt;}
+\vzeile{das Spiel drum kann ich nicht sparen!}
+\speaker{Fricka}
+\vzeile{Liebeloser, leidigster Mann!}
+\vzeile{Um der Macht und Herrschaft müssigen Tand}
+\vzeile{verspielst du in lästerndem Spott}
+\vzeile{Liebe und Weibes Wert?}
+\speaker{Wotan}
+\stagedir{ernst}
+\vzeile{Um dich zum Weib zu gewinnen,}
+\vzeile{mein eines Auge setzt' ich werbend daran;}
+\vzeile{wie törig tadelst du jetzt!}
+\vzeile{Ehr' ich die Frauen doch mehr als dich freut;}
+\vzeile{und Freia, die gute, geb' ich nicht auf;}
+\vzeile{nie sann dies ernstlich mein Sinn.}
+\speaker{Fricka}
+\stagedir{mit ängstlicher Spannung in die Szene blickend}
+\vzeile{So schirme sie jetzt: in schutzloser Angst}
+\vzeile{läuft sie nach Hilfe dort her!}
+\speaker{Freia}
+\stagedir{tritt wie in hastiger Flucht auf}
+\vzeile{Hilf mir, Schwester! Schütze mich, Schwäher!}
+\vzeile{Vom Felsen drüben drohte mir Fasolt,}
+\vzeile{mich Holde käm' er zu holen.}
+\speaker{Wotan}
+\vzeile{Lass ihn droh'n! Sahst du nicht Loge?}
+\speaker{Fricka}
+\vzeile{Dass am liebsten du immer dem Listigen traust!}
+\vzeile{Viel Schlimmes schuf er uns schon,}
+\vzeile{doch stets bestrickt er dich wieder.}
+\speaker{Wotan}
+\vzeile{Wo freier Mut frommt,}
+\vzeile{allein frag' ich nach keinem.}
+\vzeile{Doch des Feindes Neid zum Nutz sich fügen,}
+\vzeile{lehrt nur Schlauheit und List,}
+\vzeile{wie Loge verschlagen sie übt.}
+\vzeile{Der zum Vertrage mir riet,}
+\vzeile{versprach mir, Freia zu lösen:}
+\vzeile{auf ihn verlass' ich mich nun.}
+\speaker{Fricka}
+\vzeile{Und er lässt dich allein!}
+\vzeile{Dort schreiten rasch die Riesen heran:}
+\vzeile{wo harrt dein schlauer Gehilf'?}
+\speaker{Freia}
+\vzeile{Wo harren meine Brüder, dass Hilfe sie brächten,}
+\vzeile{da mein Schwäher die Schwache verschenkt?}
+\vzeile{Zu Hilfe, Donner! Hieher, hieher!}
+\vzeile{Rette Freia, mein Froh!}
+\speaker{Fricka}
+\vzeile{Die in bösem Bund dich verrieten,}
+\vzeile{sie alle bergen sich nun!}
+\stagedir{Fasolt und Fafner, beide in riesiger Gestalt, mit starken Pfählen bewaffnet, treten auf.}
+\speaker{Fasolt}
+\vzeile{Sanft schloss Schlaf dein Aug';}
+\vzeile{wir beide bauten Schlummers bar die Burg.}
+\vzeile{Mächt'ger Müh' müde nie,}
+\vzeile{stauten starke Stein' wir auf;}
+\vzeile{steiler Turm, Tür und Tor,}
+\vzeile{deckt und schliesst im schlanken Schloss den Saal.}
+\stagedir{auf die Burg deutend}
+\vzeile{Dort steht's, was wir stemmten,}
+\vzeile{schimmernd hell, bescheint's der Tag:}
+\vzeile{zieh nun ein, uns zahl' den Lohn!}
+\speaker{Wotan}
+\vzeile{Nennt, Leute, den Lohn:}
+\vzeile{was dünkt euch zu bedingen?}
+\speaker{Fasolt}
+\vzeile{Bedungen ist, was tauglich uns dünkt:}
+\vzeile{gemahnt es dich so matt?}
+\vzeile{Freia, die Holde, Holda, die Freie,}
+\vzeile{vertragen ist's, sie tragen wir heim.}
+\speaker{Wotan}
+\stagedir{schnell}
+\vzeile{Seid ihr bei Trost mit eurem Vertrag?}
+\vzeile{Denkt auf andern Dank: Freia ist mir nicht feil.}
+\speaker{Fasolt}
+\stagedir{steht, in höchster Bestürzung, einen Augenblick sprachlos}
+\vzeile{Was sagst du? Ha, sinnst du Verrat?}
+\vzeile{Verrat am Vertrag? Die dein Speer birgt,}
+\vzeile{sind sie dir Spiel, des berat'nen Bundes Runen?}
+\speaker{Fafner}
+\stagedir{höhnisch}
+\vzeile{Getreu'ster Bruder,}
+\vzeile{merkst du Tropf nun Betrug?}
+\speaker{Fasolt}
+\vzeile{Lichtsohn du, leicht gefügter!}
+\vzeile{Hör' und hüte dich: Verträgen halte Treu'!}
+\vzeile{Was du bist, bist du nur durch Verträge;}
+\vzeile{bedungen ist, wohl bedacht deine Macht.}
+\vzeile{Bist weiser du, als witzig wir sind,}
+\vzeile{bandest uns Freie zum Frieden du:}
+\vzeile{all deinem Wissen fluch' ich,}
+\vzeile{fliehe weit deinen Frieden,}
+\vzeile{weisst du nicht offen, ehrlich und frei}
+\vzeile{Verträgen zu wahren die Treu'!}
+\vzeile{Ein dummer Riese rät dir das:}
+\vzeile{Du Weiser, wiss' es von ihm.}
+\speaker{Wotan}
+\vzeile{Wie schlau für Ernst du achtest,}
+\vzeile{was wir zum Scherz nur beschlossen!}
+\vzeile{Die liebliche Göttin, licht und leicht,}
+\vzeile{was taugt euch Tölpeln ihr Reiz?}
+\speaker{Fasolt}
+\vzeile{Höhnst du uns? Ha, wie unrecht!}
+\vzeile{Die ihr durch Schönheit herrscht,}
+\vzeile{schimmernd hehres Geschlecht,}
+\vzeile{wir törig strebt ihr nach Türmen von Stein,}
+\vzeile{setzt um Burg und Saal}
+\vzeile{Weibes Wonne zum Pfand!}
+\vzeile{Wir Plumpen plagen uns}
+\vzeile{schwitzend mit schwieliger Hand,}
+\vzeile{ein Weib zu gewinnen, das wonnig und mild}
+\vzeile{bei uns Armen wohne;}
+\vzeile{und verkehrt nennst du den Kauf?}
+\speaker{Fafner}
+\vzeile{Schweig' dein faules Schwatzen,}
+\vzeile{Gewinn werben wir nicht:}
+\vzeile{Freias Haft hilft wenig}
+\vzeile{doch viel gilt's den Göttern sie zu entreissen.}
+\stagedir{leise}
+\vzeile{Goldene Äpfel wachsen in ihrem Garten;}
+\vzeile{sie allein weiss die Äpfel zu pflegen!}
+\vzeile{Der Frucht Genuss frommt ihren Sippen}
+\vzeile{zu ewig nie alternder Jugend:}
+\vzeile{siech und bleich doch sinkt ihre Blüte,}
+\vzeile{alt und schwach schwinden sie hin,}
+\vzeile{müssen Freia sie missen.}
+\stagedir{grob}
+\vzeile{Ihrer Mitte drum sei sie entführt!}
+\speaker{Wotan}
+\stagedir{für sich}
+\vzeile{Loge säumt zu lang!}
+\speaker{Fasolt}
+\vzeile{Schlicht gib nun Bescheid!}
+\speaker{Wotan}
+\vzeile{Sinnt auf andern Sold!}
+\speaker{Fasolt}
+\vzeile{Kein andrer: Freia allein!}
+\speaker{Fafner}
+\vzeile{Du da! Folg' uns fort!}
+\stagedir{Sie dringen auf Freia zu}
+\speaker{Freia}
+\stagedir{fliehend}
+\vzeile{Helft! Helft, vor den Harten!}
+\speaker{Froh}
+\stagedir{Freia in seine Arme fassend}
+\vzeile{Zu mir, Freia! Meide sie, Frecher!}
+\vzeile{Froh schützt die Schöne.}
+\speaker{Donner}
+\stagedir{sich vor die beiden Riesen stellend}
+\vzeile{Fasolt und Fafner,}
+\vzeile{fühltet ihr schon meines Hammers harten Schlag?}
+\speaker{Fafner}
+\vzeile{Was soll das Drohn?}
+\speaker{Fasolt}
+\vzeile{Was dringst du her?}
+\vzeile{Kampf kiesten wir nicht,}
+\vzeile{verlangen nur unsern Lohn.}
+\speaker{Donner}
+\vzeile{Schon oft zahlt' ich Riesen den Zoll.}
+\vzeile{Kommt her, des Lohnes Last}
+\vzeile{wäg' ich mit gutem Gewicht!}
+\stagedir{er schwingt den Hammer}
+\speaker{Wotan}
+\stagedir{seinen Speer zwischen den Streitenden ausstreckend}
+\vzeile{Halt, du Wilder! Nichts durch Gewalt!}
+\vzeile{Verträge schützt meines Speeres Schaft:}
+\vzeile{spar' deines Hammers Heft!}
+\speaker{Freia}
+\vzeile{Wehe! Wehe! Wotan verlässt mich!}
+\speaker{Fricka}
+\vzeile{Begreif' ich dich noch, grausamer Mann?}
+\speaker{Wotan}
+\stagedir{wendet sich ab und sieht Loge kommen}
+\vzeile{Endlich Loge! Eiltest du so,}
+\vzeile{den du geschlossen,}
+\vzeile{den schlimmen Handel zu schlichten?}
+\speaker{Loge}
+\stagedir{ist im Hintergrunde aus dem Tale heraufgestiegen}
+\vzeile{Wie? Welchen Handel hätt' ich geschlossen?}
+\vzeile{Wohl was mit den Riesen dort im Rate du dangst?}
+\vzeile{In Tiefen und Höhen treibt mich mein Hang;}
+\vzeile{Haus und Herd behagt mir nicht.}
+\vzeile{Donner und Froh,}
+\vzeile{die denken an Dach und Fach,}
+\vzeile{wollen sie frei'n,}
+\vzeile{ein Haus muss sie erfreu'n.}
+\vzeile{Ein stolzer Saal, ein starkes Schloss,}
+\vzeile{danach stand Wotans Wunsch.}
+\vzeile{Haus und Hof, Saal und Schloss,}
+\vzeile{die selige Burg, sie steht nun fest gebaut.}
+\vzeile{Das Prachtgemäuer prüft' ich selbst,}
+\vzeile{ob alles fest, forscht' ich genau:}
+\vzeile{Fasolt und Fafner fand ich bewährt:}
+\vzeile{kein Stein wankt in Gestemm'.}
+\vzeile{Nicht müssig war ich, wie mancher hier;}
+\vzeile{der lügt, wer lässig mich schilt!}
+\speaker{Wotan}
+\vzeile{Arglistig weichst du mir aus:}
+\vzeile{mich zu betrügen hüte in Treuen dich wohl!}
+\vzeile{Von allen Göttern dein einz'ger Freund,}
+\vzeile{nahm ich dich auf in der übel trauenden Tross.}
+\vzeile{Nun red' und rate klug!}
+\vzeile{Da einst die Bauer der Burg}
+\vzeile{zum Dank Freia bedangen,}
+\vzeile{du weisst, nicht anders willigt' ich ein,}
+\vzeile{als weil auf Pflicht du gelobtest,}
+\vzeile{zu lösen das hehre Pfand.}
+\speaker{Loge}
+\vzeile{Mit höchster Sorge drauf zu sinnen,}
+\vzeile{wie es zu lösen, das - hab' ich gelobt.}
+\vzeile{Doch, dass ich fände,}
+\vzeile{was nie sich fügt, was nie gelingt, -}
+\vzeile{wie liess sich das wohl geloben?}
+\speaker{Fricka}
+\stagedir{zu Wotan}
+\vzeile{Sieh, welch trugvollem Schelm du getraut!}
+\speaker{Froh}
+\vzeile{Loge heisst du,}
+\vzeile{doch nenn' ich dich Lüge!}
+\speaker{Donner}
+\vzeile{Verfluchte Lohe, dich lösch' ich aus!}
+\speaker{Loge}
+\vzeile{Ihre Schmach zu decken,}
+\vzeile{schmähen mich Dumme!}
+\stagedir{Donner holt auf Loge aus}
+\speaker{Wotan}
+\stagedir{tritt dazwischen}
+\vzeile{In Frieden lasst mir den Freund!}
+\vzeile{Nicht kennt ihr Loges Kunst:}
+\vzeile{reicher wiegt seines Rates Wert,}
+\vzeile{zahlt er zögernd ihn aus.}
+\speaker{Fafner}
+\vzeile{Nichts gezögert! Rasch gezahlt!}
+\speaker{Fasolt}
+\vzeile{Lang währt's mit dem Lohn!}
+\speaker{Wotan}
+\stagedir{wendet sich hart zu Loge, drängend}
+\vzeile{Jetzt hör', Störrischer! Halte Stich!}
+\vzeile{Wo schweiftest du hin und her?}
+\speaker{Loge}
+\vzeile{Immer ist Undank Loges Lohn!}
+\vzeile{Für dich nur besorgt, sah ich mich um,}
+\vzeile{durchstöbert' im Sturm alle Winkel der Welt,}
+\vzeile{Ersatz für Freia zu suchen,}
+\vzeile{wie er den Riesen wohl recht.}
+\vzeile{Umsonst sucht' ich, und sehe nun wohl:}
+\vzeile{in der Welten Ring nichts ist so reich,}
+\vzeile{als Ersatz zu muten dem Mann}
+\vzeile{für Weibes Wonne und Wert!}
+\stagedir{Alle geraten in Erstaunen und verschiedenartige Betroffenheit}
+\vzeile{So weit Leben und Weben,}
+\vzeile{In Wasser, Erd' und Luft,}
+\vzeile{viel frug' ich, forschte bei allen,}
+\vzeile{wo Kraft nur sich rührt, und Keime sich regen:}
+\vzeile{was wohl dem Manne mächt'ger dünk',}
+\vzeile{als Weibes Wonne und Wert?}
+\vzeile{Doch so weit Leben und Weben,}
+\vzeile{verlacht nur ward meine fragende List:}
+\vzeile{in Wasser, Erd' und Luft,}
+\vzeile{lassen will nichts von Lieb' und Weib.}
+\vzeile{Nur einen sah' ich, der sagte der Liebe ab:}
+\vzeile{um rotes Gold entriet er des Weibes Gunst.}
+\vzeile{Des Rheines klare Kinder}
+\vzeile{klagten mir ihre Not:}
+\vzeile{der Nibelung, Nacht-Alberich,}
+\vzeile{buhlte vergebens um der Badenden Gunst;}
+\vzeile{das Rheingold da}
+\vzeile{raubte sich rächend der Dieb:}
+\vzeile{das dünkt ihn nun das teuerste Gut,}
+\vzeile{hehrer als Weibes Huld.}
+\vzeile{Um den gleissenden Tand,}
+\vzeile{der Tiefe entwandt,}
+\vzeile{erklang mir der Töchter Klage:}
+\vzeile{an dich, Wotan, wenden sie sich,}
+\vzeile{dass zu Recht du zögest den Räuber,}
+\vzeile{das Gold dem Wasser wieder gebest,}
+\vzeile{und ewig es bliebe ihr Eigen.}
+\stagedir{Hingebende Bewegung aller}
+\vzeile{Dir's zu melden, gelobt' ich den Mädchen:}
+\vzeile{nun löste Loge sein Wort.}
+\speaker{Wotan}
+\vzeile{Törig bist du, wenn nicht gar tückisch!}
+\vzeile{Mich selbst siehst du in Not:}
+\vzeile{wie hülft' ich andern zum Heil?}
+\speaker{Fasolt}
+\stagedir{der aufmerksam zugehört, zu Fafner}
+\vzeile{Nicht gönn' ich das Gold dem Alben;}
+\vzeile{viel Not schon schuf uns der Niblung,}
+\vzeile{doch schlau entschlüpfte unserm}
+\vzeile{Zwange immer der Zwerg.}
+\speaker{Fafner}
+\vzeile{Neue Neidtat sinnt uns der Niblung,}
+\vzeile{gibt das Gold ihm Macht. -}
+\vzeile{Du da, Loge! Sag' ohne Lug:}
+\vzeile{was Grosses gilt denn das Gold,}
+\vzeile{dass dem Niblung es genügt?}
+\speaker{Loge}
+\vzeile{Ein Tand ist's in des Wassers Tiefe,}
+\vzeile{lachenden Kindern zur Lust,}
+\vzeile{doch ward es zum runden Reife geschmiedet,}
+\vzeile{hilft es zur höchsten Macht,}
+\vzeile{gewinnt dem Manne die Welt.}
+\speaker{Wotan}
+\stagedir{sinnend}
+\vzeile{Von des Rheines Gold hört' ich raunen:}
+\vzeile{Beute-Runen berge sein roter Glanz;}
+\vzeile{Macht und Schätze schüf ohne Mass ein Reif.}
+\speaker{Fricka}
+\stagedir{leise zu Loge}
+\vzeile{Taugte wohl des goldnen Tandes}
+\vzeile{gleissend Geschmeid}
+\vzeile{auch Frauen zu schönem Schmuck?}
+\speaker{Loge}
+\vzeile{Des Gatten Treu' ertrotzte die Frau,}
+\vzeile{trüge sie hold den hellen Schmuck,}
+\vzeile{den schimmernd Zwerge schmieden,}
+\vzeile{rührig im Zwange des Reifs.}
+\speaker{Fricka}
+\stagedir{schmeichelnd zu Wotan}
+\vzeile{Gewänne mein Gatte sich wohl das Gold?}
+\speaker{Wotan}
+\stagedir{wie in einem Zustande wachsender Bezauberung}
+\vzeile{Des Reifes zu walten,}
+\vzeile{rätlich will es mich dünken.}
+\vzeile{Doch wie, Loge, lernt' ich die Kunst?}
+\vzeile{Wie schüf' ich mir das Geschmeid'?}
+\speaker{Loge}
+\vzeile{Ein Runenzauber zwingt das Gold zum Reif;}
+\vzeile{keiner kennt ihn;}
+\vzeile{doch einer übt ihn leicht,}
+\vzeile{der sel'ger Lieb' entsagt.}
+\stagedir{Wotan wendet sich unmutig ab}
+\vzeile{Das sparst du wohl; zu spät auch kämst du:}
+\vzeile{Alberich zauderte nicht.}
+\vzeile{Zaglos gewann er des Zaubers Macht:}
+\stagedir{grell}
+\vzeile{geraten ist ihm der Ring!}
+\speaker{Donner}
+\stagedir{zu Wotan}
+\vzeile{Zwang uns allen schüfe der Zwerg,}
+\vzeile{würd' ihm der Reif nicht entrissen.}
+\speaker{Wotan}
+\vzeile{Den Ring muss ich haben!}
+\speaker{Froh}
+\vzeile{Leicht erringt ohne Liebesfluch er sich jetzt.}
+\speaker{Loge}
+\vzeile{Spottleicht, ohne Kunst, wie im Kinderspiel!}
+\speaker{Wotan}
+\stagedir{grell}
+\vzeile{So rate, wie?}
+\speaker{Loge}
+\vzeile{Durch Raub!}
+\vzeile{Was ein Dieb stahl, das stiehlst du dem Dieb;}
+\vzeile{ward leichter ein Eigen erlangt?}
+\vzeile{Doch mit arger Wehr wahrt sich Alberich;}
+\vzeile{klug und fein musst du verfahren,}
+\vzeile{ziehst den Räuber du zu Recht,}
+\vzeile{um des Rheines Töchtern, den roten Tand,}
+\stagedir{mit Wärme}
+\vzeile{das Gold wiederzugeben;}
+\vzeile{denn darum flehen sie dich.}
+\speaker{Wotan}
+\vzeile{Des Rheines Töchtern? Was taugt mir der Rat?}
+\speaker{Fricka}
+\vzeile{Von dem Wassergezücht mag ich nichts wissen:}
+\vzeile{schon manchen Mann - mir zum Leid -}
+\vzeile{verlockten sie buhlend im Bad.}
+\stagedir{Wotan steht stumm mit sich kämpfend; die übrigen Götter heften in schweigender Spannung die Blicke auf ihn. Währenddem hat Fafner beiseite mit Fasolt beraten}
+\speaker{Fafner}
+\stagedir{zu Fasolt}
+\vzeile{Glaub' mir, mehr als Freia}
+\vzeile{frommt das gleissende Gold:}
+\vzeile{auch ew'ge Jugend erjagt,}
+\vzeile{wer durch Goldes Zauber sie zwingt.}
+\stagedir{Fasolts Gebärde deutet an, dass er sich wider Willen überredet fühlt. Fafner tritt mit Fasolt wieder an Wotan heran.}
+\vzeile{Hör', Wotan, der Harrenden Wort!}
+\vzeile{Freia bleib' euch in Frieden;}
+\vzeile{leicht'ren Lohn fand ich zur Lösung:}
+\vzeile{uns rauhen Riesen genügt}
+\vzeile{des Niblungen rotes Gold.}
+\speaker{Wotan}
+\vzeile{Seid ihr bei Sinn?}
+\vzeile{Was nicht ich besitze,}
+\vzeile{soll ich euch Schamlosen schenken?}
+\speaker{Fafner}
+\vzeile{Schwer baute dort sich die Burg;}
+\vzeile{leicht wird dir's mit list'ger Gewalt}
+\vzeile{was im Neidspiel nie uns gelang,}
+\vzeile{den Niblungen fest zu fahn.}
+\speaker{Wotan}
+\vzeile{Für euch müht' ich mich um den Alben?}
+\vzeile{Für euch fing' ich den Feind?}
+\vzeile{Unverschämt und überbegehrlich,}
+\vzeile{macht euch Dumme mein Dank!}
+\speaker{Fasolt}
+\stagedir{ergreift plötzlich Freia und führt sie mit Fafner zur Seite}
+\vzeile{Hieher, Maid! In unsre Macht!}
+\vzeile{Als Pfand folgst du uns jetzt,}
+\vzeile{bis wir Lösung empfah'n!}
+\speaker{Freia}
+\stagedir{wehklagend}
+\vzeile{Wehe! Wehe! Wehe!}
+\stagedir{alle Götter sind in höchster Bestürzung}
+\speaker{Fafner}
+\vzeile{Fort von hier sei sie entführt!}
+\vzeile{Bis Abend - achtet's wohl -}
+\vzeile{pflegen wir sie als Pfand;}
+\vzeile{wir kehren wieder; doch kommen wir,}
+\vzeile{und bereit liegt nicht als Lösung}
+\vzeile{das Rheingold licht und rot -}
+\speaker{Fasolt}
+\vzeile{Zu End' ist die Frist dann,}
+\vzeile{Freia verfallen}
+\vzeile{für immer folge sie uns!}
+\speaker{Freia}
+\stagedir{schreiend}
+\vzeile{Schwester! Brüder! Rettet! Helft!}
+\stagedir{sie wird von den hastig enteilenden Riesen fortgetragen}
+\speaker{Froh}
+\vzeile{Auf, ihnen nach!}
+\speaker{Donner}
+\vzeile{Breche denn alles!}
+\stagedir{Sie blicken Wotan fragend an}
+\speaker{Freia}
+\stagedir{aus weiter Ferne}
+\vzeile{Rettet! Helft!}
+\speaker{Loge}
+\stagedir{den Riesen nachsehend}
+\vzeile{Über Stock und Stein zu Tal}
+\vzeile{stapfen sie hin:}
+\vzeile{durch des Rheines Wasserfurt}
+\vzeile{waten die Riesen.}
+\vzeile{Fröhlich nicht hängt Freia}
+\vzeile{den Rauhen über dem Rücken! -}
+\vzeile{Heia! Hei! Wie taumeln die Tölpel dahin!}
+\vzeile{Durch das Tal talpen sie schon.}
+\vzeile{Wohl an Riesenheims Mark}
+\vzeile{erst halten sie Rast. -}
+\stagedir{er wendet sich zu den Göttern}
+\vzeile{Was sinnt nun Wotan so wild?}
+\vzeile{Den sel'gen Göttern wie geht's?}
+\stagedir{Ein fahler Nebel erfüllt mit wachsender Dichtheit die Bühne; in ihm erhalten die Götter ein zunehmend bleiches und ältliches Aussehen: alle stehen bang und erwartungsvoll auf Wotan blickend, der sinnend die Augen an den Boden heftet.}
+\speaker{Loge}
+\vzeile{Trügt mich ein Nebel?}
+\vzeile{Neckt mich ein Traum?}
+\vzeile{Wie bang und bleich verblüht ihr so bald!}
+\vzeile{Euch erlischt der Wangen Licht;}
+\vzeile{der Blick eures Auges verblitzt!}
+\vzeile{Frisch, mein Froh, noch ist's ja früh!}
+\vzeile{Deiner Hand, Donner, entsinkt ja der Hammer!}
+\vzeile{Was ist's mit Fricka? Freut sie sich wenig}
+\vzeile{ob Wotans grämlichem Grau,}
+\vzeile{das schier zum Greisen ihn schafft?}
+\speaker{Fricka}
+\vzeile{Wehe! Wehe! Was ist geschehen?}
+\speaker{Donner}
+\vzeile{Mir sinkt die Hand!}
+\speaker{Froh}
+\vzeile{Mir stockt das Herz!}
+\speaker{Loge}
+\vzeile{Jetzt fand' ich's: hört, was euch fehlt!}
+\vzeile{Von Freias Frucht genosset ihr heute noch nicht.}
+\vzeile{Die goldnen Äpfel in ihrem Garten,}
+\vzeile{sie machten euch tüchtig und jung,}
+\vzeile{asst ihr sie jeden Tag.}
+\vzeile{Des Gartens Pflegerin ist nun verpfändet;}
+\vzeile{an den Ästen darbt und dorrt das Obst,}
+\vzeile{bald fällt faul es herab. -}
+\vzeile{Mich kümmert's minder;}
+\vzeile{an mir ja kargte Freia von je}
+\vzeile{knausernd die köstliche Frucht:}
+\vzeile{denn halb so echt nur bin ich wie, Selige, ihr!}
+\vzeile{Doch ihr setztet alles auf das jüngende Obst:}
+\vzeile{das wussten die Riesen wohl;}
+\vzeile{auf eurer Leben legten sie's an:}
+\vzeile{nun sorgt, wie ihr das wahrt!}
+\vzeile{Ohne die Äpfel,}
+\vzeile{alt und grau, greis und grämlich,}
+\vzeile{welkend zum Spott aller Welt,}
+\vzeile{erstirbt der Götter Stamm.}
+\speaker{Fricka}
+\stagedir{bang}
+\vzeile{Wotan, Gemahl, unsel'ger Mann!}
+\vzeile{Sieh, wie dein Leichtsinn lachend uns allen}
+\vzeile{Schimpf und Schmach erschuf!}
+\speaker{Wotan}
+\stagedir{mit plötzlichem Entschluss auffahrend}
+\vzeile{Auf, Loge, hinab mit mir!}
+\vzeile{Nach Nibelheim fahren wir nieder:}
+\vzeile{gewinnen will ich das Gold.}
+\speaker{Loge}
+\vzeile{Die Rheintöchter riefen dich an:}
+\vzeile{so dürfen Erhörung sie hoffen?}
+\speaker{Wotan}
+\stagedir{heftig}
+\vzeile{Schweige, Schwätzer!}
+\vzeile{Freia, die Gute, Freia gilt es zu lösen!}
+\speaker{Loge}
+\vzeile{Wie du befiehlst}
+\vzeile{führ' ich dich gern}
+\vzeile{steil hinab}
+\vzeile{steigen wir denn durch den Rhein?}
+\speaker{Wotan}
+\vzeile{Nicht durch den Rhein!}
+\speaker{Loge}
+\vzeile{So schwingen wir uns durch die Schwefelkluft.}
+\vzeile{Dort schlüpfe mit mir hinein!}
+\stagedir{Er geht voran und verschwindet seitwärts in einer Kluft, aus der sogleich ein schwefliger Dampf hervorquillt.}
+\speaker{Wotan}
+\vzeile{Ihr andern harrt bis Abend hier:}
+\vzeile{verlorner Jugend erjag' ich erlösendes Gold!}
+\stagedir{Er steigt Loge nach in die Kluft hinab: der aus ihr dringende Schwefeldampf verbreitet sich über die ganze Bühne und erfüllt diese schnell mit dickem Gewölk. Bereits sind die Zurückbleibenden unsichtbar.}
+\speaker{Donner}
+\vzeile{Fahre wohl, Wotan!}
+\speaker{Froh}
+\vzeile{Glück auf! Glück auf!}
+\speaker{Fricka}
+\vzeile{O kehre bald zur bangenden Frau!}
+\stagedir{Der Schwefeldampf verdüstert sich bis zu ganz schwarzem Gewölk, welches von unten nach oben steigt; dann verwandelt sich dieses in festes, finsteres Steingeklüft, das sich immer aufwärts bewegt, so dass es den Anschein hat, als sänke die Szene immer tiefer in die Erde hinab. Wachsendes Geräusch wie von Schmiedenden wird überallher vernommen.}
+\chapter*{Dritte Szene}
+\addcontentsline{toc}{chapter}{Dritte Szene}
+\markright{Dritte Szene}
+\begin{center}\small\color{stage}\emph{Alberich, Mime, Wotan, Loge}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{Von verschiedenen Seiten her dämmert aus der Ferne dunkelroter Schein auf: eine unabsehbar weit sich dahinziehende unterirdische Kluft wird erkennbar, die nach allen Seiten hin in enge Schachte auszumünden scheint.}
+\stage{Alberich zerrt den kreischenden Mime an den Ohren aus einer Seitenschlucht herbei.}
+\speaker{Alberich}
+\vzeile{Hehe! Hehe!}
+\vzeile{Hieher! Hieher! Tückischer Zwerg!}
+\vzeile{Tapfer gezwickt sollst du mir sein,}
+\vzeile{schaffst du nicht fertig, wie ich's bestellt,}
+\vzeile{zur Stund' das feine Geschmeid'!}
+\speaker{Mime}
+\stagedir{heulend}
+\vzeile{Ohe! Ohe! Au! Au!}
+\vzeile{Lass mich nur los!}
+\vzeile{Fertig ist's, wie du befahlst,}
+\vzeile{mit Fleiss und Schweiss ist es gefügt:}
+\vzeile{nimm nugrell}
+\vzeile{die Nägel vom Ohr!}
+\speaker{Alberich}
+\stagedir{loslassend}
+\vzeile{Was zögerst du dann}
+\vzeile{und zeigst es nicht?}
+\speaker{Mime}
+\vzeile{Ich Armer zagte,}
+\vzeile{dass noch was fehle.}
+\speaker{Alberich}
+\vzeile{Was wär' noch nicht fertig?}
+\speaker{Mime}
+\stagedir{verlegen}
+\vzeile{Hier - und da -}
+\speaker{Alberich}
+\vzeile{Was hier und da? Her das Geschmeid'!}
+\stagedir{Er will ihm wieder an das Ohr fahren; vor Schreck lässt Mime ein metallenes Gewirke, das er krampfhaft in den Händen hielt, sich entfallen. Alberich hebt es hastig auf und prüft es genau.}
+\vzeile{Schau, du Schelm! Alles geschmiedet}
+\vzeile{und fertig gefügt, wie ich's befahl!}
+\vzeile{So wollte der Tropf schlau mich betrügen?}
+\vzeile{Für sich behalten das hehre Geschmeid',}
+\vzeile{das meine List ihn zu schmieden gelehrt?}
+\vzeile{Kenn' ich dich dummen Dieb?}
+\stagedir{Er setzt das Gewirk als "Tarnhelm" auf den Kopf}
+\vzeile{Dem Haupt fügt sich der Helm:}
+\vzeile{ob sich der Zauber auch zeigt?}
+\stagedir{sehr leise}
+\vzeile{\glqq{}Nacht und Nebel - niemand gleich!\grqq{}}
+\stagedir{seine Gestalt verschwindet; statt ihrer gewahrt man eine Nebelsäule}
+\vzeile{Siehst du mich, Bruder?}
+\speaker{Mime}
+\stagedir{blickt sich verwundert um}
+\vzeile{Wo bist du? Ich sehe dich nicht.}
+\speaker{Alberich}
+\stagedir{unsichtbar}
+\vzeile{So fühle mich doch, du fauler Schuft!}
+\vzeile{Nimm das für dein Diebesgelüst!}
+\speaker{Mime}
+\stagedir{schreit und windet sich unter empfangenen Geisselhieben, deren Fall man vernimmt, ohne die Geissel selbst zu sehen}
+\vzeile{Ohe, Ohe! Au! Au! Au!}
+\speaker{Alberich}
+\stagedir{lachend, unsichtbar}
+\vzeile{Hahahahahaha!}
+\vzeile{Hab' Dank, du Dummer!}
+\vzeile{Dein Werk bewährt sich gut!}
+\vzeile{Hoho! Hoho!}
+\vzeile{Niblungen all', neigt euch nun Alberich!}
+\vzeile{Überall weilt er nun, euch zu bewachen;}
+\vzeile{Ruh' und Rast ist euch zerronnen;}
+\vzeile{ihm müsst ihr schaffen wo nicht ihr ihn schaut;}
+\vzeile{wo nicht ihr ihn gewahrt, seid seiner gewärtig!}
+\vzeile{Untertan seid ihr ihm immer}
+\stagedir{grell}
+\vzeile{Hoho! Hoho! Hört' ihn, er naht:}
+\vzeile{der Niblungen Herr!}
+\stagedir{Die Nebelsäule verschwindet dem Hintergrunde zu: man hört in immer weiterer Ferne Alberichs Toben und Zanken; Geheul und Geschrei antwortet ihm, das sich endlich in immer weiterer Ferne unhörbar verliert. Mime ist vor Schmerz zusammengesunken. Wotan und Loge lassen sich aus einer Schlucht von oben herab.}
+\speaker{Loge}
+\vzeile{Nibelheim hier:}
+\vzeile{Durch bleiche Nebel}
+\vzeile{was blitzen dort feurige Funken?}
+\speaker{Mime}
+\vzeile{Au! Au! Au!}
+\speaker{Wotan}
+\vzeile{Hier stöhnt es laut:}
+\vzeile{was liegt im Gestein?}
+\speaker{Loge}
+\stagedir{neigt sich zu Mime}
+\vzeile{Was Wunder wimmerst du hier?}
+\speaker{Mime}
+\vzeile{Ohe! Ohe! Au! Au!}
+\speaker{Loge}
+\vzeile{Hei, Mime! Munt'rer Zwerg!}
+\vzeile{Was zwickt und zwackt dich denn so?}
+\speaker{Mime}
+\vzeile{Lass mich in Frieden!}
+\speaker{Loge}
+\vzeile{Das will ich freilich,}
+\vzeile{und mehr noch, hör':}
+\vzeile{helfen will ich dir, Mime!}
+\vzeile{Er stellt ihn mühsam aufrecht}
+\speaker{Mime}
+\vzeile{Wer hälfe mir?}
+\vzeile{Gehorchen muss ich dem leiblichen Bruder,}
+\vzeile{der mich in Bande gelegt.}
+\speaker{Loge}
+\vzeile{Dich, Mime, zu binden,}
+\vzeile{was gab ihm die Macht?}
+\speaker{Mime}
+\vzeile{Mit arger List schuf sich Alberich}
+\vzeile{aus Rheines Gold einem gelben Reif:}
+\vzeile{seinem starken Zauber zittern wir staunend;}
+\vzeile{mit ihm zwingt er uns alle,}
+\vzeile{der Niblungen nächt'ges Heer.}
+\vzeile{Sorglose Schmiede, schufen wir sonst wohl}
+\vzeile{Schmuck unsern Weibern, wonnig Geschmeid',}
+\vzeile{niedlichen Niblungentand;}
+\vzeile{wir lachten lustig der Müh'.}
+\vzeile{Nun zwingt uns der Schlimme,}
+\vzeile{in Klüfte zu schlüpfen,}
+\vzeile{für ihn allein uns immer zu müh'n.}
+\vzeile{Durch des Ringes Gold errät seine Gier,}
+\vzeile{wo neuer Schimmer in Schachten sich birgt:}
+\vzeile{da müssen wir spähen, spüren und graben,}
+\vzeile{die Beute schmelzen und schmieden den Guss,}
+\vzeile{ohne Ruh' und Rast}
+\vzeile{dem Herrn zu häufen den Hort.}
+\speaker{Loge}
+\vzeile{Dich Trägen so eben traf wohl sein Zorn?}
+\speaker{Mime}
+\vzeile{Mich Ärmsten, ach, mich zwang er zum Ärgsten:}
+\vzeile{ein Helmgeschmeid' hiess er mich schweissen;}
+\vzeile{genau befahl er, wie es zu fügen.}
+\vzeile{Wohl merkt' ich klug, welch mächtige Kraft}
+\vzeile{zu eigen dem Werk, das aus Erz ich wob;}
+\vzeile{für mich drum hüten wollt' ich dem Helm;}
+\vzeile{durch seinen Zauber}
+\vzeile{Alberichs Zwang mich entzieh'n:}
+\vzeile{vielleicht - ja vielleicht}
+\vzeile{den Lästigen selbst überlisten,}
+\vzeile{in meine Gewalt ihn zu werfen,}
+\vzeile{den Ring ihm zu entreissen,}
+\vzeile{dass, wie ich Knecht jetzt dem Kühnen,}
+\stagedir{grell}
+\vzeile{mir Freien er selber dann frön'!}
+\speaker{Loge}
+\vzeile{Warum, du Kluger, glückte dir's nicht?}
+\speaker{Mime}
+\vzeile{Ach, der das Werk ich wirkte,}
+\vzeile{den Zauber, der ihm entzuckt,}
+\vzeile{den Zauber erriet ich nicht recht!}
+\vzeile{Der das Werk mir riet und mir's entriss,}
+\vzeile{der lehrte mich nun,}
+\vzeile{- doch leider zu spät, -}
+\vzeile{welche List läg' in dem Helm:}
+\vzeile{Meinem Blick entschwand er,}
+\vzeile{doch Schwielen dem Blinden}
+\vzeile{schlug unschaubar sein Arm.}
+\stagedir{heulend und schluchzend}
+\vzeile{Das schuf ich mir Dummen schön zu Dank!}
+\stagedir{er streicht sich den Rücken. Wotan und Loge lachen}
+\speaker{Loge}
+\stagedir{zu Wotan}
+\vzeile{Gesteh', nicht leicht gelingt der Fang.}
+\speaker{Wotan}
+\vzeile{Doch erliegt der Feind, hilft deine List!}
+\speaker{Mime}
+\stagedir{von dem Lachen der Götter betroffen, betrachtet diese aufmerksamer}
+\vzeile{Mit eurem Gefrage,}
+\vzeile{wer seid denn ihr Fremde?}
+\speaker{Loge}
+\vzeile{Freunde dir; von ihrer Not}
+\vzeile{befrei'n wir der Niblungen Volk!}
+\speaker{Mime}
+\stagedir{schrickt zusammen, da er Alberich sich wieder nahen hört}
+\vzeile{Nehmt euch in acht! Alberich naht.}
+\speaker{Wotan}
+\vzeile{Sein' harren wir hier.}
+\stagedir{Er setzt sich ruhig auf einen Stein; Loge lehnt ihm zur Seite. Alberich, der den Tarnhelm vom Haupte genommen und an den Gürtel gehängt hat, treibt mit geschwungener Geissel aus der unteren, tiefer gelegenen Schlucht aufwärts eine Schar Nibelungen vor sich her: diese sind mit goldenem und silbernem Geschmeide beladen, das sie, unter Alberichs steter Nötigung, all auf einen Haufen speichern und so zu einem Horte häufen.}
+\speaker{Alberich}
+\vzeile{Hieher! Dorthin! Hehe! Hoho!}
+\vzeile{Träges Heer, dort zu Hauf schichtet den Hort!}
+\vzeile{Du da, hinauf! Willst du voran?}
+\vzeile{Schmähliches Volk, ab das Geschmeide!}
+\vzeile{Soll ich euch helfen? Alle hieher!}
+\stagedir{er gewahrt plötzlich Wotan und Loge}
+\vzeile{He! Wer ist dort? Wer drang hier ein?}
+\vzeile{Mime, zu mir, schäbiger Schuft!}
+\vzeile{Schwatztest du gar mit dem schweifenden Paar?}
+\vzeile{Fort, du Fauler!}
+\vzeile{Willst du gleich schmieden und schaffen?}
+\stagedir{Er treibt Mime mit Geisselhieben unter den Haufen der Nibelungen hinein.}
+\vzeile{He! An die Arbeit!}
+\vzeile{Alle von hinnen! Hurtig hinab!}
+\vzeile{Aus den neuen Schachten schafft mir das Gold!}
+\vzeile{Euch grüsst die Geissel, grabt ihr nicht rasch!}
+\vzeile{Dass keiner mir müssig, bürge mir Mime,}
+\vzeile{sonst birgt er sich schwer meiner Geissel Schwunge!}
+\vzeile{Dass ich überall weile, wo keiner mich wähnt,}
+\vzeile{das weiss er, dünkt mich, genau!}
+\vzeile{Zögert ihr noch? Zaudert wohl gar?}
+\stagedir{Er zieht seinen Ring vom Finger, küsst ihn und streckt ihn drohend aus.}
+\vzeile{Zittre und zage, gezähmtes Heer!}
+\vzeile{Rasch gehorcht des Ringes Herrn!}
+\stagedir{Unter Geheul und Gekreisch stieben die Nibelungen, unter ihnen Mime, auseinander und schlüpfen in die Schächte hinab}
+\speaker{Alberich}
+\stagedir{betrachtet lange und misstrauisch Wotan und Loge.}
+\vzeile{Was wollt ihr hier?}
+\speaker{Wotan}
+\vzeile{Von Nibelheims nächt'gem Land}
+\vzeile{vernahmen wir neue Mär':}
+\vzeile{mächtige Wunder wirke hier Alberich;}
+\vzeile{daran uns zu weiden, trieb uns Gäste die Gier.}
+\speaker{Alberich}
+\vzeile{Nach Nibelheim führt euch der Neid:}
+\vzeile{so kühne Gäste, glaubt, kenn' ich gut!}
+\speaker{Loge}
+\vzeile{Kennst du mich gut, kindischer Alp?}
+\vzeile{Nun sag', wer bin ich, dass du so bellst?}
+\vzeile{Im kalten Loch, da kauern du lagst,}
+\vzeile{wer gab dir Licht und wärmende Lohe,}
+\vzeile{wenn Loge nie dir gelacht?}
+\vzeile{Was hülf' dir dein Schmieden,}
+\vzeile{heizt' ich die Schmiede dir nicht?}
+\vzeile{Dir bin ich Vetter, und war dir Freund:}
+\vzeile{nicht fein drum dünkt mich dein Dank!}
+\speaker{Alberich}
+\vzeile{Den Lichtalben lacht jetzt Loge,}
+\vzeile{der list'ge Schelm:}
+\vzeile{bist du falscher ihr Freund,}
+\vzeile{wie mir Freund du einst warst:}
+\vzeile{haha! Mich freut's!}
+\vzeile{Von ihnen fürcht' ich dann nichts.}
+\speaker{Loge}
+\vzeile{So denk' ich, kannst du mir traun?}
+\speaker{Alberich}
+\vzeile{Deiner Untreu trau' ich, nicht deiner Treu'!}
+\stagedir{eine herausfordernde Stellung einnehmend}
+\vzeile{Doch getrost trotz' ich euch allen!}
+\speaker{Loge}
+\vzeile{Hohen Mut verleiht deine Macht;}
+\vzeile{grimmig gross wuchs dir die Kraft!}
+\speaker{Alberich}
+\vzeile{Siehst du den Hort,}
+\vzeile{den mein Heer dort mir gehäuft?}
+\speaker{Loge}
+\vzeile{So neidlichen sah ich noch nie.}
+\speaker{Alberich}
+\vzeile{Das ist für heut, ein kärglich Häufchen:}
+\vzeile{Kühn und mächtig soll er künftig sich mehren.}
+\speaker{Wotan}
+\vzeile{Zu was doch frommt dir der Hort,}
+\vzeile{da freudlos Nibelheim,}
+\vzeile{und nichts für Schätze hier feil?}
+\speaker{Alberich}
+\vzeile{Schätze zu schaffen und Schätze zu bergen,}
+\vzeile{nützt mir Nibelheims Nacht.}
+\vzeile{Doch mit dem Hort, in der Höhle gehäuft,}
+\vzeile{denk' ich dann Wunder zu wirken:}
+\vzeile{die ganze Welt gewinn' ich mit ihm mir zu eigen!}
+\speaker{Wotan}
+\vzeile{Wie beginnst du, Gütiger, das?}
+\speaker{Alberich}
+\vzeile{Die in linder Lüfte Weh'n da oben ihr lebt,}
+\vzeile{lacht und liebt: mit goldner Faust}
+\vzeile{euch Göttliche fang' ich mir alle!}
+\vzeile{Wie ich der Liebe abgesagt,}
+\vzeile{alles, was lebt, soll ihr entsagen!}
+\vzeile{Mit Golde gekirrt,}
+\vzeile{nach Gold nur sollt ihr noch gieren!}
+\vzeile{Auf wonnigen Höhn,}
+\vzeile{in seligem Weben wiegt ihr euch;}
+\vzeile{den Schwarzalben}
+\vzeile{verachtet ihr ewigen Schwelger!}
+\vzeile{Habt acht! Habt acht!}
+\vzeile{Denn dient ihr Männer erst meiner Macht,}
+\vzeile{eure schmucken Frau'n, die mein Frei'n verschmäht,}
+\vzeile{sie zwingt zur Lust sich der Zwerg,}
+\vzeile{lacht Liebe ihm nicht!}
+\stagedir{wild lachend}
+\vzeile{Hahahaha! Habt ihr's gehört?}
+\vzeile{Habt acht vor dem nächtlichen Heer,}
+\vzeile{entsteigt des Niblungen Hort}
+\vzeile{aus stummer Tiefe zu Tag!}
+\speaker{Wotan}
+\stagedir{auffahrend}
+\vzeile{Vergeh, frevelnder Gauch!}
+\speaker{Alberich}
+\vzeile{Was sagt der?}
+\speaker{Loge}
+\stagedir{ist dazwischengetreten}
+\vzeile{Sei doch bei Sinnen!}
+\stagedir{zu Alberich}
+\vzeile{Wen doch fasste nicht Wunder,}
+\vzeile{erfährt er Alberichs Werk?}
+\vzeile{Gelingt deiner herrlichen List,}
+\vzeile{was mit dem Horte du heischest:}
+\vzeile{den Mächtigsten muss ich dich rühmen;}
+\vzeile{denn Mond und Stern', und die strahlende Sonne,}
+\vzeile{sie auch dürfen nicht anders,}
+\vzeile{dienen müssen sie dir.}
+\vzeile{Doch - wichtig acht' ich vor allem,}
+\vzeile{dass des Hortes Häufer, der Niblungen Heer,}
+\vzeile{neidlos dir geneigt.}
+\vzeile{Einen Reif rührtest du kühn;}
+\vzeile{dem zagte zitternd dein Volk: -}
+\vzeile{doch, wenn im Schlaf ein Dieb dich beschlich',}
+\vzeile{den Ring schlau dir entriss', -}
+\vzeile{wie wahrtest du, Weiser, dich dann?}
+\speaker{Alberich}
+\vzeile{Der Listigste dünkt sich Loge;}
+\vzeile{andre denkt er immer sich dumm:}
+\vzeile{dass sein' ich bedürfte zu Rat und Dienst,}
+\vzeile{um harten Dank,}
+\vzeile{das hörte der Dieb jetzt gern!}
+\vzeile{Den hehlenden Helm ersann ich mir selbst;}
+\vzeile{der sorglichste Schmied,}
+\vzeile{Mime, musst' ihn mir schmieden:}
+\vzeile{schnell mich zu wandeln, nach meinem Wunsch}
+\vzeile{die Gestalt mir zu tauschen, taugt der Helm.}
+\vzeile{Niemand sieht mich, wenn er mich sucht;}
+\vzeile{doch überall bin ich, geborgen dem Blick.}
+\vzeile{So ohne Sorge}
+\vzeile{bin ich selbst sicher vor dir,}
+\vzeile{du fromm sorgender Freund!}
+\speaker{Loge}
+\vzeile{Vieles sah ich, Seltsames fand ich,}
+\vzeile{doch solches Wunder gewahrt' ich nie.}
+\vzeile{Dem Werk ohnegleichen kann ich nicht glauben;}
+\vzeile{wäre das eine möglich,}
+\vzeile{deine Macht währte dann ewig!}
+\speaker{Alberich}
+\vzeile{Meinst du, ich lüg' und prahle wie Loge?}
+\speaker{Loge}
+\vzeile{Bis ich's geprüft,}
+\vzeile{bezweifl' ich, Zwerg, dein Wort.}
+\speaker{Alberich}
+\vzeile{Vor Klugheit bläht sich}
+\vzeile{zum Platzen der Blöde!}
+\vzeile{Nun plage dich Neid!}
+\vzeile{Bestimm', in welcher Gestalt}
+\vzeile{soll ich jach vor dir stehn?}
+\speaker{Loge}
+\vzeile{In welcher du willst;}
+\vzeile{nur mach' vor Staunen mich stumm.}
+\speaker{Alberich}
+\stagedir{hat den Helm aufgesetzt}
+\vzeile{\glqq{}Riesen-Wurm winde sich ringelnd!\grqq{}}
+\stagedir{Sogleich verschwindet er: eine ungeheure Riesenschlange windet sich statt seiner am Boden; sie bäumt sich und streckt den aufgesperrten Rachen nach Wotan und Loge hin.}
+\speaker{Loge}
+\stagedir{stellt sich von Furcht ergriffen}
+\vzeile{Ohe! Ohe!}
+\vzeile{Schreckliche Schlange, verschlinge mich nicht!}
+\vzeile{Schone Logen das Leben!}
+\speaker{Wotan}
+\vzeile{Hahaha! Gut, Alberich!}
+\vzeile{Gut, du Arger!}
+\vzeile{Wie wuchs so rasch}
+\vzeile{zum riesigen Wurme der Zwerg!}
+\stagedir{Die Schlange verschwindet; statt ihrer erscheint sogleich Alberich wieder in seiner wirklichen Gestalt.}
+\speaker{Alberich}
+\vzeile{Hehe! Ihr Klugen, glaubt ihr mir nun?}
+\speaker{Loge}
+\vzeile{Mein Zittern mag dir's bezeugen.}
+\vzeile{Zur grossen Schlange schufst du dich schnell:}
+\vzeile{weil ich's gewahrt,}
+\vzeile{willig glaub' ich dem Wunder.}
+\vzeile{Doch, wie du wuchsest,}
+\vzeile{kannst du auch winzig}
+\vzeile{und klein dich schaffen?}
+\vzeile{Das Klügste schien' mir das,}
+\vzeile{Gefahren schlau zu entfliehn:}
+\vzeile{das aber dünkt mich zu schwer!}
+\speaker{Alberich}
+\vzeile{Zu schwer dir, weil du zu dumm!}
+\vzeile{Wie klein soll ich sein?}
+\speaker{Loge}
+\vzeile{Dass die feinste Klinze dich fasse,}
+\vzeile{wo bang die Kröte sich birgt.}
+\speaker{Alberich}
+\vzeile{Pah! Nichts leichter! Luge du her!}
+\vzeile{Er setzt den Tarnhelm wieder auf.}
+\vzeile{\glqq{}Krumm und grau krieche Kröte!\grqq{}}
+\stagedir{Er verschwindet; die Götter gewahren im Gestein eine Kröte auf sich zukriechen.}
+\speaker{Loge}
+\stagedir{zu Wotan}
+\vzeile{Dort, die Kröte, greife sie rasch!}
+\stagedir{Wotan setzt seinen Fuss auf die Kröte, Loge fährt ihr nach dem Kopfe und hält den Tarnhelm in der Hand. Alberich wird plötzlich in seiner wirklichen Gestalt sichtbar, wie er sich unter Wotans Fusse windet.}
+\speaker{Alberich}
+\vzeile{Ohe! Verflucht! Ich bin gefangen!}
+\speaker{Loge}
+\vzeile{Halt' ihn fest, bis ich ihn band.}
+\stagedir{Er hat ein Bastseil hervorgeholt und bindet Alberich damit Hände und Beine; den Geknebelten, der sich wütend zu wehren sucht, fassen dann beide und schleppen ihn mit sich nach der Kluft, aus der sie herauskamen.}
+\speaker{Loge}
+\vzeile{Nun schnell hinauf: dort ist er unser!}
+\stagedir{Sie verschwinden, aufwärts steigend.}
+\chapter*{Vierte Szene}
+\addcontentsline{toc}{chapter}{Vierte Szene}
+\markright{Vierte Szene}
+\begin{center}\small\color{stage}\emph{Alberich, Wotan, Loge, Die Übrigen Götter Und Göttinnen, Erda, Die Drei Rheintöchter}\end{center}
+\begin{stageblock}
+\end{stageblock}
+\stage{Die Szene verwandelt sich, nur in umgekehrter Weise, wie zuvor; die Verwandlung führt wieder an den Schmieden vorüber. Fortdauernde Verwandlung nach oben. Schliesslich erscheint wieder die freie Gegend auf Bergeshöhen wie in der zweiten Szene; nur ist sie jetzt noch in fahle Nebel verhüllt, wie vor der zweiten Verwandlung nach Freias Abführung.}
+\stage{Wotan und Loge, den gebundenen Alberich mit sich führend, steigen aus der Kluft herauf.}
+\speaker{Loge}
+\vzeile{Da, Vetter, sitze du fest!}
+\vzeile{Luge Liebster, dort liegt die Welt,}
+\vzeile{die du Lungrer gewinnen dir willst:}
+\vzeile{welch Stellchen, sag',}
+\vzeile{bestimmst du drin mir zu Stall?}
+\stagedir{er schlägt ihm tanzend Schnippchen}
+\speaker{Alberich}
+\vzeile{Schändlicher Schächer! Du Schalk! Du Schelm!}
+\vzeile{Löse den Bast, binde mich los,}
+\vzeile{den Frevel sonst büssest du Frecher!}
+\speaker{Wotan}
+\vzeile{Gefangen bist du, fest mir gefesselt,}
+\vzeile{wie du die Welt, was lebt und webt,}
+\vzeile{in deiner Gewalt schon wähntest,}
+\vzeile{in Banden liegst du vor mir,}
+\vzeile{du Banger kannst es nicht leugnen!}
+\vzeile{Zu ledigen dich, bedarf 's nun der Lösung.}
+\speaker{Alberich}
+\vzeile{O ich Tropf, ich träumender Tor!}
+\vzeile{Wie dumm traut' ich dem diebischen Trug}
+\vzeile{Furchtbare Rache räche den Fehl!}
+\speaker{Loge}
+\vzeile{Soll Rache dir frommen,}
+\vzeile{vor allem rate dich frei:}
+\vzeile{dem gebundnen Manne}
+\vzeile{büsst kein Freier den Frevel.}
+\vzeile{Drum, sinnst du auf Rache,}
+\vzeile{rasch ohne Säumen}
+\vzeile{sorg' um die Lösung zunächst!}
+\stagedir{er zeigt ihm, mit den Fingern schnalzend, die Art der Lösung an}
+\speaker{Alberich}
+\stagedir{barsch}
+\vzeile{So heischt, was ihr begehrt!}
+\speaker{Wotan}
+\vzeile{Den Hort und dein helles Gold.}
+\speaker{Alberich}
+\vzeile{Gieriges Gaunergezücht!}
+\stagedir{für sich}
+\vzeile{Doch behalt' ich mir nur den Ring,}
+\vzeile{des Hortes entrat' ich dann leicht;}
+\vzeile{denn von neuem gewonnen}
+\vzeile{und wonnig genährt}
+\vzeile{ist er bald durch des Ringes Gebot:}
+\vzeile{eine Witzigung wär 's,}
+\vzeile{die weise mich macht;}
+\vzeile{zu teuer nicht zahl' ich}
+\vzeile{lass' für die Lehre ich den Tand.}
+\speaker{Wotan}
+\vzeile{Erlegst du den Hort?}
+\speaker{Alberich}
+\vzeile{Löst mir die Hand, so ruf' ich ihn her.}
+\stagedir{Loge löst ihm die Schlinge an der rechten Hand. Alberich berührt den Ring mit den Lippen und murmelt heimlich einen Befehl.}
+\vzeile{Wohlan, die Nibelungen rief ich mir nah'.}
+\vzeile{Ihrem Herrn gehorchend, hör' ich den Hort}
+\vzeile{aus der Tiefe sie führen zu Tag:}
+\vzeile{nun löst mich vom lästigen Band!}
+\speaker{Wotan}
+\vzeile{Nicht eh'r, bis alles gezahlt.}
+\stagedir{Die Nibelungen steigen aus der Kluft herauf, mit den Geschmeiden des Hortes beladen. Während des Folgenden schichten sie den Hort auf.}
+\speaker{Alberich}
+\vzeile{O schändliche Schmach!}
+\vzeile{Dass die scheuen Knechte}
+\vzeile{geknebelt selbst mich ersch'aun!}
+\stagedir{zu den Nibelungen}
+\vzeile{Dorthin geführt, wie ich's befehlt'!}
+\vzeile{All zu Hauf schichtet den Hort!}
+\vzeile{Helf' ich euch Lahmen?}
+\vzeile{Hieher nicht gelugt!}
+\vzeile{Rasch da, rasch!}
+\vzeile{Dann rührt euch von hinnen,}
+\vzeile{dass ihr mir schafft!}
+\vzeile{Fort in die Schachten!}
+\vzeile{Weh' euch, find' ich euch faul!}
+\vzeile{Auf den Fersen folg' ich euch nach!}
+\stagedir{er küsst seinen Ring und streckt ihn gebieterisch aus. Wie von einem Schlage getroffen, drängen sich die Nibelungen scheu und ängstlich der Kluft zu, in die sie schnell hinabschlüpfen.}
+\vzeile{Gezahlt hab' ich;}
+\vzeile{nun lasst mich zieh'n:}
+\vzeile{und das Helmgeschmeid',}
+\vzeile{das Loge dort hält,}
+\vzeile{das gebt mir nun gütlich zurück!}
+\speaker{Loge}
+\stagedir{den Tarnhelm zum Horte werfend}
+\vzeile{Zur Busse gehört auch die Beute.}
+\speaker{Alberich}
+\vzeile{Verfluchter Dieb!}
+\stagedir{leise}
+\vzeile{Doch nur Geduld!}
+\vzeile{Der den alten mir schuf, schafft einen andern:}
+\vzeile{noch halt' ich die Macht, der Mime gehorcht.}
+\vzeile{Schlimm zwar ist's, dem schlauen Feind}
+\vzeile{zu lassen die listige Wehr!}
+\vzeile{Nun denn! Alberich liess euch alles:}
+\vzeile{jetzt löst, ihr Bösen, das Band.}
+\speaker{Loge}
+\stagedir{zu Wotan}
+\vzeile{Bist du befriedigt? Lass' ich ihn frei?}
+\speaker{Wotan}
+\vzeile{Ein goldner Ring ragt dir am Finger;}
+\vzeile{hörst du, Alp?}
+\vzeile{Der, acht' ich, gehört mit zum Hort.}
+\speaker{Alberich}
+\stagedir{entsetzt}
+\vzeile{Der Ring?}
+\speaker{Wotan}
+\vzeile{Zu deiner Lösung musst du ihn lassen.}
+\speaker{Alberich}
+\stagedir{bebend}
+\vzeile{Das Leben, doch nicht den Ring!}
+\speaker{Wotan}
+\stagedir{heftiger}
+\vzeile{Den Reif' verlang' ich,}
+\vzeile{mit dem Leben mach', was du willst!}
+\speaker{Alberich}
+\vzeile{Lös' ich mir Leib und Leben,}
+\vzeile{den Ring auch muss ich mir lösen;}
+\vzeile{Hand und Haupt, Aug' und Ohr}
+\vzeile{sind nicht mehr mein Eigen,}
+\vzeile{als hier dieser rote Ring!}
+\speaker{Wotan}
+\vzeile{Dein Eigen nennst du den Ring?}
+\vzeile{Rasest du, schamloser Albe?}
+\vzeile{Nüchtern sag',}
+\vzeile{wem entnahmst du das Gold,}
+\vzeile{daraus du den schimmernden schufst?}
+\vzeile{War's dein Eigen, was du Arger}
+\vzeile{der Wassertiefe entwandt?}
+\vzeile{Bei des Rheines Töchtern hole dir Rat,}
+\vzeile{ob ihr Gold sie zu eigen dir gaben,}
+\vzeile{das du zum Ring dir geraubt!}
+\speaker{Alberich}
+\vzeile{Schmähliche Tücke! Schändlicher Trug!}
+\vzeile{Wirfst du Schächer die Schuld mir vor,}
+\vzeile{die dir so wonnig erwünscht?}
+\vzeile{Wie gern raubtest}
+\vzeile{du selbst dem Rheine das Gold,}
+\vzeile{war nur so leicht}
+\vzeile{die Kunst, es zu schmieden, erlangt?}
+\vzeile{Wie glückt es nun dir Gleissner zum Heil,}
+\vzeile{dass der Niblung, ich, aus schmählicher Not,}
+\vzeile{in des Zornes Zwange,}
+\vzeile{den schrecklichen Zauber gewann,}
+\vzeile{dess' Werk nun lustig dir lacht?}
+\vzeile{Des Unseligen, Angstversehrten}
+\vzeile{fluchfertige, furchtbare Tat,}
+\vzeile{zu fürstlichem Tand soll sie fröhlich dir taugen,}
+\vzeile{zur Freude dir frommen mein Fluch?}
+\vzeile{Hüte dich, herrischer Gott!}
+\vzeile{Frevelte ich, so frevelt' ich frei an mir:}
+\vzeile{doch an allem, was war,}
+\vzeile{ist und wird,}
+\vzeile{frevelst, Ewiger, du,}
+\vzeile{entreissest du frech mir den Ring!}
+\speaker{Wotan}
+\vzeile{Her der Ring!}
+\vzeile{Kein Recht an ihm}
+\vzeile{schwörst du schwatzend dir zu.}
+\stagedir{er ergreift Alberich und entzieht seinem Finger mit heftiger Gewalt den Ring.}
+\speaker{Alberich}
+\stagedir{grässlich aufschreiend}
+\vzeile{Ha! Zertrümmert! Zerknickt!}
+\vzeile{Der Traurigen traurigster Knecht!}
+\speaker{Wotan}
+\stagedir{den Ring betrachtend}
+\vzeile{Nun halt' ich, was mich erhebt,}
+\vzeile{der Mächtigen mächtigsten Herrn!}
+\stagedir{er steckt den Ring an}
+\speaker{Loge}
+\vzeile{Ist er gelöst?}
+\speaker{Wotan}
+\vzeile{Bind' ihn los!}
+\speaker{Loge}
+\stagedir{löst Alberich vollends die Bande}
+\vzeile{Schlüpfe denn heim!}
+\vzeile{Keine Schlinge hält dich:}
+\vzeile{frei fahre dahin!}
+\speaker{Alberich}
+\stagedir{sich vom Boden erhebend}
+\vzeile{Bin ich nun frei?}
+\stagedir{mit wütendem Lachen}
+\vzeile{Wirklich frei?}
+\vzeile{So grüss' euch denn}
+\vzeile{meiner Freiheit erster Gruss! -}
+\vzeile{Wie durch Fluch er mir geriet,}
+\vzeile{verflucht sei dieser Ring!}
+\vzeile{Gab sein Gold mir Macht ohne Mass,}
+\vzeile{nun zeug' sein Zauber Tod dem, der ihn trägt!}
+\vzeile{Kein Froher soll seiner sich freun,}
+\vzeile{keinem Glücklichen lache sein lichter Glanz!}
+\vzeile{Wer ihn besitzt, den sehre die Sorge,}
+\vzeile{und wer ihn nicht hat, den nage der Neid!}
+\vzeile{Jeder giere nach seinem Gut,}
+\vzeile{doch keiner geniesse mit Nutzen sein!}
+\vzeile{Ohne Wucher hüt' ihn sein Herr;}
+\vzeile{doch den Würger zieh' er ihm zu!}
+\vzeile{Dem Tode verfallen, fessle den Feigen die Furcht:}
+\vzeile{solang er lebt, sterb' er lechzend dahin,}
+\vzeile{des Ringes Herr als des Ringes Knecht:}
+\vzeile{bis in meiner Hand den geraubten wieder ich halte! -}
+\vzeile{So segnet in höchster Not}
+\vzeile{der Nibelung seinen Ring!}
+\vzeile{Behalt' ihn nun,}
+\stagedir{lachend}
+\vzeile{hüte ihn wohl:}
+\stagedir{grimmig}
+\vzeile{meinem Fluch fliehest du nicht!}
+\stagedir{Er verschwindet schnell in der Kluft. Der dichte Nebelduft des Vordergrundes klärt sich allmählich auf.}
+\speaker{Loge}
+\vzeile{Lauschtest du seinem Liebesgruss?}
+\speaker{Wotan}
+\stagedir{in den Anblick des Ringes an seiner Hand versunken}
+\vzeile{Gönn' ihm die geifernde Lust!}
+\stagedir{es wird immer heller}
+\speaker{Loge}
+\stagedir{nach rechts in die Szene blickend}
+\vzeile{Fasolt und Fafner nahen von fern:}
+\vzeile{Freia führen sie her.}
+\stagedir{Aus dem sich immer mehr zerteilenden Nebel erscheinen Donner, Froh und Fricka und eilen dem Vordergrunde zu.}
+\speaker{Froh}
+\vzeile{Sie kehren zurück!}
+\speaker{Donner}
+\vzeile{Willkommen, Bruder!}
+\speaker{Fricka}
+\stagedir{besorgt zu Wotan}
+\vzeile{Bringst du gute Kunde?}
+\speaker{Loge}
+\stagedir{auf den Hort deutend}
+\vzeile{Mit List und Gewalt gelang das Werk:}
+\vzeile{dort liegt, was Freia löst.}
+\speaker{Donner}
+\vzeile{Aus der Riesen Haft naht dort die Holde.}
+\speaker{Froh}
+\vzeile{Wie liebliche Luft wieder uns weht,}
+\vzeile{wonnig' Gefühl die Sinne erfüllt!}
+\vzeile{Traurig ging es uns allen,}
+\vzeile{getrennt für immer von ihr,}
+\vzeile{die leidlos ewiger Jugend}
+\vzeile{jubelnde Lust uns verleiht.}
+\stagedir{Der Vordergrund ist wieder hell geworden; das Aussehen der Götter gewinnt wieder die erste Frische: über dem Hintergrunde haftet jedoch noch der Nebelschleier, so dass die Burg unsichtbar bleibt. Fasolt und Fafner treten auf, Freia zwischen sich führend.}
+\speaker{Fricka}
+\stagedir{eilt freudig auf die Schwester zu, um sie zu umarmen}
+\vzeile{Lieblichste Schwester, süsseste Lust!}
+\vzeile{Bist du mir wieder gewonnen?}
+\speaker{Fasolt}
+\stagedir{ihr wehrend}
+\vzeile{Halt! Nicht sie berührt!}
+\vzeile{Noch gehört sie uns.}
+\vzeile{Auf Riesenheims ragender Mark}
+\vzeile{rasteten wir; mit treuem Mut}
+\vzeile{des Vertrages Pfand pflegten wir.}
+\vzeile{So sehr mich's reut, zurück doch bring' ich's,}
+\vzeile{erlegt uns Brüdern die Lösung ihr.}
+\speaker{Wotan}
+\vzeile{Bereit liegt die Lösung:}
+\vzeile{des Goldes Mass sei nun gütlich gemessen.}
+\speaker{Fasolt}
+\vzeile{Das Weib zu missen, wisse, gemutet mich weh:}
+\vzeile{soll aus dem Sinn sie mir schwinden}
+\vzeile{des Geschmeides Hort häufet denn so,}
+\vzeile{dass meinem Blick die Blühende ganz er verdeck'!}
+\speaker{Wotan}
+\vzeile{So stellt das Mass nach Freias Gestalt!}
+\stagedir{Freia wird von den beiden Riesen in die Mitte gestellt. Darauf stossen sie ihre Pfähle zu Freias beiden Seiten so in den Boden, dass sie gleiche Höhe und Breite mit ihrer Gestalt messen.}
+\speaker{Fafner}
+\vzeile{Gepflanzt sind die Pfähle nach Pfandes Mass;}
+\vzeile{Gehäuft nun füll' es der Hort!}
+\speaker{Wotan}
+\vzeile{Eilt mit dem Werk: widerlich ist mir's!}
+\speaker{Loge}
+\vzeile{Hilf mir, Froh!}
+\speaker{Froh}
+\vzeile{Freias Schmach eil' ich zu enden.}
+\stagedir{Loge und Froh häufen hastig zwischen den Pfählen die Geschmeide}
+\speaker{Fafner}
+\vzeile{Nicht so leicht und locker gefügt!}
+\stagedir{er drückt mit roher Kraft die Geschmeide dicht zusammen}
+\vzeile{Fest und dicht füll' er das Mass.}
+\stagedir{er beugt sich, um nach Lücken zu spähen}
+\vzeile{Hier lug' ich noch durch:}
+\vzeile{verstopft mir die Lücken!}
+\speaker{Loge}
+\vzeile{Zurück, du Grober!}
+\speaker{Fafner}
+\vzeile{Hierher!}
+\speaker{Loge}
+\vzeile{Greif' mir nichts an!}
+\speaker{Fafner}
+\vzeile{Hierher! Die Klinze verklemmt!}
+\speaker{Wotan}
+\stagedir{unmutig sich abwendend}
+\vzeile{Tief in der Brust brennt mir die Schmach!}
+\speaker{Fricka}
+\stagedir{den Blick auf Freia geheftet}
+\vzeile{Sieh, wie in Scham schmählich die Edle steht:}
+\vzeile{um Erlösung fleht stumm der leidende Blick.}
+\vzeile{Böser Mann! Der Minnigen botest du das!}
+\speaker{Fafner}
+\vzeile{Noch mehr! Noch mehr hierher!}
+\speaker{Donner}
+\vzeile{Kaum halt' ich mich: schäumende Wut}
+\vzeile{weckt mir der schamlose Wicht!}
+\vzeile{Hierher, du Hund! Willst du messen,}
+\vzeile{so miss dich selber mit mir!}
+\speaker{Fafner}
+\vzeile{Ruhig, Donner! Rolle, wo's taugt:}
+\vzeile{hier nützt dein Rasseln dir nichts!}
+\speaker{Donner}
+\stagedir{holt aus}
+\vzeile{Nicht dich Schmähl'chen zu zerschmettern?}
+\speaker{Wotan}
+\vzeile{Friede doch!}
+\vzeile{Schon dünkt mich Freia verdeckt.}
+\speaker{Loge}
+\vzeile{Der Hort ging auf.}
+\speaker{Fafner}
+\stagedir{misst den Hort genau mit dem Blick und späht nach Lücken}
+\vzeile{Noch schimmert mir Holdas Haar:}
+\vzeile{dort das Gewirk wirf auf den Hort!}
+\speaker{Loge}
+\vzeile{Wie? Auch den Helm?}
+\speaker{Fafner}
+\vzeile{Hurtig, her mit ihm!}
+\speaker{Wotan}
+\vzeile{Lass ihn denn fahren!}
+\speaker{Loge}
+\stagedir{wirft den Tarnhelm auf den Hort}
+\vzeile{So sind wir denn fertig!}
+\vzeile{Seid ihr zufrieden?}
+\speaker{Fasolt}
+\vzeile{Freia, die Schöne, schau' ich nicht mehr:}
+\vzeile{so ist sie gelöst? Muss ich sie lassen?}
+\stagedir{er tritt nahe hinzu und späht durch den Hort}
+\vzeile{Weh! Noch blitzt ihr Blick zu mir her;}
+\vzeile{des Auges Stern strahlt mich noch an:}
+\vzeile{durch eine Spalte muss ich's erspäh'n.}
+\stagedir{ausser sich}
+\vzeile{Seh' ich dies wonnige Auge,}
+\vzeile{von dem Weibe lass' ich nicht ab!}
+\speaker{Fafner}
+\vzeile{He! Euch rat' ich,}
+\vzeile{verstopft mir die Ritze!}
+\speaker{Loge}
+\vzeile{Nimmersatte! Seht ihr denn nicht,}
+\vzeile{ganz schwand uns der Hort?}
+\speaker{Fafner}
+\vzeile{Mitnichten, Freund! An Wotans Finger}
+\vzeile{glänzt von Gold noch ein Ring:}
+\vzeile{den gebt, die Ritze zu füllen!}
+\speaker{Wotan}
+\vzeile{Wie! Diesen Ring?}
+\speaker{Loge}
+\vzeile{Lasst euch raten!}
+\vzeile{Den Rheintöchtern gehört dies Gold;}
+\vzeile{ihnen gibt Wotan es wieder.}
+\speaker{Wotan}
+\vzeile{Was schwatztest du da?}
+\vzeile{Was schwer ich mir erbeutet,}
+\vzeile{ohne Bangen wahr' ich's für mich!}
+\speaker{Loge}
+\vzeile{Schlimm dann steht's um mein Versprechen,}
+\vzeile{das ich den Klagenden gab!}
+\speaker{Wotan}
+\vzeile{Dein Versprechen bindet mich nicht;}
+\vzeile{als Beute bleibt mir der Reif.}
+\speaker{Fafner}
+\vzeile{Doch hier zur Lösung musst du ihn legen.}
+\speaker{Wotan}
+\vzeile{Fordert frech, was ihr wollt,}
+\vzeile{alles gewähr' ich;}
+\vzeile{um alle Welt,}
+\vzeile{doch nicht fahren lass' ich den Ring!}
+\speaker{Fasolt}
+\stagedir{zieht wütend Freia hinter dem Horte hervor}
+\vzeile{Aus denn ist's, beim Alten bleibt's;}
+\vzeile{nun folgt uns Freia für immer!}
+\speaker{Freia}
+\vzeile{Hilfe! Hilfe!}
+\speaker{Fricka}
+\vzeile{Harter Gott, gib ihnen nach!}
+\speaker{Froh}
+\vzeile{Spare das Gold nicht!}
+\speaker{Donner}
+\vzeile{Spende den Ring doch!}
+\stagedir{Fafner hält den fortdrängenden Fasolt noch auf; alle stehen bestürzt}
+\speaker{Wotan}
+\vzeile{Lasst mich in Ruh'! Den Reif geb' ich nicht!}
+\stagedir{Wotan wendet sich zürnend zur Seite. Die Bühne hat sich von neuem verfinstert; aus der Felskluft zur Seite bricht ein bläulicher Schein hervor: in ihm wird plötzlich Erda sichtbar, die bis zu halber Leibeshöhe aus der Tiefe aufsteigt; sie ist von edler Gestalt, weithin von schwarzem Haar umwallt.}
+\speaker{Erda}
+\stagedir{die Hand mahnend gegen Wotan ausstreckend}
+\vzeile{Weiche, Wotan! Weiche!}
+\vzeile{Flieh' des Ringes Fluch!}
+\vzeile{Rettungslos dunklem Verderben}
+\vzeile{weiht dich sein Gewinn.}
+\speaker{Wotan}
+\vzeile{Wer bist du, mahnendes Weib?}
+\speaker{Erda}
+\vzeile{Wie alles war - weiss ich;}
+\vzeile{wie alles wird, wie alles sein wird,}
+\vzeile{seh' ich auch, -}
+\vzeile{der ew'gen Welt Ur-Wala,}
+\vzeile{Erda, mahnt deinen Mut. Drei der Töchter,}
+\vzeile{ur-erschaff'ne, gebar mein Schoss;}
+\vzeile{was ich sehe, sagen dir nächtlich die Nornen.}
+\vzeile{Doch höchste Gefahr führt mich heut'}
+\vzeile{selbst zu dir her.}
+\vzeile{Höre! Höre! Höre!}
+\vzeile{Alles was ist, endet.}
+\vzeile{Ein düst'rer Tag dämmert den Göttern:}
+\vzeile{dir rat' ich, meide den Ring!}
+\stagedir{sie versinkt langsam bis an die Brust, während der bläuliche Schein zu dunkeln beginnt}
+\speaker{Wotan}
+\vzeile{Geheimnis-hehr}
+\vzeile{hallt mir dein Wort:}
+\vzeile{weile, dass mehr ich wisse!}
+\speaker{Erda}
+\stagedir{im Versinken}
+\vzeile{Ich warnte dich; du weisst genug:}
+\vzeile{sinn' in Sorg' und Furcht!}
+\stagedir{sie verschwindet gänzlich}
+\speaker{Wotan}
+\vzeile{Soll ich sorgen und fürchten,}
+\vzeile{dich muss ich fassen, alles erfahren!}
+\stagedir{er will der Verschwindenden in die Kluft nach, um sie zu halten. Froh und Fricka werfen sich ihm entgegen und halten ihn zurück}
+\speaker{Fricka}
+\vzeile{Was willst du, Wütender?}
+\speaker{Froh}
+\vzeile{Halt' ein, Wotan!}
+\vzeile{Scheue die Edle, achte ihr Wort!}
+\stagedir{Wotan starrt sinnend vor sich hin}
+\speaker{Donner}
+\stagedir{sich entschlossen zu den Riesen wendend}
+\vzeile{Hört, ihr Riesen! Zurück, und harret:}
+\vzeile{das Gold wird euch gegeben.}
+\speaker{Freia}
+\vzeile{Darf ich es hoffen?}
+\vzeile{Dünkt euch Holda wirklich der Lösung wert?}
+\stagedir{Alle blicken gespannt auf Wotan; dieser nach tiefem Sinnen zu sich kommend, erfasst seinen Speer und schwenkt ihn wie zum Zeichen eines mutigen Entschlusses}
+\speaker{Wotan}
+\vzeile{Zu mir, Freia! Du bist befreit.}
+\vzeile{Wieder gekauft kehr' uns die Jugend zurück!}
+\vzeile{Ihr Riesen, nehmt euren Ring!}
+\vzeile{er wirft den Ring auf den Hort}
+\stagedir{Die Riesen lassen Freia los; sie eilt freudig auf die Götter zu, die sie abwechselnd längere Zeit in höchster Freude liebkosen.}
+\stagedir{Fafner breitet sogleich einen ungeheuren Sack aus und macht sich über den Hort her, um ihn da hineinzuschichten.}
+\speaker{Fasolt}
+\stagedir{dem Bruder sich entgegenwerfend}
+\vzeile{Halt, du Gieriger! Gönne mir auch was!}
+\vzeile{Redliche Teilung taugt uns beiden.}
+\speaker{Fafner}
+\vzeile{Mehr an der Maid als am Gold}
+\vzeile{lag dir verliebtem Geck:}
+\vzeile{mit Müh' zum Tausch vermocht' ich dich Toren;}
+\vzeile{Ohne zu teilen, hättest du Freia gefreit:}
+\vzeile{teil' ich den Hort,}
+\vzeile{billig behalt' ich die grösste Hälfte für mich.}
+\speaker{Fasolt}
+\vzeile{Schändlicher du! Mir diesen Schimpf?}
+\stagedir{zu den Göttern}
+\vzeile{Euch ruf' ich zu Richtern:}
+\vzeile{teilet nach Recht uns redlich den Hort!}
+\stagedir{Wotan wendet sich verächtlich ab}
+\speaker{Loge}
+\vzeile{Den Hort lass ihn raffen;}
+\vzeile{halte du nur auf den Ring!}
+\speaker{Fasolt}
+\stagedir{stürzt sich auf Fafner, der immerzu eingesackt hat}
+\vzeile{Zurück, du Frecher! Mein ist der Ring;}
+\vzeile{mir blieb er für Freias Blick!}
+\stagedir{Er greift hastig nach dem Reif. Sie ringen.}
+\speaker{Fafner}
+\vzeile{Fort mit der Faust! Der Ring ist mein!}
+\stagedir{Fasolt entreisst Fafner den Ring}
+\speaker{Fasolt}
+\vzeile{Ich halt' ihn, mir gehört er!}
+\speaker{Fafner}
+\stagedir{mit einem Pfahle nach Fasolt ausholend}
+\vzeile{Halt' ihn fest, dass er nicht fall'!}
+\stagedir{Er streckt Fasolt mit einem Streiche zu Boden, dem Sterbenden entreisst er dann hastig den Ring}
+\speaker{Fafner}
+\vzeile{Nun blinzle nach Freias Blick!}
+\vzeile{An den Reif rührst du nicht mehr!}
+\stagedir{Er steckt den Ring in den Sack und rafft dann gemächlich den Hort vollends ein. Alle Götter stehen entsetzt. Langes, feierliches Schweigen}
+\speaker{Wotan}
+\vzeile{Furchtbar nun erfind' ich des Fluches Kraft!}
+\speaker{Loge}
+\vzeile{Was gleicht, Wotan, wohl deinem Glücke?}
+\vzeile{Viel erwarb dir des Ringes Gewinn;}
+\vzeile{dass er nun dir genommen, nützt dir noch mehr:}
+\vzeile{deine Feinde - sieh - fällen sich selbst}
+\vzeile{um das Gold, das du vergabst.}
+\speaker{Wotan}
+\stagedir{tief erschüttert}
+\vzeile{Wie doch Bangen mich bindet!}
+\vzeile{Sorg' und Furcht fesseln den Sinn:}
+\vzeile{wie sie zu enden, lehre mich Erda:}
+\vzeile{zu ihr muss ich hinab!}
+\speaker{Fricka}
+\stagedir{schmeichelnd sich an ihn schmiegend}
+\vzeile{Wo weilst du, Wotan?}
+\vzeile{Winkt dir nicht hold die hehre Burg,}
+\vzeile{die des Gebieters gastlich bergend nun harrt?}
+\speaker{Wotan}
+\stagedir{düster}
+\vzeile{Mit bösem Zoll zahlt' ich den Bau.}
+\speaker{Donner}
+\stagedir{auf den Hintergrund deutend, der noch in Nebel gehüllt ist}
+\vzeile{Schwüles Gedünst schwebt in der Luft;}
+\vzeile{lästig ist mir der trübe Druck!}
+\vzeile{Das bleiche Gewölk}
+\vzeile{samml' ich zu blitzendem Wetter,}
+\vzeile{das fegt den Himmel mir hell.}
+\stagedir{er besteigt einen hohen Felsstein am Talabhange und schwingt dort seinen Hammer; Nebel ziehen sich um ihn zusammen}
+\vzeile{He da! He da! He do!}
+\vzeile{Zu mir, du Gedüft! Ihr Dünste, zu mir!}
+\vzeile{Donner, der Herr, ruft euch zu Heer!}
+\stagedir{er schwingt den Hammer}
+\vzeile{Auf des Hammers Schwung schwebet herbei!}
+\vzeile{Dunstig Gedämpf! Schwebend Gedüft!}
+\vzeile{Donner, der Herr, ruft euch zu Heer!}
+\vzeile{He da! He da! He do!}
+\stagedir{er verschwindet völlig in einer immer finsterer sich ballenden Gewitterwolke. Man hört Donners Hammerschlag schwer auf den Felsstein fallen: ein starker Blitz entfährt der Wolke; ein heftiger Donnerschlag folgt. Froh ist mit dem Gewölk verschwunden.}
+\speaker{Donner}
+\stagedir{unsichtbar}
+\vzeile{Bruder, hieher! Weise der Brücke den Weg!}
+\stagedir{Plötzlich verzieht sich die Wolke; Donner und Froh werden sichtbar: von ihren Füssen aus zieht sich, mit blendendem Leuchten, eine Regenbogenbrücke über das Tal hinüber bis zur Burg, die jetzt, von der Abendsonne beschienen, im hellsten Glanze erstrahlt. Fafner, der neben der Leiche seines Bruders endlich den ganzen Hort eingerafft, hat, den ungeheuren Sack auf dem Rücken, während Donners Gewitterzauber die Bühne verlassen.}
+\speaker{Froh}
+\stagedir{der der Brücke mit der ausgestreckten Hand den Weg über das Tal angewiesen, zu den Göttern}
+\vzeile{Zur Burg führt die Brücke,}
+\vzeile{leicht, doch fest eurem Fuss:}
+\vzeile{beschreitet kühn ihren schrecklosen Pfad!}
+\stagedir{Wotan und die anderen Götter sind sprachlos in den prächtigen Anblick verloren.}
+\speaker{Wotan}
+\vzeile{Abendlich strahlt der Sonne Auge;}
+\vzeile{in prächtiger Glut prangt glänzend die Burg.}
+\vzeile{In des Morgens Scheine mutig erschimmernd,}
+\vzeile{lag sie herrenlos, hehr verlockend vor mir.}
+\vzeile{Von Morgen bis Abend, in Müh' und Angst,}
+\vzeile{nicht wonnig ward sie gewonnen!}
+\vzeile{Es naht die Nacht: vor ihrem Neid}
+\vzeile{biete sie Bergung nun.}
+\stagedir{Wie von einem grossen Gedanken ergriffen, sehr entschlossen}
+\vzeile{So grüss' ich die Burg,}
+\vzeile{sicher vor Bang' und Grau'n!}
+\stagedir{er wendet sich feierlich zu Fricka}
+\vzeile{Folge mir, Frau:}
+\vzeile{in Walhall wohne mit mir!}
+\speaker{Fricka}
+\vzeile{Was deutet der Name?}
+\vzeile{Nie, dünkt mich, hört' ich ihn nennen.}
+\speaker{Wotan}
+\vzeile{Was, mächtig der Furcht,}
+\vzeile{mein Mut mir erfand,}
+\vzeile{wenn siegend es lebt,}
+\vzeile{leg' es den Sinn dir dar!}
+\stagedir{er fasst Fricka an der Hand und schreitet mit ihr langsam der Brücke zu;}
+\stagedir{Froh, Freia und Donner folgen}
+\speaker{Loge}
+\stagedir{im Vordergrunde verharrend und den Göttern nachblickend}
+\vzeile{Ihrem Ende eilen sie zu,}
+\vzeile{die so stark in Bestehen sich wähnen.}
+\vzeile{Fast schäm' ich mich, mit ihnen zu schaffen;}
+\vzeile{zur leckenden Lohe mich wieder zu wandeln,}
+\vzeile{spür' ich lockende Lust:}
+\vzeile{sie aufzuzehren, die einst mich gezähmt,}
+\vzeile{statt mit den Blinden blöd zu vergehn,}
+\vzeile{und wären es göttlichste Götter!}
+\vzeile{Nicht dumm dünkte mich das!}
+\vzeile{Bedenken will ich's: wer weiss, was ich tu'!}
+\stagedir{Er geht, um sich den Göttern in nachlässiger Haltung anzuschliessen. Aus der Tiefe hört man den Gesang der Rheintöchter heraufschallen.}
+\speaker{Die Drei Rheintöchter}
+\stagedir{in der Tiefe des Tales, unsichtbar}
+\vzeile{Rheingold! Rheingold! Reines Gold!}
+\vzeile{Wie lauter und hell leuchtest hold du uns!}
+\vzeile{Um dich, du klares, wir nun klagen:}
+\vzeile{gebt uns das Gold!}
+\vzeile{O gebt uns das reine zurück!}
+\speaker{Wotan}
+\stagedir{im Begriff, den Fuss auf die Brücke zu setzen, hält an und wendet sich um}
+\vzeile{Welch' Klagen klingt zu mir her?}
+\speaker{Loge}
+\stagedir{späht in das Tal hinab}
+\vzeile{Des Rheines Kinder beklagen des Goldes Raub!}
+\speaker{Wotan}
+\vzeile{Verwünschte Nicker!}
+\stagedir{zu Loge}
+\vzeile{Wehre ihrem Geneck!}
+\speaker{Loge}
+\stagedir{in das Tal hinabrufend}
+\vzeile{Ihr da im Wasser, was weint ihr herauf?}
+\vzeile{Hört, was Wotan euch wünscht!}
+\vzeile{Glänzt nicht mehr euch Mädchen das Gold,}
+\vzeile{in der Götter neuem Glanze}
+\vzeile{sonnt euch selig fortan!}
+\stagedir{Die Götter lachen und beschreiten dann die Brücke.}
+\speaker{Die Drei Rheintöchter}
+\stagedir{aus der Tiefe}
+\vzeile{Rheingold! Rheingold! Reines Gold!}
+\vzeile{O leuchtete noch in der Tiefe dein laut'rer Tand!}
+\vzeile{Traulich und treu ist's nur in der Tiefe:}
+\vzeile{falsch und feig ist, was dort oben sich freut!}
+\stagedir{Während die Götter auf der Brücke der Burg zuschreiten, fällt der Vorhang.}
+
+\end{document}

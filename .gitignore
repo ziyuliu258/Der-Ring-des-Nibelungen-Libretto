@@ -1,0 +1,22 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+*.idx
+*.ind
+*.ilg
+*.lof
+*.lot
+
+# macOS / editor
+.DS_Store
+*.swp
+*~
